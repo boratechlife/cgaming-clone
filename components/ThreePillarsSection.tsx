@@ -32,7 +32,7 @@ const ThreePillarsSection = () => {
       </div>
 
       <div className="flex flex-col items-center justify-center w-full max-w-[1280px] px-[60px] py-20 mx-auto">
-        <div className="flex flex-row justify-between items-start gap-8 w-full">
+        <div className="flex flex-col lg:flex-row justify-between items-start gap-8 w-full">
           {/* Developers Pillar */}
           <div className="flex flex-col items-center gap-4 flex-1">
             <h4

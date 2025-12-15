@@ -269,7 +269,7 @@ const MissionSection = () => {
         </div>
 
         {/* YouTube video */}
-        <div className="flex-none w-[768px] h-[430px] relative">
+        <div className="flex-none w-[331px] lg:w-[768px] h-[185px] lg:h-[430px] relative">
           <div
             style={{
               position: "relative",
