@@ -1,0 +1,101 @@
+import React from 'react';
+
+const Mission = () => {
+  return (
+    <div
+      className="framer-1vkh3ly flex  flex-col items-center justify-center bg-gradient-to-b from-gray-900 to-purple-900 h-min w-full"
+      style={{
+        padding: '200px 160px 100px',
+        scrollMarginTop: '0px',
+        gap: '10px',
+      }}
+      data-framer-name="Mission"
+      id="mission"
+      name="Mission"
+    >
+      <div
+        className="framer-1pl6al2 flex flex-col items-center justify-center w-full"
+        style={{ gap: '40px', maxWidth: '1228px' }}
+        data-framer-name="Container"
+        name="Container"
+      >
+        <div
+          className="framer-9pafsr-container"
+          style={{ height: '430px', width: '768px' }}
+        >
+          <article
+            role="presentation"
+            style={{
+              position: 'relative',
+              width: '100%',
+              height: '100%',
+              borderRadius: '20px',
+              transform: 'unset',
+              cursor: 'pointer',
+              overflow: 'hidden',
+            }}
+          >
+            <link rel="preconnect" href="https://www.youtube.com" />
+            <link rel="preconnect" href="https://www.google.com" />
+            <div
+              style={{
+                position: 'absolute',
+                top: '0px',
+                left: '0px',
+                height: '100%',
+                width: '100%',
+                background:
+                  'url("https://i.ytimg.com/vi_webp/HpOYqI9s71o/sddefault.webp") center center / cover no-repeat',
+              }}
+            />
+            <iframe
+              loading="lazy"
+              title="Youtube Video"
+              allow="presentation; fullscreen; accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              src="https://www.youtube.com/embed/HpOYqI9s71o?iv_load_policy=3&amp;rel=0&amp;modestbranding=1&amp;playsinline=1&amp;autoplay=0"
+              frameBorder="0"
+              style={{
+                position: 'absolute',
+                top: '0px',
+                left: '0px',
+                height: '100%',
+                width: '100%',
+                display: 'none',
+              }}
+            />
+            <button
+              aria-label="Play"
+              style={{
+                position: 'absolute',
+                top: '50%',
+                left: '50%',
+                transform: 'translate(-50%, -50%)',
+                width: '68px',
+                height: '48px',
+                padding: '0px',
+                border: 'none',
+                background: 'transparent',
+                cursor: 'pointer',
+              }}
+            >
+              <svg height="100%" version="1.1" viewBox="0 0 68 48" width="100%">
+                <path
+                  d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z"
+                  fill="#212121"
+                  fillOpacity="0.8"
+                  style={{
+                    transition:
+                      'fill 0.1s cubic-bezier(0.4, 0, 1, 1), fill-opacity 0.1s cubic-bezier(0.4, 0, 1, 1)',
+                  }}
+                />
+                <path d="M 45,24 27,14 27,34" fill="#fff" />
+              </svg>
+            </button>
+          </article>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Mission;
