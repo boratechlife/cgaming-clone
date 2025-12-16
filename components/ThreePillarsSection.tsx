@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 
 const ThreePillarsSection = () => {
   return (
     <a
-      className="flex flex-col flex-none justify-center items-center gap-0 w-full h-min pt-[189px] px-[60px] scroll-mt-10 relative overflow-visible bg-[#5630bf] no-underline"
+      className="flex flex-col flex-none justify-center items-center gap-0 w-full h-min pt-[189px] px-4 lg:px-[60px] scroll-mt-10 relative overflow-visible bg-[#5630bf] no-underline"
       id="works"
       href="https://cgameawards.us18.list-manage.com/subscribe/post?u=b71f8ca57eab220be5354b8c0&id=77d43e63a9&f_id=00b6ade6f0"
       rel="noopener noreferrer"
@@ -13,20 +13,20 @@ const ThreePillarsSection = () => {
           <h2
             className="text-center"
             style={{
-              fontFamily: "Karla, sans-serif",
-              fontSize: "62px",
+              fontFamily: 'Karla, sans-serif',
+              fontSize: '62px',
               fontWeight: 500,
-              letterSpacing: "-3px",
-              lineHeight: "1.05em",
-              color: "#ffffff",
+              letterSpacing: '-3px',
+              lineHeight: '1.05em',
+              color: '#ffffff',
             }}
           >
-            <span style={{ display: "inline-block" }}>The</span>{" "}
-            <span style={{ display: "inline-block" }}>Three</span>{" "}
-            <span style={{ display: "inline-block" }}>Pillars</span>{" "}
-            <span style={{ display: "inline-block" }}>of</span>{" "}
-            <span style={{ display: "inline-block" }}>the</span>{" "}
-            <span style={{ display: "inline-block" }}>CGA</span>
+            <span style={{ display: 'inline-block' }}>The</span>{' '}
+            <span style={{ display: 'inline-block' }}>Three</span>{' '}
+            <span style={{ display: 'inline-block' }}>Pillars</span>{' '}
+            <span style={{ display: 'inline-block' }}>of</span>{' '}
+            <span style={{ display: 'inline-block' }}>the</span>{' '}
+            <span style={{ display: 'inline-block' }}>CGA</span>
           </h2>
         </div>
       </div>
@@ -38,11 +38,11 @@ const ThreePillarsSection = () => {
             <h4
               className="text-white text-center mb-2"
               style={{
-                fontFamily: "system-ui, -apple-system, sans-serif",
-                fontSize: "36px",
+                fontFamily: 'system-ui, -apple-system, sans-serif',
+                fontSize: '36px',
                 fontWeight: 600,
-                letterSpacing: "-0.02em",
-                lineHeight: "1.2",
+                letterSpacing: '-0.02em',
+                lineHeight: '1.2',
               }}
             >
               Developers
@@ -50,12 +50,12 @@ const ThreePillarsSection = () => {
             <p
               className="text-center max-w-[320px]"
               style={{
-                fontFamily: "system-ui, -apple-system, sans-serif",
-                fontSize: "16px",
+                fontFamily: 'system-ui, -apple-system, sans-serif',
+                fontSize: '16px',
                 fontWeight: 300,
-                letterSpacing: "0.01em",
-                lineHeight: "1.6",
-                color: "#b8b8ff",
+                letterSpacing: '0.01em',
+                lineHeight: '1.6',
+                color: '#b8b8ff',
               }}
             >
               Showcasing Canadian culture and talent, the CGAs celebrate the
@@ -69,11 +69,11 @@ const ThreePillarsSection = () => {
             <h4
               className="text-white text-center mb-2"
               style={{
-                fontFamily: "system-ui, -apple-system, sans-serif",
-                fontSize: "36px",
+                fontFamily: 'system-ui, -apple-system, sans-serif',
+                fontSize: '36px',
                 fontWeight: 600,
-                letterSpacing: "-0.02em",
-                lineHeight: "1.2",
+                letterSpacing: '-0.02em',
+                lineHeight: '1.2',
               }}
             >
               Content Creators
@@ -81,12 +81,12 @@ const ThreePillarsSection = () => {
             <p
               className="text-center max-w-[320px]"
               style={{
-                fontFamily: "system-ui, -apple-system, sans-serif",
-                fontSize: "16px",
+                fontFamily: 'system-ui, -apple-system, sans-serif',
+                fontSize: '16px',
                 fontWeight: 300,
-                letterSpacing: "0.01em",
-                lineHeight: "1.6",
-                color: "#b8b8ff",
+                letterSpacing: '0.01em',
+                lineHeight: '1.6',
+                color: '#b8b8ff',
               }}
             >
               Honoring the community builders who bring us together to share our
@@ -99,11 +99,11 @@ const ThreePillarsSection = () => {
             <h4
               className="text-white text-center mb-2"
               style={{
-                fontFamily: "system-ui, -apple-system, sans-serif",
-                fontSize: "36px",
+                fontFamily: 'system-ui, -apple-system, sans-serif',
+                fontSize: '36px',
                 fontWeight: 600,
-                letterSpacing: "-0.02em",
-                lineHeight: "1.2",
+                letterSpacing: '-0.02em',
+                lineHeight: '1.2',
               }}
             >
               Esports
@@ -111,12 +111,12 @@ const ThreePillarsSection = () => {
             <p
               className="text-center max-w-[320px]"
               style={{
-                fontFamily: "system-ui, -apple-system, sans-serif",
-                fontSize: "16px",
+                fontFamily: 'system-ui, -apple-system, sans-serif',
+                fontSize: '16px',
                 fontWeight: 300,
-                letterSpacing: "0.01em",
-                lineHeight: "1.6",
-                color: "#b8b8ff",
+                letterSpacing: '0.01em',
+                lineHeight: '1.6',
+                color: '#b8b8ff',
               }}
             >
               Recognizing the excitement and skill of Canada's best players,

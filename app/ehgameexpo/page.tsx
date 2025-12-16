@@ -1,6 +1,6 @@
-import EhgameExpoHeroSection from "@/components/EhgameexpoHero";
-import GameAwardsPage from "@/components/GameAwardsPage";
-import TabletFooter from "@/components/TabletFooter";
+import EhgameExpoHeroSection from '@/components/EhgameexpoHero';
+import GameAwardsPage from '@/components/GameAwardsPage';
+import TabletFooter from '@/components/TabletFooter';
 
 export default function Ehgameexpo() {
   return (
