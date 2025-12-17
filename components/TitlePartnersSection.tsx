@@ -24,13 +24,13 @@ const TitlePartnerSection = () => {
           Title Partner:
         </h2>
       </div>
-      <div className="grid flex-none gap-[26px] grid-cols-1 grid-rows-1 h-min justify-center overflow-hidden w-full relative px-[160px] sm:gap-[46px] sm:p-[30px_40px_50px] 2xl:gap-[98px] 2xl:px-[50px]">
+      <div className="grid flex-none gap-[26px] grid-cols-1 lg:grid-rows-1 h-min justify-center overflow-hidden w-full relative lg:px-[160px] sm:gap-[46px] sm:p-[30px_40px_50px] 2xl:gap-[98px] 2xl:px-[50px]">
         <div className="place-self-center flex flex-col items-center  flex-none h-[180px] relative w-full md:h-[200px] 2xl:h-[250px]">
           <a
             href="https://www.valnetinc.com/en/"
             target="_blank"
             rel="noopener"
-            className="flex items-center justify-center h-[180px] relative no-underline w-[480px]"
+            className="flex items-center justify-center h-[180px] relative no-underline w-full lg:w-[480px]"
             style={{ opacity: 1 }}
           >
             <div className="w-full rounded-inherit inset-0 flex items-center justify-center">

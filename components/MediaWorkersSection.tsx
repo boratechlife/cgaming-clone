@@ -27,20 +27,20 @@ const MediaWorkersSection = () => {
 
   return (
     <div
-      className="framer-NFhrK framer-h69w26 flex flex-col items-center gap-23 min-h-min overflow-visible relative w-full"
+      className="framer-NFhrK pt-[200px] lg:px-40 pb-[179px] framer-h69w26 flex flex-col items-center gap-23 min-h-min overflow-visible relative w-full"
       style={{
         background:
           'linear-gradient(180deg, #5630bf 0%, rgba(60, 33, 133, 1) 52.702702702702695%, #0d021b 100%)',
-        padding: '200px 160px 179px',
+
         scrollMarginTop: '40px',
       }}
     >
       <div className="framer-n4lyna flex flex-col items-center gap-20 min-h-min overflow-visible relative w-full max-w-7xl">
-        <div className="framer-wjehur grid grid-cols-2 gap-30 justify-center w-[95%]">
+        <div className="framer-wjehur grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-30 justify-center w-[95%]">
           <div className="framer-vkmmil flex flex-col items-start gap-8 w-full">
             <div className="framer-1ati1n7 w-full">
               <h2
-                className="framer-text text-5xl font-medium tracking-tight text-white"
+                className="framer-text text-4xl lg:text-5xl font-medium tracking-tight text-white"
                 style={{
                   fontFamily: '"Satoshi", "Satoshi Placeholder", sans-serif',
                   letterSpacing: '-1px',
@@ -77,10 +77,7 @@ const MediaWorkersSection = () => {
               </a>
             </div>
           </div>
-          <div
-            className="framer-60muk relative rounded-3xl overflow-hidden"
-            style={{ borderRadius: '25px' }}
-          >
+          <div className="framer-60muk relative rounded-3xl overflow-hidden">
             <div
               className="relative rounded-3xl overflow-hidden"
               style={{
@@ -105,7 +102,7 @@ const MediaWorkersSection = () => {
           </div>
         </div>
 
-        <div className="framer-pzfr2y grid grid-cols-2 gap-30 justify-center w-[95%]">
+        <div className="framer-pzfr2y grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-30 justify-center w-[95%]">
           <div
             className="framer-1s8vurc relative rounded-3xl overflow-hidden"
             style={{ borderRadius: '25px' }}
@@ -135,7 +132,7 @@ const MediaWorkersSection = () => {
           <div className="framer-b3vy2d flex flex-col items-start gap-8 w-full">
             <div className="framer-1vyhdh5 w-full">
               <h2
-                className="framer-text text-5xl font-medium tracking-tight text-white"
+                className="framer-text text-4xl lg:text-5xl font-medium tracking-tight text-white"
                 style={{
                   fontFamily: '"Satoshi", "Satoshi Placeholder", sans-serif',
                   letterSpacing: '-1px',
@@ -198,10 +195,7 @@ const MediaWorkersSection = () => {
               href={post.link}
               className="framer-4tp28x flex flex-wrap md:flex-nowrap items-center justify-center gap-10 "
             >
-              <div
-                className="flex-none framer-rr61xn framer-1qlxjto framer-tv6njl relative rounded-xl border border-gray-600"
-                style={{ height: '132px', width: '183px' }}
-              >
+              <div className="flex-none h-[132px] w-[183px] framer-rr61xn framer-1qlxjto framer-tv6njl relative rounded-xl border border-gray-600">
                 <div
                   className="relative rounded-xl overflow-hidden"
                   style={{
@@ -233,7 +227,6 @@ const MediaWorkersSection = () => {
                         '"Satoshi", "Satoshi Placeholder", sans-serif',
                       letterSpacing: '-0.04em',
                       lineHeight: '1.1em',
-                      fontSize: '40px',
                     }}
                   >
                     {post.title}

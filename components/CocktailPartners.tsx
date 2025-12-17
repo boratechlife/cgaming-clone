@@ -71,7 +71,7 @@ const CocktailPartners = () => {
     >
       <div className="framer-k1jjom w-full text-center">
         <h2
-          className="framer-text text-5xl font-medium tracking-tight text-white"
+          className="framer-text text-3xl lg:text-5xl font-medium tracking-tight text-white"
           style={{
             fontFamily: '"Satoshi", "Satoshi Placeholder", sans-serif',
             letterSpacing: '-1px',
@@ -83,20 +83,35 @@ const CocktailPartners = () => {
       </div>
 
       <div
-        className="framer-1gjyoeo grid grid-cols-3 gap-6.5 justify-center w-full"
-        style={{ padding: '100px 160px 0px' }}
+        className="
+    framer-1gjyoeo
+    grid
+    grid-cols-1
+    sm:grid-cols-2
+    lg:grid-cols-3
+    gap-0
+    sm:gap-6
+    w-full
+    px-4
+    sm:px-8
+    lg:px-40
+    pt-8
+    lg:pt-24
+  "
       >
         {partners.map((partner, index) => (
           <div
             key={index}
-            className={partner.containerClass}
-            style={{
-              placeSelf: partner.placeSelf,
-              flex: '0 0 auto',
-              height: partner.height,
-              position: 'relative',
-              width: partner.width,
-            }}
+            className={`
+    ${partner.containerClass}
+    relative
+    w-full
+    max-w-full
+    sm:max-w-[300px]
+    lg:max-w-[400px]
+    aspect-[4/3]
+    mx-auto
+  `}
           >
             <a
               href={partner.url}

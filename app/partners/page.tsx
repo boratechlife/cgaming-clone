@@ -2,6 +2,7 @@ import AwardsPartners from '@/components/AwardsPartners';
 import CharityPartner from '@/components/CharityPartner';
 import CocktailPartners from '@/components/CocktailPartners';
 import ExpoPartners from '@/components/ExpoPartners';
+import InlineFooter from '@/components/InlineFooter';
 import MediaPartners from '@/components/MediaPartners';
 import OfficialMediaPartner from '@/components/OfficialMediaPartner';
 import ProvincialPartners from '@/components/ProvincialPartners';
@@ -20,6 +21,7 @@ export default function Ehgameexpo() {
       <CocktailPartners />
       <CharityPartner />
       <ProvincialPartners />
+      <InlineFooter />
     </section>
   );
 }

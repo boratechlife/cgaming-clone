@@ -1,6 +1,8 @@
 'use client';
 import React, { useState } from 'react';
 import Head from 'next/head';
+import FAQ from '@/components/Faq';
+import InlineFooter from '@/components/InlineFooter';
 
 // Updated PersonCard Component with specific styles
 const PersonCard = ({ image, name, title }) => {
@@ -118,7 +120,7 @@ export default function Home() {
       </section>
 
       {/* Adjudication Process Managers */}
-      <section className="py-16 px-6">
+      <section className="py-16 px-6 lg:px-20">
         <div className="max-w-full mx-auto">
           <h2 className="text-4xl font-bold text-center mb-12">
             Adjudication Process Managers
@@ -139,7 +141,7 @@ export default function Home() {
       </section>
 
       {/* Selection Committee */}
-      <section className="py-16 px-6 bg-gray-800">
+      <section className="py-16 px-6 lg:px-20 bg-gray-800">
         <div className="max-w-full mx-auto">
           <h2 className="text-4xl font-bold text-center mb-12">
             Our Selection Committee
@@ -185,7 +187,7 @@ export default function Home() {
       </section>
 
       {/* Judging Committee */}
-      <section className="py-16 px-6">
+      <section className="py-16 px-6 lg:px-20">
         <div className="max-w-full mx-auto">
           <h2 className="text-4xl font-bold text-center mb-12">
             Our Judging Committee
@@ -256,66 +258,10 @@ export default function Home() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 px-6 bg-gray-800">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12">
-            Frequently Asked Questions
-          </h2>
-          <div className="space-y-4">
-            <FAQItem
-              question="When and what time are the awards?"
-              answer="The Canadian Game Awards will take place on November 15, 2025 at 7:00 PM EST."
-            />
-            <FAQItem
-              question="Is the event open to the general public?"
-              answer="Yes, the event is open to the public. Tickets can be purchased through our website."
-            />
-            <FAQItem
-              question="How long is the gala?"
-              answer="The gala typically lasts for approximately 3 hours, including the awards ceremony and after-party."
-            />
-            <FAQItem
-              question="Who designed the trophy, and what does it represent?"
-              answer="The trophy was designed by a team of Canadian artists and represents the excellence and innovation in Canadian game development."
-            />
-          </div>
-        </div>
-      </section>
+      <FAQ />
 
       {/* Footer */}
-      <footer className="py-12 px-6 bg-gradient-to-r from-purple-800 to-purple-900">
-        <div className="max-w-6xl mx-auto">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="mb-6 md:mb-0">
-              <img
-                src="https://framerusercontent.com/images/QpfRERS028JTTMK15ucTYWGXDM.png"
-                alt="Footer Logo"
-                className="h-12"
-              />
-              <p className="text-gray-300 mt-2">
-                The Canadian Game Awards © 2025 All Rights Reserved
-              </p>
-            </div>
-            <div className="flex gap-6">
-              <a href="#" className="text-white hover:text-gray-300">
-                <i className="fab fa-instagram text-xl"></i>
-              </a>
-              <a href="#" className="text-white hover:text-gray-300">
-                <i className="fab fa-twitch text-xl"></i>
-              </a>
-              <a href="#" className="text-white hover:text-gray-300">
-                <i className="fab fa-twitter text-xl"></i>
-              </a>
-              <a href="#" className="text-white hover:text-gray-300">
-                <i className="fab fa-facebook text-xl"></i>
-              </a>
-              <a href="#" className="text-white hover:text-gray-300">
-                <i className="fab fa-youtube text-xl"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <InlineFooter />
     </div>
   );
 }

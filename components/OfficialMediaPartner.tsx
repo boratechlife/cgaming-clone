@@ -8,7 +8,7 @@ const OfficialMediaPartner = () => {
     >
       <div className="framer-15214o8 w-full text-center">
         <h2
-          className="framer-text text-4xl font-medium tracking-tight text-white"
+          className="framer-text text-2xl lg:text-4xl font-medium tracking-tight text-white"
           style={{
             fontFamily: '"Satoshi", "Satoshi Placeholder", sans-serif',
             letterSpacing: '-1px',
@@ -19,18 +19,11 @@ const OfficialMediaPartner = () => {
         </h2>
       </div>
 
-      <div
-        className="framer-6urnkf grid grid-cols-1 gap-6.5 justify-center w-full"
-        style={{ padding: '0px 160px' }}
-      >
+      <div className="framer-6urnkf py-0  px-4 lg:px-40 grid grid-cols-1 gap-6.5 justify-center w-full">
         <div
-          className="framer-af2r9z-container"
+          className="framer-af2r9z-container place-self-start flex h-[157px] lg:h-[207px] relative w-full"
           style={{
-            placeSelf: 'start',
             flex: '0 0 auto',
-            height: '207px',
-            position: 'relative',
-            width: '100%',
           }}
         >
           <a

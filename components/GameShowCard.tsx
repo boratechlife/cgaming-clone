@@ -40,13 +40,13 @@ export const GameShowCard: React.FC<GameShowCardProps> = ({
 }) => {
   return (
     // The main container for the card
-    <div className="flex flex-col items-center gap-10 max-w-full mx-auto p-4">
+    <div className="flex flex-col items-center gap-10 max-w-full mx-auto p-0">
       {/* Image Link Section */}
       <a
         href={href}
         target="_blank"
         rel="noopener noreferrer"
-        className="flex items-center justify-center w-full max-w-full h-[337px] relative no-underline overflow-hidden rounded-lg shadow-xl"
+        className="flex items-center justify-center w-full max-w-full h-[300px] lg:h-[337px] relative no-underline overflow-hidden rounded-lg shadow-xl"
       >
         <div className="absolute inset-0">
           <img
@@ -66,7 +66,7 @@ export const GameShowCard: React.FC<GameShowCardProps> = ({
           data-framer-component-type="RichTextContainer"
         >
           {/* Display the dates prop (or default value) */}
-          <h2 className="text-white text-center text-[52px] font-medium leading-[1.25] tracking-[-1px] font-satoshi">
+          <h2 className="text-white px-4 lg:px-auto text-center text-[52px] font-medium leading-[1.25] tracking-[-1px] font-satoshi">
             {dates}
           </h2>
         </div>
@@ -78,7 +78,7 @@ export const GameShowCard: React.FC<GameShowCardProps> = ({
           data-framer-component-type="RichTextContainer"
         >
           {/* Display the deadline prop (or default value) */}
-          <h2 className="text-white text-center text-[52px] font-medium leading-[1.25] tracking-[-1px] font-satoshi">
+          <h2 className="text-white px-4 lg:px-auto text-center text-[52px] font-medium leading-[1.25] tracking-[-1px] font-satoshi">
             {deadline}
           </h2>
         </div>

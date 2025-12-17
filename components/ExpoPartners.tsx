@@ -23,13 +23,10 @@ const ExpoPartners = () => {
   ];
 
   return (
-    <div
-      className="framer-NVjQy framer-b1p6um flex flex-col items-center gap-2.25 min-h-min overflow-hidden relative w-full"
-      style={{ padding: '30px 0px' }}
-    >
+    <div className="framer-NVjQy py-[30px] px-0 framer-b1p6um flex flex-col items-center gap-2.25 min-h-min overflow-hidden relative w-full">
       <div className="framer-1f1r2h4 w-full text-center">
         <h2
-          className="framer-text text-5xl font-medium tracking-tight text-white"
+          className="framer-text text-2xl lg:text-5xl font-medium tracking-tight text-white"
           style={{
             fontFamily: '"Satoshi", "Satoshi Placeholder", sans-serif',
             letterSpacing: '-1px',
@@ -40,21 +37,11 @@ const ExpoPartners = () => {
         </h2>
       </div>
 
-      <div
-        className="framer-1yw1tr4 grid grid-cols-3 gap-6.5 justify-center w-full"
-        style={{ padding: '0px 160px' }}
-      >
+      <div className="framer-1yw1tr4 py-0 mt-4 px-4 lg:px-40 grid grid-cols-1 lg:grid-cols-3 gap-6.5 justify-center w-full">
         {partners.map((partner, index) => (
           <div
             key={index}
-            className="framer-110bz69-container framer-12202r-container framer-lve5jz-container"
-            style={{
-              placeSelf: 'start',
-              flex: '0 0 auto',
-              height: '275px',
-              position: 'relative',
-              width: '100%',
-            }}
+            className="framer-110bz69-container place-items-start h-[175px] lg:h-[275px] w-full  framer-12202r-container framer-lve5jz-container"
           >
             <a
               href={partner.url}
@@ -63,14 +50,7 @@ const ExpoPartners = () => {
               className="framer-LJD03 framer-ce27pg framer-v-ce27pg framer-14yq3ls block"
               style={{ width: '100%', height: '100%' }}
             >
-              <div
-                className="relative rounded-lg overflow-hidden"
-                style={{
-                  position: 'absolute',
-                  borderRadius: 'inherit',
-                  inset: '0px',
-                }}
-              >
+              <div className="relative rounded-lg overflow-hidden">
                 <img
                   src={partner.image}
                   alt={`${partner.name} logo – Eh! Game Expo Partner`}

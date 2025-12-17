@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 interface GamePromoSectionProps {
   heading: string;
@@ -15,31 +15,31 @@ const GamePromoSection: React.FC<GamePromoSectionProps> = ({
   supportingText,
   imageUrl,
   imageAlt,
-  headingSize = "52px",
+  headingSize = '52px',
   headingWeight = 500,
   reverseLayout = false, // Default to original layout (text left, image right)
 }) => {
   return (
-    <div className="grid grid-cols-2 gap-[120px] w-full h-min relative overflow-visible">
+    <div className="grid grid-cols-1 lg:px-4 lg:grid-cols-2 gap-15 lg:gap-[120px] w-full h-min relative overflow-visible">
       {/* Content column - position controlled by reverseLayout prop */}
       <div
         className={`flex flex-col items-start justify-start gap-[32px] w-full h-full relative overflow-visible ${
-          reverseLayout ? "order-2" : "order-1" // Move to right when reversed
+          reverseLayout ? 'lg:order-2' : 'lg:order-1' // Move to right when reversed
         }`}
       >
         {/* Heading */}
-        <div className="flex flex-col justify-start outline-none flex-shrink-0 w-full h-auto relative">
+        <div className="flex px-4 lg:px-auto flex-col justify-start outline-none flex-shrink-0 w-full h-auto relative">
           <h2
             className="text-white"
             style={{
               fontFamily: '"Satoshi", "Satoshi Placeholder", sans-serif',
               fontSize: headingSize,
               fontWeight: headingWeight,
-              letterSpacing: "-1px",
-              lineHeight: "1.25em",
-              whiteSpace: "pre-wrap",
-              wordBreak: "break-word",
-              wordWrap: "break-word",
+              letterSpacing: '-1px',
+              lineHeight: '1.25em',
+              whiteSpace: 'pre-wrap',
+              wordBreak: 'break-word',
+              wordWrap: 'break-word',
             }}
           >
             {heading}
@@ -47,17 +47,17 @@ const GamePromoSection: React.FC<GamePromoSectionProps> = ({
         </div>
 
         {/* Supporting text */}
-        <div className="flex flex-col justify-start outline-none flex-shrink-0 w-full h-auto relative">
+        <div className="flex px-4 lg:px-auto flex-col justify-start outline-none flex-shrink-0 w-full h-auto relative">
           <p
             className="text-[#afafaf]"
             style={{
               fontFamily: '"Karla", "Karla Placeholder", sans-serif',
-              fontSize: "18px",
-              letterSpacing: "-0.07em",
-              lineHeight: "1.6em",
-              whiteSpace: "pre-wrap",
-              wordBreak: "break-word",
-              wordWrap: "break-word",
+              fontSize: '18px',
+              letterSpacing: '-0.07em',
+              lineHeight: '1.6em',
+              whiteSpace: 'pre-wrap',
+              wordBreak: 'break-word',
+              wordWrap: 'break-word',
             }}
           >
             {supportingText}
@@ -68,10 +68,10 @@ const GamePromoSection: React.FC<GamePromoSectionProps> = ({
       {/* Image column - position controlled by reverseLayout prop */}
       <div
         className={`rounded-[25px] w-full h-full relative ${
-          reverseLayout ? "order-1" : "order-2" // Move to left when reversed
+          reverseLayout ? 'order-1' : 'order-2' // Move to left when reversed
         }`}
       >
-        <div className=" inset-0 rounded-[25px] h-[300px]">
+        <div className=" inset-0 rounded-[25px] lg:h-[300px]">
           <img
             decoding="async"
             width="2500"
@@ -80,8 +80,8 @@ const GamePromoSection: React.FC<GamePromoSectionProps> = ({
             srcSet={`${imageUrl}?scale-down-to=512 512w, ${imageUrl}?scale-down-to=1024 1024w, ${imageUrl}?scale-down-to=2048 2048w, ${imageUrl} 2500w`}
             src={imageUrl}
             alt={imageAlt}
-            className="w-full h-[300px] object-cover object-center"
-            style={{ display: "block", borderRadius: "inherit" }}
+            className="w-full lg:h-[300px] lg:object-cover object-center"
+            style={{ display: 'block', borderRadius: 'inherit' }}
           />
         </div>
       </div>

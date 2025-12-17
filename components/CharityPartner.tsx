@@ -9,13 +9,10 @@ const CharityPartner = () => {
   };
 
   return (
-    <div
-      className="framer-NVjQy framer-1p2jxhv flex flex-col items-center gap-2.25 min-h-min overflow-hidden relative w-full"
-      style={{ padding: '73px 0px 30px' }}
-    >
+    <div className="framer-NVjQy pt-[73px] py-0 pb-[30px] framer-1p2jxhv flex flex-col items-center gap-2.25 min-h-min overflow-hidden relative w-full">
       <div className="framer-1yzdy8q w-full text-center">
         <h2
-          className="framer-text text-5xl font-medium tracking-tight text-white"
+          className="framer-text text-3xl lg:text-5xl font-medium tracking-tight text-white"
           style={{
             fontFamily: '"Satoshi", "Satoshi Placeholder", sans-serif',
             letterSpacing: '-1px',
@@ -26,10 +23,7 @@ const CharityPartner = () => {
         </h2>
       </div>
 
-      <div
-        className="framer-8gjpzu grid grid-cols-1 gap-6.5 justify-center w-full"
-        style={{ padding: '100px 160px 0px' }}
-      >
+      <div className="framer-8gjpzu pt-[100px] lg:py-40 px-0 grid grid-cols-1 gap-6.5 justify-center w-full">
         <div
           className="framer-u76fki-container"
           style={{

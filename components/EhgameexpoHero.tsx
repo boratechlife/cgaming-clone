@@ -13,13 +13,18 @@ const EhgameExpoHeroSection = () => {
         <img
           src="https://framerusercontent.com/images/t77F9dNTIAm0knTnkab3cK5Z7NA.png"
           alt="Hero background"
-          className="object-cover"
+          className="object-cover h-full w-full hidden lg:block"
+        />
+        <img
+          src=" https://framerusercontent.com/images/y6kWXjFONpoyTOQk1tsZipgYDA.png"
+          alt="Hero background"
+          className="object-cover  object-center h-full w-full lg:hidden opacity-30"
         />
       </div>
 
       {/* Hero Content */}
       <section
-        className="relative z-10 flex flex-row flex-none gap-0 h-min max-w-full overflow-hidden p-[65px_96px_5px_130px] w-full place-content-center items-center"
+        className="relative z-10 flex flex-col lg:flex-row flex-none gap-0 h-min max-w-full overflow-hidden px-4 sm:px-6 pt-20 lg:p-[65px_96px_5px_130px] w-full place-content-center items-center"
         id="hero-section"
       >
         <div className="flex flex-col flex-[6_0_0px] gap-4 h-min overflow-visible p-0 relative  place-content-[flex-start_center] items-start">
@@ -28,13 +33,13 @@ const EhgameExpoHeroSection = () => {
             <img
               src="https://framerusercontent.com/images/zHziUHnbr5bQPXjnNbfMwM7r40M.png"
               alt="Decorative element"
-              className="object-cover"
+              className=" w-full h-full object-cover object-center"
             />
           </div>
 
           {/* Main Heading */}
           <div
-            className={`${richTextContainerStyles} flex-none h-auto relative whitespace-pre-wrap w-[40%] break-words`}
+            className={`${richTextContainerStyles} flex-none h-auto relative whitespace-pre-wrap w-full lg:w-[40%] break-words`}
           >
             <h1 className="font-karla font-semibold text-3xl md:text-4xl lg:text-5xl text-white leading-tight tracking-tight">
               <span className="inline-block">Eh!</span>{' '}
@@ -49,7 +54,7 @@ const EhgameExpoHeroSection = () => {
           {/* Description Text */}
           <div className="flex flex-col flex-none gap-9 h-min overflow-visible p-0 relative w-full place-content-[flex-start_center] items-start">
             <div
-              className={`${richTextContainerStyles} flex-none h-auto max-w-[40%] relative whitespace-pre-wrap  break-words`}
+              className={`${richTextContainerStyles} flex-none h-auto max-w-full lg:max-w-[40%] relative whitespace-pre-wrap  break-words`}
             >
               <p className="font-karla text-lg md:text-xl text-white leading-relaxed tracking-tight">
                 <span className="block">

@@ -41,13 +41,10 @@ const ProvincialPartners = () => {
   ];
 
   return (
-    <div
-      className="framer-NVjQy framer-j0hsf3 flex flex-col items-center gap-2.25 min-h-min overflow-hidden relative w-full"
-      style={{ padding: '30px 0px 73px' }}
-    >
+    <div className="framer-NVjQy px-4 lg:px-[30px] py-[0px] pb-[73px] framer-j0hsf3 flex flex-col items-center gap-2.25 min-h-min overflow-hidden relative w-full">
       <div className="framer-1ojr5wz w-full text-center">
         <h2
-          className="framer-text text-5xl font-medium tracking-tight text-white"
+          className="framer-text text-4xl lg:text-5xl font-medium tracking-tight text-white"
           style={{
             fontFamily: '"Satoshi", "Satoshi Placeholder", sans-serif',
             letterSpacing: '-1px',
@@ -58,10 +55,7 @@ const ProvincialPartners = () => {
         </h2>
       </div>
 
-      <div
-        className="framer-1pc95b8 grid grid-cols-2 gap-6.5 justify-center w-full"
-        style={{ padding: '100px 160px 0px' }}
-      >
+      <div className="framer-1pc95b8 pt-[100px] lg:px-[160px] pb-0 grid grid-cols-1 lg:grid-cols-2 gap-6.5 justify-center w-full">
         {partners.map((partner, index) => (
           <div
             key={index}

@@ -1,13 +1,14 @@
-import Link from "next/link";
-import NominateButton from "./NominateButton";
-import { GameShowCard } from "./GameShowCard";
-import { GameShowEvents } from "@/data/events";
-import GamePromoSection from "./GamePromoSection";
+import Link from 'next/link';
+import NominateButton from './NominateButton';
+import { GameShowCard } from './GameShowCard';
+import { GameShowEvents } from '@/data/events';
+import GamePromoSection from './GamePromoSection';
+import GameshowPartners from './GameshowPartners';
 
 const GameAwardsPage = () => {
   // RichTextContainer styles
   const richTextContainerStyles =
-    "flex flex-col justify-start outline-none flex-shrink-0";
+    'flex flex-col justify-start outline-none flex-shrink-0';
 
   return (
     <div className="flex flex-col items-center justify-center gap-[41px] w-full h-min scroll-mt-10 bg-[#110e0b] relative overflow-visible">
@@ -70,7 +71,7 @@ const GameAwardsPage = () => {
           </div>
         </div>
 
-        <h2 className="text-white font-satoshi font-medium text-[52px] leading-[1.25] tracking-[-1px] whitespace-pre-wrap break-words break-all">
+        <h2 className="text-white px-4 lg:px-auto font-satoshi font-medium text-[52px] leading-[1.25] tracking-[-1px] whitespace-pre-wrap break-words break-all">
           Tour Stops and Deadlines
         </h2>
         <div className="w-full">

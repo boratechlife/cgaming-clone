@@ -56,7 +56,7 @@ const AwardsPartners = () => {
     <div className="framer-NVjQy framer-3xy9jw flex flex-col items-center gap-2.5 min-h-min overflow-hidden relative w-full lg:px-40">
       <div className="framer-1w6ikmi w-full text-center">
         <h2
-          className="framer-text text-4xl font-medium tracking-tight text-white"
+          className="framer-text text-2xl lg:text-4xl font-medium tracking-tight text-white"
           style={{
             fontFamily: '"Satoshi", "Satoshi Placeholder", sans-serif',
             letterSpacing: '-1px',
@@ -68,7 +68,7 @@ const AwardsPartners = () => {
       </div>
 
       <div
-        className="framer-11tnjez grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 justify-center w-full relative"
+        className="framer-11tnjez grid grid-cols-1  md:grid-cols-3 lg:grid-cols-4 gap-4 justify-center w-full relative"
         style={{ height: '425px' }}
       >
         {partners.map((partner, index) => (

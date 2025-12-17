@@ -65,13 +65,10 @@ const MediaPartners = () => {
   ];
 
   return (
-    <div
-      className="framer-NVjQy framer-1w6vnkm flex flex-col items-center gap-2.25 min-h-min overflow-hidden relative w-full"
-      style={{ padding: '30px 0px' }}
-    >
+    <div className="framer-NVjQy framer-1w6vnkm py-[30px] px-0 flex flex-col items-center gap-2.25 min-h-min overflow-hidden relative w-full">
       <div className="framer-1d9b6gp w-full text-center">
         <h2
-          className="framer-text text-5xl font-medium tracking-tight text-white"
+          className="framer-text text-3xl lg:text-5xl font-medium tracking-tight text-white"
           style={{
             fontFamily: '"Satoshi", "Satoshi Placeholder", sans-serif',
             letterSpacing: '-1px',
@@ -82,21 +79,20 @@ const MediaPartners = () => {
         </h2>
       </div>
 
-      <div
-        className="framer-1416a6o grid grid-cols-3 gap-6.25 justify-center w-full"
-        style={{ padding: '0px 160px' }}
-      >
+      <div className="framer-1416a6o grid grid-cols-1 py-0 px-4 lg:px-40 lg:grid-cols-3 gap-6.25 justify-center w-full">
         {partners.map((partner, index) => (
           <div
             key={index}
-            className={partner.containerClass}
-            style={{
-              placeSelf: partner.placeSelf,
-              flex: '0 0 auto',
-              height: partner.height,
-              position: 'relative',
-              width: partner.width,
-            }}
+            className={`
+    ${partner.containerClass}
+    relative
+    w-full
+    max-w-[260px]
+    aspect-[4/3]
+    sm:max-w-[300px]
+    lg:max-w-[400px]
+    lg:aspect-[4/3]
+  `}
           >
             <a
               href={partner.url}
