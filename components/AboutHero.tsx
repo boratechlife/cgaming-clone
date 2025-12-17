@@ -1,227 +1,81 @@
-import React from 'react';
+import React from "react";
 
 const HeroSection = () => {
   return (
     <div
-      className="framer-1fqfjqy relative flex flex-col items-center justify-center bg-blue-600 h-[588px] z-2"
-      style={
-        {
-          padding: '42px 0px 0px',
-          '--border-bottom-width': '1px',
-          '--border-color': '#545454',
-          '--border-left-width': '0px',
-          '--border-right-width': '0px',
-          '--border-style': 'solid',
-          '--border-top-width': '0px',
-        } as React.CSSProperties
-      }
-      data-border="true"
+      className="relative flex flex-col items-center justify-center w-full 
+                 h-[420px] lg:h-[588px] 
+                 border-b border-[#545454]"
+      style={{ paddingTop: "42px" }}
+      id="top"
     >
-      <section
-        className="framer-17m46ak relative flex items-center justify-center w-full"
-        style={{ padding: '115px 96px 115px 130px' }}
-      >
-        <div className="framer-1qd1tz1 flex flex-col items-start justify-start gap-6 w-full">
-          <div
-            className="framer-1h0owa7 relative"
-            style={{ width: '576px', whiteSpace: 'pre-wrap' }}
-          >
+      {/* ================= BACKGROUND ================= */}
+      <div className="absolute inset-0 -z-10 overflow-hidden">
+        {/* Mobile Image Background */}
+        <img
+          decoding="auto"
+          className="block lg:hidden w-full h-full object-cover"
+          width="1920"
+          height="1080"
+          sizes="100vw"
+          srcSet="
+            https://framerusercontent.com/images/K6MpepzIoEx1Eh22pTWT1wY3zw.jpg?scale-down-to=512 512w,
+            https://framerusercontent.com/images/K6MpepzIoEx1Eh22pTWT1wY3zw.jpg?scale-down-to=1024 1024w,
+            https://framerusercontent.com/images/K6MpepzIoEx1Eh22pTWT1wY3zw.jpg 1920w
+          "
+          src="https://framerusercontent.com/images/K6MpepzIoEx1Eh22pTWT1wY3zw.jpg"
+          alt=""
+        />
+
+        {/* Desktop Video Background */}
+        <video
+          src="/videos/SW98RkaeO79SEfSU86gJLxDqXE.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="auto"
+          className="hidden lg:block w-full h-full object-cover"
+        />
+
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-black/40" />
+      </div>
+
+      {/* ================= CONTENT ================= */}
+      <section className="relative z-10 w-full h-full flex items-center">
+        <div className="w-full px-6 lg:px-[130px]">
+          <div className="max-w-[600px] flex flex-col gap-6">
+            {/* Heading */}
             <h1
-              className="framer-text text-white font-semibold leading-tight"
+              className="text-white font-semibold leading-tight"
               style={{
                 fontFamily: '"Karla", "Karla Placeholder", sans-serif',
-                fontSize: '72px',
-                fontWeight: '600',
-                letterSpacing: '-3px',
-                lineHeight: '1.05em',
-                textAlign: 'left',
+                fontSize: "clamp(36px, 6vw, 72px)",
+                letterSpacing: "-3px",
+                lineHeight: "1.05em",
               }}
             >
-              About "Canadian Game Awards"
+              About “Canadian Game Awards”
             </h1>
-          </div>
-          <div className="framer-dkqpha flex flex-col items-start justify-start gap-9 w-full">
-            <div
-              className="framer-tu42vg relative"
+
+            {/* Description */}
+            <p
+              className="text-white"
               style={{
-                maxWidth: '600px',
-                width: '601px',
-                whiteSpace: 'pre-wrap',
-                textWrap: 'balance',
+                fontFamily: '"Karla", "Karla Placeholder", sans-serif',
+                fontSize: "18px",
+                letterSpacing: "-0.07em",
+                lineHeight: "1.6em",
               }}
             >
-              <p
-                className="framer-text"
-                style={{
-                  fontFamily: '"Karla", "Karla Placeholder", sans-serif',
-                  fontSize: '18px',
-                  letterSpacing: '-0.07em',
-                  lineHeight: '1.6em',
-                  textAlign: 'left',
-                  color: 'rgb(255, 255, 255)',
-                }}
-              >
-                <span
-                  style={{ display: 'inline-block', willChange: 'transform' }}
-                >
-                  The
-                </span>{' '}
-                <span
-                  style={{ display: 'inline-block', willChange: 'transform' }}
-                >
-                  Canadian
-                </span>{' '}
-                <span
-                  style={{ display: 'inline-block', willChange: 'transform' }}
-                >
-                  Game
-                </span>{' '}
-                <span
-                  style={{ display: 'inline-block', willChange: 'transform' }}
-                >
-                  Awards
-                </span>{' '}
-                <span
-                  style={{ display: 'inline-block', willChange: 'transform' }}
-                >
-                  are
-                </span>{' '}
-                <span
-                  style={{ display: 'inline-block', willChange: 'transform' }}
-                >
-                  back!
-                </span>{' '}
-                <span
-                  style={{ display: 'inline-block', willChange: 'transform' }}
-                >
-                  Join
-                </span>{' '}
-                <span
-                  style={{ display: 'inline-block', willChange: 'transform' }}
-                >
-                  us
-                </span>{' '}
-                <span
-                  style={{ display: 'inline-block', willChange: 'transform' }}
-                >
-                  at
-                </span>{' '}
-                <span
-                  style={{ display: 'inline-block', willChange: 'transform' }}
-                >
-                  the
-                </span>{' '}
-                <span
-                  style={{ display: 'inline-block', willChange: 'transform' }}
-                >
-                  prestigious
-                </span>{' '}
-                <span
-                  style={{ display: 'inline-block', willChange: 'transform' }}
-                >
-                  TIFF
-                </span>{' '}
-                <span
-                  style={{ display: 'inline-block', willChange: 'transform' }}
-                >
-                  Lightbox
-                </span>{' '}
-                <span
-                  style={{ display: 'inline-block', willChange: 'transform' }}
-                >
-                  on
-                </span>{' '}
-                <span
-                  style={{ display: 'inline-block', willChange: 'transform' }}
-                >
-                  February
-                </span>{' '}
-                <span
-                  style={{ display: 'inline-block', willChange: 'transform' }}
-                >
-                  15th
-                </span>{' '}
-                <span
-                  style={{ display: 'inline-block', willChange: 'transform' }}
-                >
-                  as
-                </span>{' '}
-                <span
-                  style={{ display: 'inline-block', willChange: 'transform' }}
-                >
-                  we
-                </span>{' '}
-                <span
-                  style={{ display: 'inline-block', willChange: 'transform' }}
-                >
-                  celebrate
-                </span>{' '}
-                <span
-                  style={{ display: 'inline-block', willChange: 'transform' }}
-                >
-                  the
-                </span>{' '}
-                <span
-                  style={{ display: 'inline-block', willChange: 'transform' }}
-                >
-                  very
-                </span>{' '}
-                <span
-                  style={{ display: 'inline-block', willChange: 'transform' }}
-                >
-                  best
-                </span>{' '}
-                <span
-                  style={{ display: 'inline-block', willChange: 'transform' }}
-                >
-                  of
-                </span>{' '}
-                <span
-                  style={{ display: 'inline-block', willChange: 'transform' }}
-                >
-                  the
-                </span>{' '}
-                <span
-                  style={{ display: 'inline-block', willChange: 'transform' }}
-                >
-                  Canadian
-                </span>{' '}
-                <span
-                  style={{ display: 'inline-block', willChange: 'transform' }}
-                >
-                  gaming
-                </span>{' '}
-                <span
-                  style={{ display: 'inline-block', willChange: 'transform' }}
-                >
-                  scene.
-                </span>
-              </p>
-            </div>
+              The Canadian Game Awards are back! Join us at the prestigious TIFF
+              Lightbox on February 15th as we celebrate the very best of the
+              Canadian gaming scene.
+            </p>
           </div>
         </div>
       </section>
-      <div className="framer-183vvog-container  absolute -z-10 hidden-uqdvms hidden-1svd07t">
-        <video
-          src="/videos/SW98RkaeO79SEfSU86gJLxDqXE.mp4"
-          loop
-          preload="auto"
-          autoPlay={true}
-          muted
-          playsInline
-          className="w-full h-full object-cover"
-          style={{
-            cursor: 'auto',
-            width: '100%',
-            height: '100%',
-            borderRadius: '0px',
-            display: 'block',
-            objectFit: 'cover',
-            backgroundColor: 'rgba(0, 0, 0, 0)',
-            objectPosition: '50% 50%',
-          }}
-        />
-      </div>
     </div>
   );
 };

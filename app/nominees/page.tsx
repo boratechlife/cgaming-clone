@@ -50,7 +50,7 @@ const nominees = [
 
 export default function Ehgameexpo() {
   return (
-    <section>
+    <section className="bg-[#5630bf]">
       <CategoriesHero />
       <NomineeSection
         categoryId="bestartdirection"

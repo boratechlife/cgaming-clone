@@ -1,49 +1,27 @@
-import React from 'react';
+import React from "react";
 
 const Mission = () => {
   return (
     <div
-      className="framer-1vkh3ly flex  flex-col items-center justify-center bg-gradient-to-b from-gray-900 to-purple-900 h-min w-full"
-      style={{
-        padding: '200px 160px 100px',
-        scrollMarginTop: '0px',
-        gap: '10px',
-      }}
+      className="framer-1vkh3ly flex pt-[200px] px-4 lg:px-40 pb-100px gap-2.5  flex-col items-center justify-center bg-linear-to-b from-gray-900 to-purple-900 h-min w-full"
       data-framer-name="Mission"
       id="mission"
-      name="Mission"
     >
       <div
         className="framer-1pl6al2 flex flex-col items-center justify-center w-full"
-        style={{ gap: '40px', maxWidth: '1228px' }}
+        style={{ gap: "40px", maxWidth: "1228px" }}
         data-framer-name="Container"
-        name="Container"
       >
-        <div
-          className="framer-9pafsr-container"
-          style={{ height: '430px', width: '768px' }}
-        >
+        <div className="framer-9pafsr-container h-[430px] w-full lg:w-3xl">
           <article
             role="presentation"
-            style={{
-              position: 'relative',
-              width: '100%',
-              height: '100%',
-              borderRadius: '20px',
-              transform: 'unset',
-              cursor: 'pointer',
-              overflow: 'hidden',
-            }}
+            className="relative w-full h-full rounded-3xl transform-unset cursor-pointer overflow-hidden"
           >
             <link rel="preconnect" href="https://www.youtube.com" />
             <link rel="preconnect" href="https://www.google.com" />
             <div
+              className="absolute top-0 left-0 h-full w-full"
               style={{
-                position: 'absolute',
-                top: '0px',
-                left: '0px',
-                height: '100%',
-                width: '100%',
                 background:
                   'url("https://i.ytimg.com/vi_webp/HpOYqI9s71o/sddefault.webp") center center / cover no-repeat',
               }}
@@ -54,28 +32,22 @@ const Mission = () => {
               allow="presentation; fullscreen; accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               src="https://www.youtube.com/embed/HpOYqI9s71o?iv_load_policy=3&amp;rel=0&amp;modestbranding=1&amp;playsinline=1&amp;autoplay=0"
               frameBorder="0"
-              style={{
-                position: 'absolute',
-                top: '0px',
-                left: '0px',
-                height: '100%',
-                width: '100%',
-                display: 'none',
-              }}
+              className="absolute top-0 left-0 h-full w-full"
             />
             <button
               aria-label="Play"
+              className="absolute top-1/2 left-1/2 -transform-"
               style={{
-                position: 'absolute',
-                top: '50%',
-                left: '50%',
-                transform: 'translate(-50%, -50%)',
-                width: '68px',
-                height: '48px',
-                padding: '0px',
-                border: 'none',
-                background: 'transparent',
-                cursor: 'pointer',
+                position: "absolute",
+                top: "50%",
+                left: "50%",
+                transform: "translate(-50%, -50%)",
+                width: "68px",
+                height: "48px",
+                padding: "0px",
+                border: "none",
+                background: "transparent",
+                cursor: "pointer",
               }}
             >
               <svg height="100%" version="1.1" viewBox="0 0 68 48" width="100%">
@@ -85,7 +57,7 @@ const Mission = () => {
                   fillOpacity="0.8"
                   style={{
                     transition:
-                      'fill 0.1s cubic-bezier(0.4, 0, 1, 1), fill-opacity 0.1s cubic-bezier(0.4, 0, 1, 1)',
+                      "fill 0.1s cubic-bezier(0.4, 0, 1, 1), fill-opacity 0.1s cubic-bezier(0.4, 0, 1, 1)",
                   }}
                 />
                 <path d="M 45,24 27,14 27,34" fill="#fff" />
