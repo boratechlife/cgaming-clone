@@ -6,7 +6,6 @@ const CategoriesHero = () => {
     <div
       className="relative w-full h-max lg:h-[90vh] border-b border-gray-800"
       id="top"
-      name="Hero"
     >
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
@@ -21,7 +20,6 @@ const CategoriesHero = () => {
       <section
         className="relative py-20 lg:py-auto z-10 flex flex-col items-center justify-center lg:min-h-screen px-4 lg:py-20"
         id="hero-section"
-        name="Hero Section"
       >
         <div className="max-w-4xl mx-auto text-center">
           {/* Main Heading */}

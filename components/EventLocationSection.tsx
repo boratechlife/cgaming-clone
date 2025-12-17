@@ -125,10 +125,7 @@ const EventLocationSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-[120px] w-[101%] h-min p-0 relative overflow-visible">
           <div className="flex flex-col flex-none justify-start self-start items-start gap-8 w-full h-full p-0 relative overflow-visible">
             <div className="contents hidden-1qql9d7 hidden-mvq4c1">
-              <div
-                className="flex flex-col justify-start outline-none flex-shrink-0 whitespace-pre-wrap break-words flex-none w-full h-auto relative"
-                style={{ '--framer-paragraph-spacing': '30px' }}
-              >
+              <div className="flex flex-col justify-start outline-none flex-shrink-0 whitespace-pre-wrap break-words flex-none w-full h-auto relative">
                 <p
                   className="text-center"
                   style={{

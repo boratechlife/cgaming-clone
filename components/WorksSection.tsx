@@ -43,7 +43,6 @@ const WorksSection = () => {
               style={{
                 transform: 'none',
                 overflowWrap: 'break-word',
-                '--framer-paragraph-spacing': '30px',
               }}
             >
               <p className="framer-text m-0 p-0 text-center text-[18px] text-[#afafaf] mx-auto max-w-[55%]">
