@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react';
 
 const FAQSection = () => {
   const faqItems = [
-    "When and what time are the awards?",
-    "Is the event open to the general public?",
-    "How long is the gala?",
-    "Who designed the trophy, and what does it represent?",
+    'When and what time are the awards?',
+    'Is the event open to the general public?',
+    'How long is the gala?',
+    'Who designed the trophy, and what does it represent?',
   ];
 
   return (
@@ -32,10 +32,10 @@ const FAQSection = () => {
                     <p
                       className="text-center"
                       style={{
-                        fontFamily: "Manrope, sans-serif",
-                        fontSize: "14px",
-                        lineHeight: "1em",
-                        color: "#afafaf",
+                        fontFamily: 'Manrope, sans-serif',
+                        fontSize: '14px',
+                        lineHeight: '1em',
+                        color: '#afafaf',
                       }}
                     >
                       Need to Know
@@ -51,43 +51,43 @@ const FAQSection = () => {
               <h2
                 className="capitalize"
                 style={{
-                  fontFamily: "Satoshi, sans-serif",
-                  fontSize: "48px",
+                  fontFamily: 'Satoshi, sans-serif',
+                  fontSize: '48px',
                   fontWeight: 500,
-                  letterSpacing: "-1px",
-                  lineHeight: "1.25em",
-                  color: "#ffffff",
+                  letterSpacing: '-1px',
+                  lineHeight: '1.25em',
+                  color: '#ffffff',
                 }}
               >
                 <span
                   style={{
-                    display: "inline-block",
+                    display: 'inline-block',
                     opacity: 0.001,
-                    filter: "blur(10px)",
+                    filter: 'blur(10px)',
                     transform:
-                      "translateX(0px) translateY(10px) scale(1) rotate(0deg) skewX(0deg) skewY(0deg)",
+                      'translateX(0px) translateY(10px) scale(1) rotate(0deg) skewX(0deg) skewY(0deg)',
                   }}
                 >
                   Frequently
-                </span>{" "}
+                </span>{' '}
                 <span
                   style={{
-                    display: "inline-block",
+                    display: 'inline-block',
                     opacity: 0.001,
-                    filter: "blur(10px)",
+                    filter: 'blur(10px)',
                     transform:
-                      "translateX(0px) translateY(10px) scale(1) rotate(0deg) skewX(0deg) skewY(0deg)",
+                      'translateX(0px) translateY(10px) scale(1) rotate(0deg) skewX(0deg) skewY(0deg)',
                   }}
                 >
                   Asked
-                </span>{" "}
+                </span>{' '}
                 <span
                   style={{
-                    display: "inline-block",
+                    display: 'inline-block',
                     opacity: 0.001,
-                    filter: "blur(10px)",
+                    filter: 'blur(10px)',
                     transform:
-                      "translateX(0px) translateY(10px) scale(1) rotate(0deg) skewX(0deg) skewY(0deg)",
+                      'translateX(0px) translateY(10px) scale(1) rotate(0deg) skewX(0deg) skewY(0deg)',
                   }}
                 >
                   Questions
@@ -105,12 +105,12 @@ const FAQSection = () => {
                   key={index}
                   className={`framer-${
                     index === 0
-                      ? "o5ac6w"
+                      ? 'o5ac6w'
                       : index === 1
-                      ? "d7ii7i"
+                      ? 'd7ii7i'
                       : index === 2
-                      ? "1gg03nh"
-                      : "2vqt0r"
+                      ? '1gg03nh'
+                      : '2vqt0r'
                   }-container`}
                   style={{ opacity: 1 }}
                 >
@@ -118,10 +118,10 @@ const FAQSection = () => {
                     className="cursor-pointer flex flex-col justify-center items-center gap-0 w-[854px] h-min p-[18px_36px] relative overflow-hidden rounded-[20px]"
                     data-framer-name="Close"
                     data-highlight="true"
-                    tabIndex="0"
+                    tabIndex={0}
                     style={{
-                      backgroundColor: "rgba(17, 17, 17, 0)",
-                      willChange: "transform",
+                      backgroundColor: 'rgba(17, 17, 17, 0)',
+                      willChange: 'transform',
                     }}
                   >
                     <div className="flex flex-col flex-none justify-center items-center gap-[30px] w-full h-min p-0 relative overflow-visible">
@@ -131,19 +131,19 @@ const FAQSection = () => {
                             className="framer-text framer-styles-preset-fqipb"
                             data-styles-preset="ytN8uOJCY"
                             style={{
-                              fontFamily: "Satoshi, sans-serif",
+                              fontFamily: 'Satoshi, sans-serif',
                               fontWeight: 500,
-                              fontSize: "18px",
-                              letterSpacing: "-0.5px",
-                              lineHeight: "1.5em",
-                              color: "rgb(133, 133, 133)",
+                              fontSize: '18px',
+                              letterSpacing: '-0.5px',
+                              lineHeight: '1.5em',
+                              color: 'rgb(133, 133, 133)',
                             }}
                           >
                             {item}
                           </h3>
                         </div>
                         <div className="flex-none w-6 h-6 relative">
-                          <div style={{ display: "contents" }}>
+                          <div style={{ display: 'contents' }}>
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="24"
@@ -154,7 +154,7 @@ const FAQSection = () => {
                               strokeWidth="2"
                               strokeLinecap="round"
                               strokeLinejoin="round"
-                              style={{ width: "100%", height: "100%" }}
+                              style={{ width: '100%', height: '100%' }}
                             >
                               <polyline points="6 9 12 15 18 9"></polyline>
                             </svg>

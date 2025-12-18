@@ -22,22 +22,7 @@ const TestimonialsSection = () => {
               data-framer-component-type="RichTextContainer"
               style={{ transform: 'none' }}
             >
-              <h2
-                className="framer-text"
-                style={{
-                  '--font-selector': 'RlM7U2F0b3NoaS1tZWRpdW0=',
-                  '--framer-font-family':
-                    '"Satoshi", "Satoshi Placeholder", sans-serif',
-                  '--framer-font-size': '52px',
-                  '--framer-font-weight': '500',
-                  '--framer-letter-spacing': '-1px',
-                  '--framer-line-height': '1.25em',
-                  '--framer-text-alignment': 'center',
-                  '--framer-text-color': 'rgb(255, 255, 255)',
-                }}
-              >
-                Meet the Adjudication Committee
-              </h2>
+              <h2 className="framer-text">Meet the Adjudication Committee</h2>
             </div>
             <div className="ssr-variant hidden-19jhyg3 hidden-79vzgs">
               <div
@@ -46,20 +31,7 @@ const TestimonialsSection = () => {
                 data-framer-component-type="RichTextContainer"
                 style={{ transform: 'none' }}
               >
-                <p
-                  className="framer-text"
-                  style={{
-                    '--font-selector': 'RlM7S2FybGEtcmVndWxhcg==',
-                    '--framer-font-family':
-                      '"Karla", "Karla Placeholder", sans-serif',
-                    '--framer-font-size': '18px',
-                    '--framer-letter-spacing': '-0.07em',
-                    '--framer-line-height': '1.6em',
-                    '--framer-text-alignment': 'center',
-                    '--framer-text-color': 'rgb(175, 175, 175)',
-                    '--framer-paragraph-spacing': '30px',
-                  }}
-                >
+                <p className="framer-text">
                   The adjudication committee of the Canadian Games Awards is
                   made up of passionate industry leaders and experts who embody
                   the creativity and talent of Canadian gaming. Their dedication

@@ -61,38 +61,14 @@ const CommitteeMemberCard: React.FC<{ member: CommitteeMember }> = ({
           className="framer-16rnp7f"
           data-framer-component-type="RichTextContainer"
         >
-          <h3
-            className="framer-text"
-            style={{
-              '--font-selector':
-                'Q1VTVE9NO0JyaWNvbGFnZSBHcm90ZXNxdWUgU2VtaUJvbGQ=',
-              '--framer-font-family':
-                '"Bricolage Grotesque SemiBold", "Bricolage Grotesque SemiBold Placeholder", sans-serif',
-              '--framer-font-size': '20px',
-              '--framer-line-height': '1.4em',
-              '--framer-text-color': 'rgb(255, 255, 255)',
-            }}
-          >
-            {member.name}
-          </h3>
+          <h3 className="framer-text">{member.name}</h3>
         </div>
         <div
           className="framer-14f2ulj"
           data-framer-appear-id="14f2ulj"
           data-framer-component-type="RichTextContainer"
         >
-          <p
-            className="framer-text"
-            style={{
-              '--font-selector': 'R0Y7U2NoaWJzdGVkIEdyb3Rlc2stcmVndWxhcg==',
-              '--framer-font-family':
-                '"Schibsted Grotesk", "Schibsted Grotesk Placeholder", sans-serif',
-              '--framer-line-height': '1.5em',
-              '--framer-text-color': 'rgb(117, 117, 117)',
-            }}
-          >
-            {member.title}
-          </p>
+          <p className="framer-text">{member.title}</p>
         </div>
       </div>
     </div>
@@ -178,22 +154,7 @@ const AdjudicationSection: React.FC<AdjudicationSectionProps> = ({
               data-framer-name="Heading"
               data-framer-component-type="RichTextContainer"
             >
-              <h2
-                className="framer-text"
-                style={{
-                  '--font-selector': 'RlM7U2F0b3NoaS1tZWRpdW0=',
-                  '--framer-font-family':
-                    '"Satoshi", "Satoshi Placeholder", sans-serif',
-                  '--framer-font-size': '52px',
-                  '--framer-font-weight': '500',
-                  '--framer-letter-spacing': '-1px',
-                  '--framer-line-height': '1.25em',
-                  '--framer-text-alignment': 'center',
-                  '--framer-text-color': 'rgb(255, 255, 255)',
-                }}
-              >
-                Meet the Adjudication Committee
-              </h2>
+              <h2 className="framer-text">Meet the Adjudication Committee</h2>
             </div>
             <div className="ssr-variant hidden-19jhyg3 hidden-79vzgs">
               <div
@@ -201,19 +162,7 @@ const AdjudicationSection: React.FC<AdjudicationSectionProps> = ({
                 data-framer-name="Supporting text"
                 data-framer-component-type="RichTextContainer"
               >
-                <p
-                  className="framer-text"
-                  style={{
-                    '--font-selector': 'RlM7S2FybGEtcmVndWxhcg==',
-                    '--framer-font-family':
-                      '"Karla", "Karla Placeholder", sans-serif',
-                    '--framer-font-size': '18px',
-                    '--framer-letter-spacing': '-0.07em',
-                    '--framer-line-height': '1.6em',
-                    '--framer-text-alignment': 'center',
-                    '--framer-text-color': 'rgb(175, 175, 175)',
-                  }}
-                >
+                <p className="framer-text">
                   The adjudication committee of the Canadian Games Awards is
                   made up of passionate industry leaders and experts who embody
                   the creativity and talent of Canadian gaming. Their dedication
@@ -247,22 +196,7 @@ const AdjudicationSection: React.FC<AdjudicationSectionProps> = ({
             data-framer-name="Heading"
             data-framer-component-type="RichTextContainer"
           >
-            <h2
-              className="framer-text"
-              style={{
-                '--font-selector': 'RlM7U2F0b3NoaS1tZWRpdW0=',
-                '--framer-font-family':
-                  '"Satoshi", "Satoshi Placeholder", sans-serif',
-                '--framer-font-size': '52px',
-                '--framer-font-weight': '500',
-                '--framer-letter-spacing': '-1px',
-                '--framer-line-height': '1.25em',
-                '--framer-text-alignment': 'center',
-                '--framer-text-color': 'rgb(255, 255, 255)',
-              }}
-            >
-              Adjudication Process Managers
-            </h2>
+            <h2 className="framer-text">Adjudication Process Managers</h2>
           </div>
         </div>
 

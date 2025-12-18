@@ -1,120 +1,94 @@
-import React from "react";
-import Image from "next/image";
+'use client';
+
+import React, { useState } from 'react';
+import Image from 'next/image';
 
 const MobileNav: React.FC = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <div className="framer-EOs4P framer-o3r8pe-container w-[90%] top-4 z-10 flex-none h-auto fixed left-1/2 -translate-x-1/2">
+    <div className="w-[90%] fixed top-4 left-1/2 -translate-x-1/2 z-50">
       <nav
-        className="framer-pcVkC framer-7tjAh framer-sfhI9 framer-1nf6vmk framer-v-cenkd9 will-change-[transform] flex flex-col gap-0 relative overflow-hidden"
-        data-framer-name="Phone"
-        style={
-          {
-            "--border-bottom-width": "0px",
-            "--border-color": "rgba(0, 0, 0, 0)",
-            "--border-left-width": "0px",
-            "--border-right-width": "0px",
-            "--border-style": "solid",
-            "--border-top-width": "0px",
-            backdropFilter: "none",
-            background:
-              "linear-gradient(180deg, rgb(33, 33, 33) 0%, rgba(33, 33, 33, 0.4) 100%)",
-            width: "100%",
-            borderRadius: "40px",
-            opacity: 1,
-          } as React.CSSProperties
-        }
+        className="relative overflow-hidden transition-all duration-500"
+        style={{
+          background:
+            'linear-gradient(180deg, rgb(10,10,10) 0%, rgba(10,10,10,0.85) 100%)',
+          borderRadius: '40px',
+        }}
       >
+        {/* TOP BAR */}
         <div
-          // MODIFIED: Changed layout to flex-row and justify-between.
-          // This keeps the logo on the left and the icon group on the right.
-          className="framer-g595vi flex-none w-full p-2 30px flex flex-row items-center justify-center"
-          data-framer-name="Content"
-          style={{
-            backgroundColor: "rgb(5, 5, 5)",
-            borderRadius: "40px",
-            opacity: 1,
-          }}
+          className="flex items-center justify-center px-5 py-4"
+          style={{ backgroundColor: 'rgb(5,5,5)' }}
         >
-          {/* Logo Group (Left Side) */}
-          <div className="framer-mdrfrw flex flex-row items-center justify-start gap-0 w-min h-min p-0 relative overflow-visible">
-            <a
-              aria-label="brand-name"
-              as="a"
-              className="framer-1h5he9a framer-tlkek5 aspect-[3.46667] h-[33px] flex-none w-[116px] no-underline relative overflow-visible"
-              href="./"
-              data-framer-page-link-current="true"
-            >
-              <div className="framer-background-image-wrapper absolute inset-0 rounded-[inherit]">
-                <Image
-                  src="https://framerusercontent.com/images/BaSvDfQZfE4UubCPmSB77sRFkY.png?width=2663&height=601"
-                  alt=""
-                  width={2663}
-                  height={601}
-                  sizes="136px"
-                  srcSet="https://framerusercontent.com/images/BaSvDfQZfE4UubCPmSB77sRFkY.png?scale-down-to=512&width=2663&height=601 512w,https://framerusercontent.com/images/BaSvDfQZfE4UubCPmSB77sRFkY.png?scale-down-to=1024&width=2663&height=601 1024w,https://framerusercontent.com/images/BaSvDfQZfE4UubCPmSB77sRFkY.png?scale-down-to=2048&width=2663&height=601 2048w,https://framerusercontent.com/images/BaSvDfQZfE4UubCPmSB77sRFkY.png?width=2663&height=601 2663w"
-                  className="block w-full h-full rounded-[inherit] object-center object-contain"
-                />
-              </div>
-            </a>
-          </div>
+          {/* Logo */}
+          <a href="./" className="h-[30px] w-[110px] relative">
+            <Image
+              src="https://framerusercontent.com/images/BaSvDfQZfE4UubCPmSB77sRFkY.png"
+              alt="Logo"
+              fill
+              className="object-contain"
+            />
+          </a>
 
-          {/* Icon Group (Right Side - Hamburger and Search, placed close together) */}
-          <div className="framer-ksydnb flex flex-row items-center justify-end gap-3 h-min p-0 relative overflow-visible">
-            {/* Hamburger Icon */}
-            <div
-              className="framer-fo75e0 cursor-pointer flex-none w-[40px] h-[40px] relative overflow-hidden"
-              data-framer-name="Icon"
-              data-highlight="true"
-              tabIndex="0"
-              style={{ opacity: 1 }}
+          {/* ICON GROUP (Hamburger / Close + Search) */}
+          <div className="flex items-center gap-3">
+            {/* Hamburger / Close */}
+            <button
+              aria-label="Toggle Menu"
+              aria-expanded={isOpen}
+              onClick={() => setIsOpen(!isOpen)}
+              className="w-[40px] h-[40px] flex items-center justify-center"
             >
-              <div
-                className="framer-10wwbn3 absolute w-[20px] h-[2px] bg-[rgb(153,153,153)] rounded-[10px]"
-                data-framer-name="Bottom"
-                style={{
-                  top: "calc(62.5% - 1px)",
-                  left: "calc(65% - 10px)",
-                  transform: "none",
-                  opacity: 1,
-                  willChange: "transform",
-                }}
-              ></div>
-              <div
-                className="framer-lw98hq absolute w-[20px] h-[2px] bg-[rgb(153,153,153)] rounded-[10px]"
-                data-framer-name="Top"
-                style={{
-                  top: "calc(37.5% - 1px)",
-                  left: "calc(65% - 10px)",
-                  transform: "none",
-                  opacity: 1,
-                  willChange: "transform",
-                }}
-              ></div>
-            </div>
-
-            {/* Search Icon */}
-            <div className="framer-dr7jhm flex flex-row flex-none items-center justify-center gap-3.25 w-min h-min p-0 relative overflow-visible">
-              <div className="framer-axo8ll-container cursor-pointer flex-none w-[40px] h-[40px] relative">
-                <div className="flex items-center justify-center w-full h-full rounded-[10px] cursor-inherit overflow-hidden">
-                  <button
-                    aria-label="Search Icon"
-                    className="w-full h-full flex items-center justify-center bg-transparent cursor-inherit text-inherit border-none outline-none p-0"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 256 256"
-                      width="24"
-                      height="24"
-                      className="text-[rgb(69,22,130)]"
-                    >
-                      <path
-                        d="M232.49,215.51,185,168a92.12,92.12,0,1,0-17,17l47.53,47.54a12,12,0,0,0,17-17ZM44,112a68,68,0,1,1,68,68A68.07,68.07,0,0,1,44,112Z"
-                        fill="currentColor"
-                      ></path>
-                    </svg>
-                  </button>
+              {isOpen ? (
+                <span className="text-white text-2xl leading-none">✕</span>
+              ) : (
+                <div className="relative w-[20px] h-[14px]">
+                  <span className="absolute top-0 w-full h-[2px] bg-gray-400 rounded" />
+                  <span className="absolute bottom-0 w-full h-[2px] bg-gray-400 rounded" />
                 </div>
-              </div>
+              )}
+            </button>
+
+            {/* SEARCH ICON (ALWAYS VISIBLE) */}
+            <button
+              aria-label="Search"
+              className="w-[40px] h-[40px] flex items-center justify-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 256 256"
+                width="22"
+                height="22"
+                className="text-[rgb(69,22,130)]"
+              >
+                <path
+                  d="M232.49,215.51,185,168a92.12,92.12,0,1,0-17,17l47.53,47.54a12,12,0,0,0,17-17ZM44,112a68,68,0,1,1,68,68A68.07,68.07,0,0,1,44,112Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        {/* SLIDE-DOWN MENU */}
+        <div
+          className={`transition-all duration-500 ease-in-out overflow-hidden ${
+            isOpen
+              ? 'max-h-[520px] opacity-100 translate-y-0'
+              : 'max-h-0 opacity-0 -translate-y-4'
+          }`}
+        >
+          <div className="flex flex-col items-center justify-center gap-6 py-10 text-white">
+            <a className="text-lg">Home</a>
+            <a className="text-lg">Eh! Game</a>
+            <a className="text-lg">Nominees</a>
+            <a className="text-lg">Partners</a>
+            <a className="text-lg">More</a>
+
+            <div className="mt-6 text-gray-300 flex items-center gap-2">
+              <span>↗</span>
+              <span className="underline">Sign up for tickets</span>
             </div>
           </div>
         </div>

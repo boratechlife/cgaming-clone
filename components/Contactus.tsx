@@ -47,26 +47,11 @@ const Contactus = () => {
                   data-framer-name="label"
                   data-framer-component-type="RichTextContainer"
                   style={{
-                    '--extracted-r6o4lv': 'rgb(175, 175, 175)',
-                    '--framer-paragraph-spacing': '0px',
                     transform: 'none',
                     opacity: 1,
                   }}
                 >
-                  <p
-                    className="framer-text"
-                    style={{
-                      '--font-selector': 'RlM7TWFucm9wZS1yZWd1bGFy',
-                      '--framer-font-family':
-                        '"Manrope", "Manrope Placeholder", sans-serif',
-                      '--framer-font-size': '14px',
-                      '--framer-line-height': '1em',
-                      '--framer-text-color':
-                        'var(--extracted-r6o4lv, rgb(175, 175, 175))',
-                    }}
-                  >
-                    Contact
-                  </p>
+                  <p className="framer-text">Contact</p>
                 </div>
               </div>
             </a>
@@ -78,20 +63,7 @@ const Contactus = () => {
               data-framer-component-type="RichTextContainer"
               style={{ transform: 'none' }}
             >
-              <h2
-                className="framer-text text-white text-center"
-                style={{
-                  '--font-selector': 'RlM7S2FybGEtbWVkaXVt',
-                  '--framer-font-family':
-                    '"Karla", "Karla Placeholder", sans-serif',
-                  '--framer-font-size': '62px',
-                  '--framer-font-weight': '500',
-                  '--framer-letter-spacing': '-3px',
-                  '--framer-line-height': '1.05em',
-                  '--framer-text-alignment': 'center',
-                  '--framer-text-color': 'rgb(255, 255, 255)',
-                }}
-              >
+              <h2 className="framer-text text-white text-center">
                 <span
                   style={{
                     display: 'inline-block',
@@ -146,19 +118,7 @@ const Contactus = () => {
               data-framer-component-type="RichTextContainer"
               style={{ transform: 'none' }}
             >
-              <p
-                className="framer-text text-gray-300 text-center"
-                style={{
-                  '--font-selector': 'RlM7S2FybGEtcmVndWxhcg==',
-                  '--framer-font-family':
-                    '"Karla", "Karla Placeholder", sans-serif',
-                  '--framer-font-size': '18px',
-                  '--framer-letter-spacing': '-0.07em',
-                  '--framer-line-height': '1.6em',
-                  '--framer-text-alignment': 'center',
-                  '--framer-text-color': 'rgb(175, 175, 175)',
-                }}
-              >
+              <p className="framer-text text-gray-300 text-center">
                 <span
                   style={{
                     display: 'inline-block',
@@ -538,45 +498,9 @@ const Contactus = () => {
                 data-framer-component-type="RichTextContainer"
                 style={{ transform: 'none', whiteSpace: 'pre' }}
               >
-                <p
-                  className="framer-text text-gray-500"
-                  style={{
-                    '--font-selector': 'SW50ZXItTWVkaXVt',
-                    '--framer-font-family':
-                      '"Inter", "Inter Placeholder", sans-serif',
-                    '--framer-font-size': '12px',
-                    '--framer-font-weight': '500',
-                    '--framer-text-color': 'rgb(136, 136, 136)',
-                  }}
-                >
-                  Name
-                </p>
+                <p className="framer-text text-gray-500">Name</p>
               </div>
-              <div
-                className="framer-form-text-input framer-form-input-wrapper framer-1ce0kvn"
-                style={{
-                  '--framer-input-background': '#bbbbbb26',
-                  '--framer-input-border-bottom-width': '1px',
-                  '--framer-input-border-color': '#8888881a',
-                  '--framer-input-border-left-width': '1px',
-                  '--framer-input-border-radius-bottom-left': '10px',
-                  '--framer-input-border-radius-bottom-right': '10px',
-                  '--framer-input-border-radius-top-left': '10px',
-                  '--framer-input-border-radius-top-right': '10px',
-                  '--framer-input-border-right-width': '1px',
-                  '--framer-input-border-style': 'solid',
-                  '--framer-input-border-top-width': '1px',
-                  '--framer-input-font-color': '#999',
-                  '--framer-input-font-family': '"Inter"',
-                  '--framer-input-font-letter-spacing': '0em',
-                  '--framer-input-font-line-height': '1.2em',
-                  '--framer-input-font-size': '14px',
-                  '--framer-input-font-weight': '400',
-                  '--framer-input-placeholder-color': '#999',
-                  width: '100%',
-                  height: '40px',
-                }}
-              >
+              <div className="framer-form-text-input framer-form-input-wrapper framer-1ce0kvn">
                 <input
                   type="text"
                   required
@@ -614,45 +538,9 @@ const Contactus = () => {
                 data-framer-component-type="RichTextContainer"
                 style={{ transform: 'none', whiteSpace: 'pre' }}
               >
-                <p
-                  className="framer-text text-gray-500"
-                  style={{
-                    '--font-selector': 'SW50ZXItTWVkaXVt',
-                    '--framer-font-family':
-                      '"Inter", "Inter Placeholder", sans-serif',
-                    '--framer-font-size': '12px',
-                    '--framer-font-weight': '500',
-                    '--framer-text-color': 'rgb(136, 136, 136)',
-                  }}
-                >
-                  Email
-                </p>
+                <p className="framer-text text-gray-500">Email</p>
               </div>
-              <div
-                className="framer-form-text-input framer-form-input-wrapper framer-1mv3f2f"
-                style={{
-                  '--framer-input-background': '#bbbbbb26',
-                  '--framer-input-border-bottom-width': '1px',
-                  '--framer-input-border-color': '#8888881a',
-                  '--framer-input-border-left-width': '1px',
-                  '--framer-input-border-radius-bottom-left': '10px',
-                  '--framer-input-border-radius-bottom-right': '10px',
-                  '--framer-input-border-radius-top-left': '10px',
-                  '--framer-input-border-radius-top-right': '10px',
-                  '--framer-input-border-right-width': '1px',
-                  '--framer-input-border-style': 'solid',
-                  '--framer-input-border-top-width': '1px',
-                  '--framer-input-font-color': '#999',
-                  '--framer-input-font-family': '"Inter"',
-                  '--framer-input-font-letter-spacing': '0em',
-                  '--framer-input-font-line-height': '1.2em',
-                  '--framer-input-font-size': '14px',
-                  '--framer-input-font-weight': '400',
-                  '--framer-input-placeholder-color': '#999',
-                  width: '100%',
-                  height: '40px',
-                }}
-              >
+              <div className="framer-form-text-input framer-form-input-wrapper framer-1mv3f2f">
                 <input
                   type="email"
                   required
@@ -690,45 +578,9 @@ const Contactus = () => {
                 data-framer-component-type="RichTextContainer"
                 style={{ transform: 'none', whiteSpace: 'pre' }}
               >
-                <p
-                  className="framer-text text-gray-500"
-                  style={{
-                    '--font-selector': 'SW50ZXItTWVkaXVt',
-                    '--framer-font-family':
-                      '"Inter", "Inter Placeholder", sans-serif',
-                    '--framer-font-size': '12px',
-                    '--framer-font-weight': '500',
-                    '--framer-text-color': 'rgb(136, 136, 136)',
-                  }}
-                >
-                  Message
-                </p>
+                <p className="framer-text text-gray-500">Message</p>
               </div>
-              <div
-                className="framer-form-text-input framer-form-input-wrapper framer-1g72h7f"
-                style={{
-                  '--framer-input-background': '#bbbbbb26',
-                  '--framer-input-border-bottom-width': '1px',
-                  '--framer-input-border-color': '#8888881a',
-                  '--framer-input-border-left-width': '1px',
-                  '--framer-input-border-radius-bottom-left': '10px',
-                  '--framer-input-border-radius-bottom-right': '10px',
-                  '--framer-input-border-radius-top-left': '10px',
-                  '--framer-input-border-radius-top-right': '10px',
-                  '--framer-input-border-right-width': '1px',
-                  '--framer-input-border-style': 'solid',
-                  '--framer-input-border-top-width': '1px',
-                  '--framer-input-font-color': '#999',
-                  '--framer-input-font-family': '"Inter"',
-                  '--framer-input-font-letter-spacing': '0em',
-                  '--framer-input-font-line-height': '1.2em',
-                  '--framer-input-font-size': '14px',
-                  '--framer-input-font-weight': '400',
-                  '--framer-input-placeholder-color': '#999',
-                  width: '100%',
-                  height: '40px',
-                }}
-              >
+              <div className="framer-form-text-input framer-form-input-wrapper framer-1g72h7f">
                 <input
                   type="text"
                   required
@@ -772,33 +624,17 @@ const Contactus = () => {
                   }}
                   data-framer-name="Default"
                   data-reset="button"
-                  tabIndex="0"
+                  tabIndex={0}
                 >
                   <div
                     className="framer-6nd3kx"
                     data-framer-component-type="RichTextContainer"
                     style={{
-                      '--extracted-r6o4lv': 'rgb(255, 255, 255)',
-                      '--framer-link-text-color': 'rgb(0, 153, 255)',
-                      '--framer-link-text-decoration': 'underline',
                       transform: 'none',
                       opacity: 1,
                     }}
                   >
-                    <p
-                      className="framer-text"
-                      style={{
-                        '--font-selector': 'SW50ZXItU2VtaUJvbGQ=',
-                        '--framer-font-family':
-                          '"Inter", "Inter Placeholder", sans-serif',
-                        '--framer-font-size': '14px',
-                        '--framer-font-weight': '600',
-                        '--framer-text-color':
-                          'var(--extracted-r6o4lv, rgb(255, 255, 255))',
-                      }}
-                    >
-                      Submit
-                    </p>
+                    <p className="framer-text">Submit</p>
                   </div>
                 </button>
               </div>

@@ -1,67 +1,47 @@
+<<<<<<< HEAD
 "use client";
 import React, { useState } from "react";
 import { Search, ArrowUpRight, Menu, X } from "lucide-react";
 import AnimatedButton from "./AnimatedButton";
+=======
+'use client';
+
+import React, { useState } from 'react';
+import { Search, ArrowUpRight, Menu, X } from 'lucide-react';
+>>>>>>> 17c9b1e6ea16da72182ee490c32ff4f02afc53e5
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isNomineesOpen, setIsNomineesOpen] = useState(false);
 
   return (
     <>
-      {/* Mobile Menu Overlay */}
+      {/* MOBILE MENU OVERLAY */}
       <div
         className={`fixed inset-0 bg-black z-40 transition-opacity duration-500 ${
-          isMenuOpen ? "opacity-100" : "opacity-0 pointer-events-none"
+          isMenuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'
         }`}
         onClick={() => setIsMenuOpen(false)}
       >
         <div className="flex flex-col items-center justify-start pt-24 px-8">
           <div className="flex flex-col items-center gap-8 w-full max-w-md">
-            <a
-              href="./"
-              className="text-white text-2xl font-medium transition-colors duration-200"
-              style={{ fontFamily: "Manrope, sans-serif" }}
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Home
-            </a>
-            <a
-              href="./ehgameexpo"
-              className="text-white text-2xl font-medium transition-colors duration-200"
-              style={{ fontFamily: "Manrope, sans-serif" }}
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Eh! Game
-            </a>
-            <a
-              href="./categories"
-              className="text-white text-2xl font-medium transition-colors duration-200"
-              style={{ fontFamily: "Manrope, sans-serif" }}
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Nominees
-            </a>
-            <a
-              href="./partners"
-              className="text-white text-2xl font-medium transition-colors duration-200"
-              style={{ fontFamily: "Manrope, sans-serif" }}
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Partners
-            </a>
-            <button
-              className="text-white text-2xl font-medium"
-              style={{ fontFamily: "Manrope, sans-serif" }}
-            >
-              More
-            </button>
+            {['Home', 'Eh! Game', 'Nominees', 'Partners', 'More'].map(
+              (item) => (
+                <a
+                  key={item}
+                  className="text-white text-2xl font-medium"
+                  style={{ fontFamily: 'Manrope, sans-serif' }}
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {item}
+                </a>
+              )
+            )}
 
-            {/* Mobile Sign Up Button */}
             <a
               href="https://cgameawards.com/#:~:text=Be,Tickets"
               target="_blank"
-              rel="noopener noreferrer"
-              className="relative group mt-8"
+              className="relative mt-8"
             >
               <AnimatedButton size="lg" text="Sign up for tickets" />
             </a>
@@ -69,95 +49,122 @@ const Navbar = () => {
         </div>
       </div>
 
+      {/* NAVBAR */}
       <div className="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-full max-w-[980px] px-4">
-        {/* Outer gradient border container */}
         <div
           className="relative rounded-[40px] p-px"
           style={{
             background:
-              "linear-gradient(180deg, rgb(33, 33, 33) 0%, rgba(33, 33, 33, 0.4) 100%)",
+              'linear-gradient(180deg, rgb(33,33,33) 0%, rgba(33,33,33,0.4) 100%)',
           }}
         >
-          {/* Inner content container */}
           <nav className="bg-[rgb(5,5,5)] rounded-[40px] px-6 py-4">
             <div className="flex items-center justify-between">
-              {/* Logo */}
-              <a href="./" className="flex-shrink-0">
+              {/* LOGO */}
+              <a href="./">
                 <img
-                  src="https://framerusercontent.com/images/BaSvDfQZfE4UubCPmSB77sRFkY.png?width=2663&height=601"
-                  alt="Canadian Game Changers"
-                  className="h-[26px] w-auto object-contain"
+                  src="https://framerusercontent.com/images/BaSvDfQZfE4UubCPmSB77sRFkY.png"
+                  alt="Logo"
+                  className="h-[26px]"
                 />
               </a>
 
-              {/* Navigation Links */}
+              {/* DESKTOP LINKS */}
               <div className="hidden lg:flex items-center gap-8 mx-8">
-                <a
-                  href="./"
-                  className="text-white hover:text-white text-[15px] font-medium transition-colors duration-200"
-                  style={{ fontFamily: "Manrope, sans-serif" }}
-                >
-                  Home
-                </a>
-                <a
-                  href="./ehgameexpo"
-                  className="text-white hover:text-white text-[15px] font-medium transition-colors duration-200"
-                  style={{ fontFamily: "Manrope, sans-serif" }}
-                >
-                  Eh! Game
-                </a>
-                <a
-                  href="./categories"
-                  className="text-white hover:text-white text-[15px] font-medium transition-colors duration-200"
-                  style={{ fontFamily: "Manrope, sans-serif" }}
-                >
-                  Nominees
-                </a>
-                <a
-                  href="./partners"
-                  className="text-white hover:text-white text-[15px]  transition-colors duration-200 font-medium"
-                  style={{ fontFamily: "Manrope, sans-serif" }}
-                >
-                  Partners
-                </a>
-                <button
-                  className="text-white text-[15px] font-medium"
-                  style={{ fontFamily: "Manrope, sans-serif" }}
-                >
-                  More
-                </button>
+                <a className="text-white text-[15px] font-medium">Home</a>
+                <a className="text-white text-[15px] font-medium">Eh! Game</a>
+
+                {/* NOMINEES DROPDOWN */}
+                <div className="relative group">
+                  <span className="text-white text-[15px] font-medium cursor-pointer">
+                    Nominees
+                  </span>
+
+                  <div
+                    className="absolute top-full left-1/2 -translate-x-1/2 pt-4
+    transition-all duration-200 ease-out z-[60]
+    opacity-0 -translate-y-2 pointer-events-none
+    group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto"
+                    style={{ zIndex: 60 }}
+                  >
+                    <div className="bg-white rounded-[22px] shadow-xl px-10 py-8 w-[680px]">
+                      <div className="grid grid-cols-2 gap-x-12 gap-y-4 text-[15px]">
+                        <div className="flex flex-col gap-3">
+                          <a href="/nominees#bestartdirection">
+                            Best Art Direction
+                          </a>
+                          <a href="/nominees#bestgamedesign">
+                            Best Game Design
+                          </a>
+                          <a href="/nominees#bestscore">
+                            Best Score / Soundtrack
+                          </a>
+                          <a href="/nominees#bestnarrative">Best Narrative</a>
+                          <a href="/nominees#bestperformance">
+                            Best Performance
+                          </a>
+                          <a href="/nominees#bestaudiodesign">
+                            Best Audio Design
+                          </a>
+                          <a href="/nominees#besttechnology">
+                            Best Technology / Innovation
+                          </a>
+                          <a href="/nominees#bestdebutindie">
+                            Best Debut Indie Game
+                          </a>
+                        </div>
+
+                        <div className="flex flex-col gap-3">
+                          <a
+                            href="/nominees#bestdebutstudio"
+                            className="text-gray-400"
+                          >
+                            Best Debut Studio
+                          </a>
+                          <a
+                            href="/nominees#mostinnovativestudio"
+                            className="text-gray-400"
+                          >
+                            Most Innovative Studio
+                          </a>
+                          <a href="/nominees#esportsplayer">Esports Player</a>
+                          <a href="/nominees#esportsorg">Esports Org</a>
+                          <a href="/nominees#esportsevent">Esports Event</a>
+                          <a href="/nominees#contentcreator">
+                            Content Creator / Show
+                          </a>
+                          <a href="/nominees#gameoftheyear">Game of the Year</a>
+                          <a href="/nominees#studiooftheyear">
+                            Studio of the Year
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <a className="text-white text-[15px] font-medium">Partners</a>
+                <span className="text-white text-[15px] font-medium">More</span>
               </div>
 
-              {/* Right Actions */}
+              {/* RIGHT ACTIONS */}
               <div className="flex items-center gap-3">
-                {/* Search Button - slides out on mobile menu open */}
                 <button
-                  className={`w-10 h-10 flex items-center justify-center rounded-[10px] hover:bg-white/5 transition-all duration-500 ${
-                    isMenuOpen
-                      ? "translate-x-[200px] opacity-0"
-                      : "translate-x-0 opacity-100"
+                  className={`w-10 h-10 flex items-center justify-center transition-all duration-500 ${
+                    isMenuOpen ? 'translate-x-[200px] opacity-0' : 'opacity-100'
                   }`}
-                  aria-label="Search"
                 >
-                  <Search
-                    className="w-6 h-6 text-[rgb(69,22,130)]"
-                    strokeWidth={2}
-                  />
+                  <Search className="w-6 h-6 text-[rgb(69,22,130)]" />
                 </button>
 
-                {/* Mobile Menu Toggle */}
                 <button
-                  className="lg:hidden w-10 h-10 flex items-center justify-center rounded-[10px] hover:bg-white/5 transition-colors duration-200"
+                  className="lg:hidden w-10 h-10 flex items-center justify-center"
                   onClick={() => setIsMenuOpen(!isMenuOpen)}
-                  aria-label="Toggle menu"
                 >
                   {isMenuOpen ? (
-                    <X className="w-6 h-6 text-white" strokeWidth={2} />
+                    <X className="text-white" />
                   ) : (
-                    <Menu
-                      className="w-6 h-6 text-[rgb(69,22,130)]"
-                      strokeWidth={2}
-                    />
+                    <Menu className="text-[rgb(69,22,130)]" />
                   )}
                 </button>
 

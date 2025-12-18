@@ -1,5 +1,5 @@
-import React from "react";
-import Image from "next/image";
+import React from 'react';
+import Image from 'next/image';
 
 const HeroVideo: React.FC = () => {
   return (
@@ -9,9 +9,9 @@ const HeroVideo: React.FC = () => {
         <div
           data-framer-background-image-wrapper="true"
           style={{
-            position: "absolute",
-            borderRadius: "inherit",
-            inset: "0px",
+            position: 'absolute',
+            borderRadius: 'inherit',
+            inset: '0px',
           }}
         >
           <Image
@@ -20,15 +20,14 @@ const HeroVideo: React.FC = () => {
             width={1024}
             height={683}
             sizes="calc(100vw + 420px)"
-            srcSet="https://framerusercontent.com/images/Q2JDdpf4rnQVVOFoAuqL7HkFY.jpg?scale-down-to=512&width=1024&height=683 512w,https://framerusercontent.com/images/Q2JDdpf4rnQVVOFoAuqL7HkFY.jpg?width=1024&height=683 1024w"
             className="block w-full h-full rounded-none object-cover object-center"
             style={{
-              display: "block",
-              width: "100%",
-              height: "100%",
-              borderRadius: "inherit",
-              objectPosition: "center center",
-              objectFit: "cover",
+              display: 'block',
+              width: '100%',
+              height: '100%',
+              borderRadius: 'inherit',
+              objectPosition: 'center center',
+              objectFit: 'cover',
             }}
           />
         </div>

@@ -4,8 +4,14 @@ import Head from 'next/head';
 import FAQ from '@/components/Faq';
 import InlineFooter from '@/components/InlineFooter';
 
-// Updated PersonCard Component with specific styles
-const PersonCard = ({ image, name, title }) => {
+// 1. Defined Interface for PersonCard
+interface PersonCardProps {
+  image: string;
+  name: string;
+  title: string;
+}
+
+const PersonCard: React.FC<PersonCardProps> = ({ image, name, title }) => {
   return (
     <div className="framer-aTYCc framer-nvrgmi">
       <div className="framer-1p3pw81" />
@@ -21,15 +27,17 @@ const PersonCard = ({ image, name, title }) => {
         <div className="framer-16rnp7f">
           <h3
             className="framer-text"
-            style={{
-              '--font-selector':
-                'Q1VTVE9NO0JyaWNvbGFnZSBHcm90ZXNxdWUgU2VtaUJvbGQ=',
-              '--framer-font-family':
-                '"Bricolage Grotesque SemiBold", "Bricolage Grotesque SemiBold Placeholder", sans-serif',
-              '--framer-font-size': '20px',
-              '--framer-line-height': '1.4em',
-              '--framer-text-color': 'rgb(255, 255, 255)',
-            }}
+            style={
+              {
+                '--font-selector':
+                  'Q1VTVE9NO0JyaWNvbGFnZSBHcm90ZXNxdWUgU2VtaUJvbGQ=',
+                '--framer-font-family':
+                  '"Bricolage Grotesque SemiBold", "Bricolage Grotesque SemiBold Placeholder", sans-serif',
+                '--framer-font-size': '20px',
+                '--framer-line-height': '1.4em',
+                '--framer-text-color': 'rgb(255, 255, 255)',
+              } as React.CSSProperties
+            } // Cast to allow custom CSS properties
           >
             {name}
           </h3>
@@ -37,13 +45,15 @@ const PersonCard = ({ image, name, title }) => {
         <div className="framer-14f2ulj">
           <p
             className="framer-text"
-            style={{
-              '--font-selector': 'R0Y7U2NoaWJzdGVkIEdyb3Rlc2stcmVndWxhcg==',
-              '--framer-font-family':
-                '"Schibsted Grotesk", "Schibsted Grotesk Placeholder", sans-serif',
-              '--framer-line-height': '1.5em',
-              '--framer-text-color': 'rgb(117, 117, 117)',
-            }}
+            style={
+              {
+                '--font-selector': 'R0Y7U2NoaWJzdGVkIEdyb3Rlc2stcmVndWxhcg==',
+                '--framer-font-family':
+                  '"Schibsted Grotesk", "Schibsted Grotesk Placeholder", sans-serif',
+                '--framer-line-height': '1.5em',
+                '--framer-text-color': 'rgb(117, 117, 117)',
+              } as React.CSSProperties
+            }
           >
             {title}
           </p>
@@ -53,9 +63,14 @@ const PersonCard = ({ image, name, title }) => {
   );
 };
 
-// FAQ Item Component
-const FAQItem = ({ question, answer }) => {
-  const [isOpen, setIsOpen] = useState(false);
+// 2. Defined Interface for FAQItem
+interface FAQItemProps {
+  question: string;
+  answer: string;
+}
+
+const FAQItem: React.FC<FAQItemProps> = ({ question, answer }) => {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
 
   return (
     <div className="bg-gray-900 rounded-lg mb-4">
@@ -257,10 +272,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FAQ Section */}
       <FAQ />
-
-      {/* Footer */}
       <InlineFooter />
     </div>
   );
