@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { Search, ArrowUpRight, Menu, X } from "lucide-react";
+import AnimatedButton from "./AnimatedButton";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -62,38 +63,7 @@ const Navbar = () => {
               rel="noopener noreferrer"
               className="relative group mt-8"
             >
-              <div className="relative bg-[rgb(32,32,32)] rounded-[7px] px-6 py-3 overflow-hidden">
-                <div
-                  className="absolute inset-0 rounded-[7px] opacity-100"
-                  style={{
-                    background:
-                      "radial-gradient(18.117% 45.653% at 0% 63%, rgb(77, 183, 185) 0%, rgba(255, 255, 255, 0) 100%)",
-                    transform: "translate3d(-6.3px, 0px, 0px) scale(0.928, 1)",
-                  }}
-                />
-                <div
-                  className="absolute inset-0 rounded-[7px] blur-[15px] opacity-60"
-                  style={{
-                    background:
-                      "radial-gradient(25% 40.172% at 0% 63%, rgb(77, 183, 185) 0%, rgba(255, 255, 255, 0) 100%)",
-                    transform:
-                      "translate3d(-8.82px, 0px, 0px) scale(0.8992, 1)",
-                  }}
-                />
-                <div className="absolute inset-0 bg-[rgb(13,13,13)] rounded-[7px]" />
-                <div className="relative flex items-center gap-2">
-                  <ArrowUpRight
-                    className="w-5 h-5 text-[rgb(222,222,222)]"
-                    strokeWidth={2}
-                  />
-                  <span
-                    className="text-[rgb(222,222,222)] text-base font-normal whitespace-nowrap"
-                    style={{ fontFamily: "Manrope, sans-serif" }}
-                  >
-                    Sign up for tickets
-                  </span>
-                </div>
-              </div>
+              <AnimatedButton size="lg" text="Sign up for tickets" />
             </a>
           </div>
         </div>
@@ -198,47 +168,12 @@ const Navbar = () => {
                   rel="noopener noreferrer"
                   className="relative group hidden lg:block"
                 >
+                  <AnimatedButton
+                    size="sm"
+                    text="Sign up for tickets"
+                    className="text-sm"
+                  />
                   {/* Button Container */}
-                  <div className="relative bg-[rgb(32,32,32)] rounded-[7px] px-5 py-2.5 overflow-hidden">
-                    {/* Animated Stroke */}
-                    <div
-                      className="absolute inset-0 rounded-[7px] opacity-100 transition-transform duration-300 group-hover:scale-105"
-                      style={{
-                        background:
-                          "radial-gradient(18.117% 45.653% at 0% 63%, rgb(77, 183, 185) 0%, rgba(255, 255, 255, 0) 100%)",
-                        transform:
-                          "translate3d(-6.3px, 0px, 0px) scale(0.928, 1)",
-                      }}
-                    />
-
-                    {/* Glow Effect */}
-                    <div
-                      className="absolute inset-0 rounded-[7px] blur-[15px] opacity-60 transition-transform duration-300 group-hover:scale-110"
-                      style={{
-                        background:
-                          "radial-gradient(25% 40.172% at 0% 63%, rgb(77, 183, 185) 0%, rgba(255, 255, 255, 0) 100%)",
-                        transform:
-                          "translate3d(-8.82px, 0px, 0px) scale(0.8992, 1)",
-                      }}
-                    />
-
-                    {/* Dark Fill */}
-                    <div className="absolute inset-0 bg-[rgb(13,13,13)] rounded-[7px]" />
-
-                    {/* Content */}
-                    <div className="relative flex items-center gap-2">
-                      <span
-                        className="text-[rgb(222,222,222)] text-[15px] font-normal whitespace-nowrap"
-                        style={{ fontFamily: "Manrope, sans-serif" }}
-                      >
-                        Sign up for tickets
-                      </span>
-                      <ArrowUpRight
-                        className="w-5 h-5 text-[rgb(222,222,222)] transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-                        strokeWidth={2}
-                      />
-                    </div>
-                  </div>
                 </a>
               </div>
             </div>
