@@ -393,7 +393,7 @@ const WhoWeAre = () => {
               }}
             >
               <img
-                src="https://framerusercontent.com/images/dMGRXmWMn0mEKftowidfK9LII.jpg"
+                src="/images/aboutus/dMGRXmWMn0mEKftowidfK9LII.avif"
                 alt=""
                 loading="lazy"
                 decoding="auto"
@@ -401,7 +401,7 @@ const WhoWeAre = () => {
                 width="2048"
                 height="1365"
                 sizes="max((min(100vw - 120px, 1280px) - 240px) / 2, 50px)"
-                srcSet="https://framerusercontent.com/images/dMGRXmWMn0mEKftowidfK9LII.jpg?scale-down-to=512 512w,https://framerusercontent.com/images/dMGRXmWMn0mEKftowidfK9LII.jpg?scale-down-to=1024 1024w,https://framerusercontent.com/images/dMGRXmWMn0mEKftowidfK9LII.jpg 2048w"
+                srcSet="/images/aboutus/dMGRXmWMn0mEKftowidfK9LII.avif?scale-down-to=512 512w,/images/aboutus/dMGRXmWMn0mEKftowidfK9LII.avif?scale-down-to=1024 1024w,/images/aboutus/dMGRXmWMn0mEKftowidfK9LII.avif 2048w"
                 style={{
                   display: "block",
 
@@ -445,7 +445,7 @@ const WhoWeAre = () => {
               }}
             >
               <img
-                src="https://framerusercontent.com/images/SlKWmhx7Z59MM4429c2qAiRTyiM.jpg"
+                src="/images/aboutus/SlKWmhx7Z59MM4429c2qAiRTyiM.avif"
                 alt=""
                 loading="lazy"
                 className="h-80 w-full object-cover"
@@ -453,7 +453,7 @@ const WhoWeAre = () => {
                 width="1228"
                 height="1840"
                 sizes="max((min(100vw - 120px, 1280px) - 240px) / 2, 50px)"
-                srcSet="https://framerusercontent.com/images/SlKWmhx7Z59MM4429c2qAiRTyiM.jpg?scale-down-to=1024 683w,https://framerusercontent.com/images/SlKWmhx7Z59MM4429c2qAiRTyiM.jpg 1228w"
+                srcSet="/images/aboutus/SlKWmhx7Z59MM4429c2qAiRTyiM.avif?scale-down-to=1024 683w,/images/aboutus/SlKWmhx7Z59MM4429c2qAiRTyiM.avif 1228w"
                 style={{
                   display: "block",
                   width: "100%",

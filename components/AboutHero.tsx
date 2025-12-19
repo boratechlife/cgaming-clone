@@ -18,12 +18,7 @@ const HeroSection = () => {
           width="1920"
           height="1080"
           sizes="100vw"
-          srcSet="
-            https://framerusercontent.com/images/K6MpepzIoEx1Eh22pTWT1wY3zw.jpg?scale-down-to=512 512w,
-            https://framerusercontent.com/images/K6MpepzIoEx1Eh22pTWT1wY3zw.jpg?scale-down-to=1024 1024w,
-            https://framerusercontent.com/images/K6MpepzIoEx1Eh22pTWT1wY3zw.jpg 1920w
-          "
-          src="https://framerusercontent.com/images/K6MpepzIoEx1Eh22pTWT1wY3zw.jpg"
+          src="/images/aboutus/K6MpepzIoEx1Eh22pTWT1wY3zw.avif"
           alt=""
         />
 

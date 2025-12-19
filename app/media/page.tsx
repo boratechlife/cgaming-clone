@@ -1,5 +1,5 @@
-import InlineFooter from '@/components/InlineFooter';
-import MediaWorkersSection from '@/components/MediaWorkersSection';
+import InlineFooter from "@/components/InlineFooter";
+import MediaWorkersSection from "@/components/MediaWorkersSection";
 
 export default function Ehgameexpo() {
   return (

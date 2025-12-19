@@ -1,7 +1,7 @@
-'use client';
-import React, { useState } from 'react';
-import { Search, ArrowUpRight, Menu, X } from 'lucide-react';
-import AnimatedButton from './AnimatedButton';
+"use client";
+import React, { useState } from "react";
+import { Search, ArrowUpRight, Menu, X } from "lucide-react";
+import AnimatedButton from "./AnimatedButton";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,18 +12,18 @@ const Navbar = () => {
       {/* MOBILE MENU OVERLAY */}
       <div
         className={`fixed inset-0 bg-black z-40 transition-opacity duration-500 ${
-          isMenuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'
+          isMenuOpen ? "opacity-100" : "opacity-0 pointer-events-none"
         }`}
         onClick={() => setIsMenuOpen(false)}
       >
         <div className="flex flex-col items-center justify-start pt-24 px-8">
           <div className="flex flex-col items-center gap-8 w-full max-w-md">
-            {['Home', 'Eh! Game', 'Nominees', 'Partners', 'More'].map(
+            {["Home", "Eh! Game", "Nominees", "Partners", "More"].map(
               (item) => (
                 <a
                   key={item}
                   className="text-white text-2xl font-medium"
-                  style={{ fontFamily: 'Manrope, sans-serif' }}
+                  style={{ fontFamily: "Manrope, sans-serif" }}
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item}
@@ -48,7 +48,7 @@ const Navbar = () => {
           className="relative rounded-[40px] p-px"
           style={{
             background:
-              'linear-gradient(180deg, rgb(33,33,33) 0%, rgba(33,33,33,0.4) 100%)',
+              "linear-gradient(180deg, rgb(33,33,33) 0%, rgba(33,33,33,0.4) 100%)",
           }}
         >
           <nav className="bg-[rgb(5,5,5)] rounded-[40px] px-6 py-4">
@@ -77,7 +77,7 @@ const Navbar = () => {
                 {/* NOMINEES DROPDOWN */}
                 <div className="relative group">
                   <a
-                    href="/nominees"
+                    href="/categories"
                     className="text-white text-[15px] font-medium cursor-pointer"
                   >
                     Nominees
@@ -174,7 +174,7 @@ const Navbar = () => {
                         <a href="/adjudication" className="text-white">
                           Adjudication
                         </a>
-                        <a href="/about-us" className="text-white">
+                        <a href="/about" className="text-white">
                           About us
                         </a>
                         <a href="/contact" className="text-white">
@@ -190,7 +190,7 @@ const Navbar = () => {
               <div className="flex items-center gap-3">
                 <button
                   className={`w-10 h-10 flex items-center justify-center transition-all duration-500 ${
-                    isMenuOpen ? 'translate-x-[200px] opacity-0' : 'opacity-100'
+                    isMenuOpen ? "translate-x-[200px] opacity-0" : "opacity-100"
                   }`}
                 >
                   <Search className="w-6 h-6 text-[rgb(69,22,130)]" />
@@ -215,7 +215,7 @@ const Navbar = () => {
                   className="relative group hidden lg:block"
                 >
                   <AnimatedButton
-                    size="sm"
+                    size="md"
                     text="Sign up for tickets"
                     className="text-sm"
                   />

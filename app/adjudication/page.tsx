@@ -1,8 +1,8 @@
-'use client';
-import React, { useState } from 'react';
-import Head from 'next/head';
-import FAQ from '@/components/Faq';
-import InlineFooter from '@/components/InlineFooter';
+"use client";
+import React, { useState } from "react";
+import Head from "next/head";
+import FAQ from "@/components/Faq";
+import InlineFooter from "@/components/InlineFooter";
 
 // 1. Defined Interface for PersonCard
 interface PersonCardProps {
@@ -20,7 +20,7 @@ const PersonCard: React.FC<PersonCardProps> = ({ image, name, title }) => {
           src={image}
           alt={name}
           className="w-full h-full object-cover object-center"
-          style={{ aspectRatio: '1' }}
+          style={{ aspectRatio: "1" }}
         />
       </div>
       <div className="framer-15lamvk">
@@ -29,13 +29,13 @@ const PersonCard: React.FC<PersonCardProps> = ({ image, name, title }) => {
             className="framer-text"
             style={
               {
-                '--font-selector':
-                  'Q1VTVE9NO0JyaWNvbGFnZSBHcm90ZXNxdWUgU2VtaUJvbGQ=',
-                '--framer-font-family':
+                "--font-selector":
+                  "Q1VTVE9NO0JyaWNvbGFnZSBHcm90ZXNxdWUgU2VtaUJvbGQ=",
+                "--framer-font-family":
                   '"Bricolage Grotesque SemiBold", "Bricolage Grotesque SemiBold Placeholder", sans-serif',
-                '--framer-font-size': '20px',
-                '--framer-line-height': '1.4em',
-                '--framer-text-color': 'rgb(255, 255, 255)',
+                "--framer-font-size": "20px",
+                "--framer-line-height": "1.4em",
+                "--framer-text-color": "rgb(255, 255, 255)",
               } as React.CSSProperties
             } // Cast to allow custom CSS properties
           >
@@ -47,11 +47,11 @@ const PersonCard: React.FC<PersonCardProps> = ({ image, name, title }) => {
             className="framer-text"
             style={
               {
-                '--font-selector': 'R0Y7U2NoaWJzdGVkIEdyb3Rlc2stcmVndWxhcg==',
-                '--framer-font-family':
+                "--font-selector": "R0Y7U2NoaWJzdGVkIEdyb3Rlc2stcmVndWxhcg==",
+                "--framer-font-family":
                   '"Schibsted Grotesk", "Schibsted Grotesk Placeholder", sans-serif',
-                '--framer-line-height': '1.5em',
-                '--framer-text-color': 'rgb(117, 117, 117)',
+                "--framer-line-height": "1.5em",
+                "--framer-text-color": "rgb(117, 117, 117)",
               } as React.CSSProperties
             }
           >
@@ -81,7 +81,7 @@ const FAQItem: React.FC<FAQItemProps> = ({ question, answer }) => {
         <span className="text-white">{question}</span>
         <svg
           className={`w-5 h-5 text-gray-400 transform transition-transform ${
-            isOpen ? 'rotate-180' : ''
+            isOpen ? "rotate-180" : ""
           }`}
           fill="none"
           stroke="currentColor"
@@ -142,12 +142,12 @@ export default function Home() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
             <PersonCard
-              image="https://framerusercontent.com/images/hTL5tg70U6k5YTs4ki31lR80U.jpg"
+              image="/images/adjudication/hTL5tg70U6k5YTs4ki31lR80U.avif"
               name="Steve Vegvari"
               title="Writer and Host, Freelance"
             />
             <PersonCard
-              image="https://framerusercontent.com/images/8M7r0nNayiTyF0joXUBhKEyaTJQ.jpg"
+              image="/images/adjudication/8M7r0nNayiTyF0joXUBhKEyaTJQ.avif"
               name="Marcel Dee"
               title="CEO and Founder, A Gaming Network"
             />
@@ -163,37 +163,37 @@ export default function Home() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <PersonCard
-              image="https://framerusercontent.com/images/5gMD6hIuqsW3ERqWYv1DGA6u4Q.jpg"
+              image="/images/adjudication/5gMD6hIuqsW3ERqWYv1DGA6u4Q.avif"
               name="Stephanie Greenall"
               title="Founder & CEO, Cake or Death inc."
             />
             <PersonCard
-              image="https://framerusercontent.com/images/gCIWsa9QtKRtJmLKtltzrH1964.jpg"
+              image="/images/adjudication/gCIWsa9QtKRtJmLKtltzrH1964.jpg"
               name="Chris Lamarucciola"
               title="Manager of Esports, Conestoga College"
             />
             <PersonCard
-              image="https://framerusercontent.com/images/7bBKu8JpjrSWgsTqmEezHMKT6Bk.jpg"
+              image="/images/adjudication/7bBKu8JpjrSWgsTqmEezHMKT6Bk.avif"
               name="Veerender Singh Jubbal"
               title="Game Journalist"
             />
             <PersonCard
-              image="https://framerusercontent.com/images/XdouMiYf0zlFkrxFaytATWtAeDA.jpg"
+              image="/images/adjudication/XdouMiYf0zlFkrxFaytATWtAeDA.avif"
               name="Chris Zaiser"
               title="Writer & Editor, SophistiGamer"
             />
             <PersonCard
-              image="https://framerusercontent.com/images/VyCyeWsvJK9HoWxgY7hIqVXp0o.jpg"
+              image="/images/adjudication/VyCyeWsvJK9HoWxgY7hIqVXp0o.avif"
               name="Matt Sowinski"
               title="Writer & Host, Console Creatures"
             />
             <PersonCard
-              image="https://framerusercontent.com/images/ICmvOnJn2we13ZF5K0iPVwGDRzc.jpg"
+              image="/images/adjudication/ICmvOnJn2we13ZF5K0iPVwGDRzc.avif"
               name="Melissa Burns"
               title=""
             />
             <PersonCard
-              image="https://framerusercontent.com/images/81lEKPzBwLPilmGmXvPjcgvW0M.png"
+              image="/images/adjudication/81lEKPzBwLPilmGmXvPjcgvW0M.avif"
               name="François Savard"
               title="Game Studies Practitioner & President, Virtual Guardians Foundation"
             />
@@ -209,62 +209,62 @@ export default function Home() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <PersonCard
-              image="https://framerusercontent.com/images/naFmGRuxgBlT96k1JTxravelkI.jpeg"
+              image="/images/adjudication/naFmGRuxgBlT96k1JTxravelkI.avif"
               name="Brad Shankar,"
               title="Gaming Editor, MobileSyrup"
             />
             <PersonCard
-              image="https://framerusercontent.com/images/nwfizcqyNQFUxke6SwWbF4IvJM0.jpg"
+              image="/images/adjudication/nwfizcqyNQFUxke6SwWbF4IvJM0.avif"
               name="Elaine Gusella"
               title="Game & Marketing Director, Artifact 5"
             />
             <PersonCard
-              image="https://framerusercontent.com/images/HVkUMhWuYKtyyQtU7GcSPeyFtY.jpg"
+              image="/images/adjudication/HVkUMhWuYKtyyQtU7GcSPeyFtY.avif"
               name="Russell Sng"
               title="Founder, ImmerSynth Inc"
             />
             <PersonCard
-              image="https://framerusercontent.com/images/HMcluVUzO5zvt4NjYiDTqCtYgk.jpg"
+              image="/images/adjudication/HMcluVUzO5zvt4NjYiDTqCtYgk.avif"
               name="Raj Patel"
               title="Marketing & Communications Director"
             />
             <PersonCard
-              image="https://framerusercontent.com/images/uZ0ditsdJ7AMl0TfkGZMFxcLX7g.png"
+              image="/images/adjudication/uZ0ditsdJ7AMl0TfkGZMFxcLX7g.avif"
               name="Valerie Shih-Lau"
               title="Esports Marketing and Events Manager, St. Clair College"
             />
             <PersonCard
-              image="https://framerusercontent.com/images/BTFml2DSYpTCs3P6LRda96Q1E.jpg"
+              image="/images/adjudication/BTFml2DSYpTCs3P6LRda96Q1E.avif"
               name="Rob Keyes"
               title="Editorial, PR, and Branding Director, ScreenRant"
             />
             <PersonCard
-              image="https://framerusercontent.com/images/DDfweSmSm42oh5Sz6flYqTuhD0Y.jpg"
+              image="/images/adjudication/DDfweSmSm42oh5Sz6flYqTuhD0Y.jpg"
               name="Bobby Pashalidis"
               title="Editor, Console Creatures"
             />
             <PersonCard
-              image="https://framerusercontent.com/images/JLuVyQjoPwV3vQxCOecdLiyAEk.jpg"
+              image="/images/adjudication/JLuVyQjoPwV3vQxCOecdLiyAEk.jpg"
               name="Dayna Eileen"
               title="Executive Editor, CGMagazine"
             />
             <PersonCard
-              image="https://framerusercontent.com/images/Dhm4L2J9q3khZmij21l0HgKaos.jpg"
+              image="/images/adjudication/Dhm4L2J9q3khZmij21l0HgKaos.avif"
               name="Brendan Frye"
               title="Editor in Chief, CGMagazine"
             />
             <PersonCard
-              image="https://framerusercontent.com/images/4sCK8VW1RylaG3NvYKKP4vSDAU.jpeg"
+              image="/images/adjudication/4sCK8VW1RylaG3NvYKKP4vSDAU.avif"
               name="Antoine Clerc-Renaud"
               title="Video Game Historian, Entrepreneur"
             />
             <PersonCard
-              image="https://framerusercontent.com/images/6DK7Dx9JEMtwlUOGTgx1iiunbs.jpg"
+              image="/images/adjudication/6DK7Dx9JEMtwlUOGTgx1iiunbs.jpg"
               name="Lenna Ly-Matz"
               title="Esports Team, Player and Event Management"
             />
             <PersonCard
-              image="https://framerusercontent.com/images/mpYznZi5NlOKZ3osVNQr8XiFDE.jpg"
+              image="/images/adjudication/mpYznZi5NlOKZ3osVNQr8XiFDE.avif"
               name="Matthew Rondina"
               title="Editor in Chief, Dapper Tux"
             />
