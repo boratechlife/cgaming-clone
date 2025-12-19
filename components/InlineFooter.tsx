@@ -11,7 +11,7 @@ const InlineFooter: React.FC = () => {
             <div className="w-44 h-16 relative flex-shrink-0">
               <div className="absolute inset-0 overflow-hidden">
                 <img
-                  src="https://framerusercontent.com/images/QpfRERS028JTTMK15ucTYWGXDM.png"
+                  src="/images/QpfRERS028JTTMK15ucTYWGXDM.avif"
                   alt="Canadian Game Awards Logo"
                   className="w-full h-full object-contain"
                   width="171"

@@ -1,14 +1,7 @@
-<<<<<<< HEAD
-"use client";
-import React, { useState } from "react";
-import { Search, ArrowUpRight, Menu, X } from "lucide-react";
-import AnimatedButton from "./AnimatedButton";
-=======
 'use client';
-
 import React, { useState } from 'react';
 import { Search, ArrowUpRight, Menu, X } from 'lucide-react';
->>>>>>> 17c9b1e6ea16da72182ee490c32ff4f02afc53e5
+import AnimatedButton from './AnimatedButton';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -71,14 +64,24 @@ const Navbar = () => {
 
               {/* DESKTOP LINKS */}
               <div className="hidden lg:flex items-center gap-8 mx-8">
-                <a className="text-white text-[15px] font-medium">Home</a>
-                <a className="text-white text-[15px] font-medium">Eh! Game</a>
+                <a href="/" className="text-white text-[15px] font-medium">
+                  Home
+                </a>
+                <a
+                  href="/ehgameexpo"
+                  className="text-white text-[15px] font-medium"
+                >
+                  Eh! Game
+                </a>
 
                 {/* NOMINEES DROPDOWN */}
                 <div className="relative group">
-                  <span className="text-white text-[15px] font-medium cursor-pointer">
+                  <a
+                    href="/nominees"
+                    className="text-white text-[15px] font-medium cursor-pointer"
+                  >
                     Nominees
-                  </span>
+                  </a>
 
                   <div
                     className="absolute top-full left-1/2 -translate-x-1/2 pt-4
@@ -143,8 +146,44 @@ const Navbar = () => {
                   </div>
                 </div>
 
-                <a className="text-white text-[15px] font-medium">Partners</a>
-                <span className="text-white text-[15px] font-medium">More</span>
+                <a
+                  href="/partners"
+                  className="text-white text-[15px] font-medium"
+                >
+                  Partners
+                </a>
+
+                {/* MORE DROPDOWN */}
+                <div className="relative group">
+                  <span className="text-white text-[15px] font-medium cursor-pointer">
+                    More
+                  </span>
+
+                  <div
+                    className="absolute top-full left-1/2 -translate-x-1/2 pt-4
+    transition-all duration-200 ease-out z-[60]
+    opacity-0 -translate-y-2 pointer-events-none
+    group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto"
+                    style={{ zIndex: 60 }}
+                  >
+                    <div className="bg-[rgb(5,5,5)] rounded-[22px] shadow-xl px-10 py-8 w-[300px]">
+                      <div className="flex flex-col gap-4 text-[15px]">
+                        <a href="/media" className="text-white">
+                          Media
+                        </a>
+                        <a href="/adjudication" className="text-white">
+                          Adjudication
+                        </a>
+                        <a href="/about-us" className="text-white">
+                          About us
+                        </a>
+                        <a href="/contact" className="text-white">
+                          Contact
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
 
               {/* RIGHT ACTIONS */}

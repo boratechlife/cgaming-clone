@@ -110,7 +110,7 @@ const EventLocationSection = () => {
             <div className="rounded-[25px] flex-none self-start w-full h-full relative">
               <div className="absolute inset-0 rounded-[25px]">
                 <img
-                  src="https://framerusercontent.com/images/9u2mAc1duBgSeXtO333ZsBaqs.jpg"
+                  src="/images/9u2mAc1duBgSeXtO333ZsBaqs.avif"
                   alt="TIFF Lightbox"
                   width={800}
                   height={600}

@@ -5,20 +5,17 @@ const ExpoPartners = () => {
     {
       name: 'City of Toronto',
       url: 'https://www.toronto.ca/',
-      image:
-        'https://framerusercontent.com/images/9T5taSmSffnn8GIAVEIcUxwYnOk.png',
+      image: '/images/9T5taSmSffnn8GIAVEIcUxwYnOk.avif',
     },
     {
       name: 'MSI',
       url: 'https://ca.msi.com/',
-      image:
-        'https://framerusercontent.com/images/1Jqcun75YhOXKBaLuqwb28kTDk.png',
+      image: '/images/1Jqcun75YhOXKBaLuqwb28kTDk.avif',
     },
     {
       name: 'Intel',
       url: 'https://www.intel.com/',
-      image:
-        'https://framerusercontent.com/images/fGFfHMPDHyHbHowQgcvzVQnjT4A.png',
+      image: '/images/fGFfHMPDHyHbHowQgcvzVQnjT4A.avif',
     },
   ];
 

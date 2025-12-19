@@ -5,8 +5,7 @@ const MediaPartners = () => {
     {
       name: 'AGN A Gaming Network',
       url: 'https://www.agamingnetwork.com/',
-      image:
-        'https://framerusercontent.com/images/7sjXy8OlDizGPBENcKd9M5bkBgc.png',
+      image: '/images/7sjXy8OlDizGPBENcKd9M5bkBgc.avif',
       containerClass: 'framer-1dzulis-container',
       height: '350px',
       width: '400px',
@@ -15,8 +14,7 @@ const MediaPartners = () => {
     {
       name: 'SCREENRANT',
       url: 'https://screenrant.com/',
-      image:
-        'https://framerusercontent.com/images/CthaA89cx88sx7PBxIL01zJmNVc.png',
+      image: '/images/CthaA89cx88sx7PBxIL01zJmNVc.avif',
       containerClass: 'framer-91wji5-container',
       height: '350px',
       width: '400px',
@@ -25,8 +23,7 @@ const MediaPartners = () => {
     {
       name: 'MobileSyrup',
       url: 'https://mobilesyrup.com/',
-      image:
-        'https://framerusercontent.com/images/nqnyIUgCEZ33FxJCDPe5sv58YE.png',
+      image: '/images/nqnyIUgCEZ33FxJCDPe5sv58YE.avif',
       containerClass: 'framer-1whe28u-container',
       height: '400px',
       width: '350px',
@@ -35,8 +32,7 @@ const MediaPartners = () => {
     {
       name: 'Indie Game Reviewer',
       url: 'https://indiegamereviewer.com/',
-      image:
-        'https://framerusercontent.com/images/OE76Dh6x4mfkyil4NUUKwnlUOp0.png',
+      image: '/images/OE76Dh6x4mfkyil4NUUKwnlUOp0.avif',
       containerClass: 'framer-59igao-container',
       height: '347px',
       width: '393px',
@@ -45,8 +41,7 @@ const MediaPartners = () => {
     {
       name: 'Canadian Podcast Awards',
       url: 'https://canpodawards.ca/',
-      image:
-        'https://framerusercontent.com/images/A09yCyAK37Musop3kvfWUKAvX0w.svg',
+      image: '/images/A09yCyAK37Musop3kvfWUKAvX0w.svg',
       containerClass: 'framer-u63hot-container',
       height: '347px',
       width: '331px',
@@ -55,8 +50,7 @@ const MediaPartners = () => {
     {
       name: 'The Lodgge',
       url: 'https://thelodgge.com/',
-      image:
-        'https://framerusercontent.com/images/4C17mxCfwPiLs3YF1yF3azQpyD8.png',
+      image: '/images/4C17mxCfwPiLs3YF1yF3azQpyD8.avif',
       containerClass: 'framer-tra9w5-container',
       height: '329px',
       width: '378px',

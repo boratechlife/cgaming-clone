@@ -36,7 +36,7 @@ const GameAwardsPage = () => {
             <GamePromoSection
               heading="Build hype for your game before launch."
               supportingText="Showcase your playable demo to an audience eager to discover something new. Create buzz, generate anticipation, and get people talking about your game months before release."
-              imageUrl="https://framerusercontent.com/images/SZQqqHYnhQLmhPJZYN56uvq9IA.jpg"
+              imageUrl="/images/SZQqqHYnhQLmhPJZYN56uvq9IA.avif"
               imageAlt="Game showcase"
             />
           </div>
@@ -49,7 +49,7 @@ const GameAwardsPage = () => {
             <GamePromoSection
               heading="Get valuable feedback from live players."
               supportingText="Watch real players interact with your game in real time. Gain insights you can use to refine mechanics, improve the experience, and ensure a stronger launch."
-              imageUrl="https://framerusercontent.com/images/CUQPjW48It43eXdqimL1YWWpSM.jpg"
+              imageUrl="/images/CUQPjW48It43eXdqimL1YWWpSM.avif"
               imageAlt="Players testing game"
               headingSize="52px"
               reverseLayout={true}
@@ -64,7 +64,7 @@ const GameAwardsPage = () => {
             <GamePromoSection
               heading="Meet press, influencers, and other developers."
               supportingText="Network with industry professionals who can help amplify your game's reach. Build relationships that open doors to media coverage and collaboration opportunities."
-              imageUrl="https://framerusercontent.com/images/noasRBIeW4tt8X1SUoyHnG3ic.jpg"
+              imageUrl="/images/noasRBIeW4tt8X1SUoyHnG3ic.avif"
               imageAlt="Networking event"
               headingSize="42px"
             />

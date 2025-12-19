@@ -27,7 +27,7 @@ const TabletFooter = () => {
               height: 'auto',
               maxWidth: '100%',
             }}
-            src="https://framerusercontent.com/images/QpfRERS028JTTMK15ucTYWGXDM.png"
+            src="/images/QpfRERS028JTTMK15ucTYWGXDM.avif"
             alt="Canadian Game Awards Logo"
           />
 

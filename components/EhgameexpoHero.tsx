@@ -31,7 +31,7 @@ const EhgameExpoHeroSection = () => {
           {/* Decorative Image */}
           <div className="aspect-[2.46353/1] flex-none h-[57px] overflow-visible relative w-[140px]">
             <img
-              src="https://framerusercontent.com/images/zHziUHnbr5bQPXjnNbfMwM7r40M.png"
+              src="/images/zHziUHnbr5bQPXjnNbfMwM7r40M.webp"
               alt="Decorative element"
               className=" w-full h-full object-cover object-center"
             />

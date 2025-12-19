@@ -1,16 +1,16 @@
 // footer.tsx
-import Image from "next/image"; // Using next/image for better optimization; if you prefer a standard img, you can replace it.
+import Image from 'next/image'; // Using next/image for better optimization; if you prefer a standard img, you can replace it.
 
 const Footer = () => {
   return (
     <footer className="bg-gradient-to-r from-[#5630BF] to-[#3A1F82] w-full">
       <div className="relative p-4">
-        {" "}
+        {' '}
         {/* Added padding for spacing; adjust as needed */}
         {/* Image section */}
         <div className="absolute inset-0">
           <Image
-            src="https://framerusercontent.com/images/QpfRERS028JTTMK15ucTYWGXDM.png"
+            src="/images/QpfRERS028JTTMK15ucTYWGXDM.avif"
             alt=""
             objectFit="cover"
             objectPosition="center"
@@ -24,7 +24,7 @@ const Footer = () => {
           {/* Left column with text links */}
           <div className="mt-4 md:mt-0">
             <h5 className="text-left text-sm font-medium tracking-tighter text-white">
-              The Canadian Game Awards © 2025 All Rights Reserved /{" "}
+              The Canadian Game Awards © 2025 All Rights Reserved /{' '}
               <a href="./media" className="underline hover:text-gray-300">
                 Our Partners
               </a>
@@ -43,7 +43,7 @@ const Footer = () => {
 
           {/* Logo section - empty in original, so kept minimal */}
           <div className="hidden md:block">
-            {" "}
+            {' '}
             {/* Assuming it's meant for larger screens; adjust visibility as needed */}
             {/* Add logo content here if available, e.g., an image or text */}
           </div>

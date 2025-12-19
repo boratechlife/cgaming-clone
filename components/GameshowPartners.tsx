@@ -34,7 +34,7 @@ const GameshowPartners: React.FC = () => {
       >
         <div className="relative w-full h-full rounded-lg overflow-hidden">
           <img
-            src="https://framerusercontent.com/images/1Jqcun75YhOXKBaLuqwb28kTDk.png?scale-down-to=512"
+            src="/images/1Jqcun75YhOXKBaLuqwb28kTDk.avif?scale-down-to=512"
             alt="MSI logo"
             className="w-full h-full object-cover"
             width="444"

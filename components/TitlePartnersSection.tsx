@@ -38,8 +38,8 @@ const TitlePartnerSection = () => {
                 decoding="auto"
                 width="1080"
                 height="481"
-                srcSet="https://framerusercontent.com/images/O5BKcDiv7AuQwsYNYECqEZKctpY.png?scale-down-to=512 512w,https://framerusercontent.com/images/O5BKcDiv7AuQwsYNYECqEZKctpY.png?scale-down-to=1024 1024w,https://framerusercontent.com/images/O5BKcDiv7AuQwsYNYECqEZKctpY.png 1080w"
-                src="https://framerusercontent.com/images/O5BKcDiv7AuQwsYNYECqEZKctpY.png"
+                srcSet="/images/O5BKcDiv7AuQwsYNYECqEZKctpY.avif?scale-down-to=512 512w,/images/O5BKcDiv7AuQwsYNYECqEZKctpY.avif?scale-down-to=1024 1024w,/images/O5BKcDiv7AuQwsYNYECqEZKctpY.avif 1080w"
+                src="/images/O5BKcDiv7AuQwsYNYECqEZKctpY.avif"
                 alt="Valnet logo – Title Partner"
                 className="rounded-inherit object-center object-cover"
               />

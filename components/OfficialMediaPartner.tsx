@@ -42,7 +42,7 @@ const OfficialMediaPartner = () => {
               }}
             >
               <img
-                src="https://framerusercontent.com/images/VZMraHXkD4ZhHAooepxno4tn9Q.png"
+                src="/images/VZMraHXkD4ZhHAooepxno4tn9Q.avif"
                 alt="SCREENRANT logo – Official Media Partner"
                 className="w-full h-full object-contain"
                 style={{

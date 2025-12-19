@@ -5,8 +5,7 @@ const ProvincialPartners = () => {
     {
       name: 'Digital Alberta',
       url: 'https://digitalalberta.com/',
-      image:
-        'https://framerusercontent.com/images/rmrnpE9KCIxlgZf3QkTaqGwUpec.png',
+      image: '/images/rmrnpE9KCIxlgZf3QkTaqGwUpec.avif',
       containerClass: 'framer-1wacicp-container',
       height: '165px',
       placeSelf: 'start',
@@ -14,8 +13,7 @@ const ProvincialPartners = () => {
     {
       name: 'La Guilde du jeu vidéo du Québec',
       url: 'https://www.laguilde.quebec/',
-      image:
-        'https://framerusercontent.com/images/HYv2N7JvT5Gbo9rHzT5qhbxDKM.png',
+      image: '/images/HYv2N7JvT5Gbo9rHzT5qhbxDKM.avif',
       containerClass: 'framer-s7iurk-container',
       height: '179px',
       placeSelf: 'start',
@@ -23,8 +21,7 @@ const ProvincialPartners = () => {
     {
       name: 'Interactive Ontario',
       url: 'https://interactiveontario.com/',
-      image:
-        'https://framerusercontent.com/images/CSf7kU9YCIyyoWdwqMEviVdes.png',
+      image: '/images/CSf7kU9YCIyyoWdwqMEviVdes.avif',
       containerClass: 'framer-zhtek6-container',
       height: '179px',
       placeSelf: 'start',
@@ -32,8 +29,7 @@ const ProvincialPartners = () => {
     {
       name: 'DigiBC',
       url: 'https://digibc.org/',
-      image:
-        'https://framerusercontent.com/images/OPBw3JXDDhDnQX6uwYv45X6ceQ.png',
+      image: '/images/OPBw3JXDDhDnQX6uwYv45X6ceQ.avif',
       containerClass: 'framer-sc1632-container',
       height: '179px',
       placeSelf: 'start',

@@ -4,8 +4,7 @@ const CharityPartner = () => {
   const partner = {
     name: 'Surrey Place',
     url: 'https://www.surreyplace.ca/',
-    image:
-      'https://framerusercontent.com/images/c6BHrhK4mGb6nA5uD7U856aH8hM.jpg',
+    image: '/images/c6BHrhK4mGb6nA5uD7U856aH8hM.avif',
   };
 
   return (

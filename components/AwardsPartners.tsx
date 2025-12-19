@@ -5,50 +5,42 @@ const AwardsPartners = () => {
     {
       name: 'TIFF',
       url: 'https://tiff.net/',
-      image:
-        'https://framerusercontent.com/images/UGpDThlQVeo64L7A9441w2I2ki4.png',
+      image: '/images/UGpDThlQVeo64L7A9441w2I2ki4.avif',
     },
     {
       name: 'Entertainment Software Association of Canada',
       url: 'https://theesa.ca/',
-      image:
-        'https://framerusercontent.com/images/VSoDIwALps7pFH4hUEhhmLEY0.png',
+      image: '/images/VSoDIwALps7pFH4hUEhhmLEY0.avif',
     },
     {
       name: 'Loto Québec',
       url: 'https://loteries.lotoquebec.com/fr/accueil',
-      image:
-        'https://framerusercontent.com/images/DQtaMioPXxnRAedrlRd3ED1m6c.png',
+      image: '/images/DQtaMioPXxnRAedrlRd3ED1m6c.avif',
     },
     {
       name: 'Intel',
       url: 'https://www.intel.com/',
-      image:
-        'https://framerusercontent.com/images/NQBChkYQtlqc749YjrtOHJGDg.png',
+      image: '/images/NQBChkYQtlqc749YjrtOHJGDg.avif',
     },
     {
       name: 'OverActive Media Group',
       url: 'https://overactive-media-group.prezly.com/',
-      image:
-        'https://framerusercontent.com/images/LK5j5HfHIB2SWKKz9G9yVULr0fs.png',
+      image: '/images/LK5j5HfHIB2SWKKz9G9yVULr0fs.avif',
     },
     {
       name: 'Valnet',
       url: 'https://www.valnetinc.com/en/',
-      image:
-        'https://framerusercontent.com/images/qMnYhbmfaiXL6mXfqCTv9H6bA.png',
+      image: 'images/qMnYhbmfaiXL6mXfqCTv9H6bA.avif',
     },
     {
       name: 'MSI',
       url: 'https://ca.msi.com/',
-      image:
-        'https://framerusercontent.com/images/1Jqcun75YhOXKBaLuqwb28kTDk.png',
+      image: '/images/1Jqcun75YhOXKBaLuqwb28kTDk.avif',
     },
     {
       name: 'Gameloft Montréal',
       url: 'https://www.gameloft.com/gameloft-studios/montreal',
-      image:
-        'https://framerusercontent.com/images/EVYtPqxWNlqaFARm7yQtpxDSN9g.png',
+      image: '/images/EVYtPqxWNlqaFARm7yQtpxDSN9g.avif',
     },
   ];
 
