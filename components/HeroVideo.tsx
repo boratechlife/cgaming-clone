@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const HeroVideo: React.FC = () => {
   return (
-    <div className="flex min-h-[80vh] items-center justify-center font-sans dark:bg-black">
+    <div className="flex min-h-[80vh] border-b border-[#545454] items-center justify-center font-sans dark:bg-black">
       {/* Mobile: Show image */}
       <div className="block md:hidden w-full h-full">
         <div
