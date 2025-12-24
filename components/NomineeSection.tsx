@@ -1,8 +1,8 @@
-"use client";
+'use client';
 
-import React from "react";
-import Image from "next/image";
-import NomineeCard from "./NomineeCard";
+import React from 'react';
+import Image from 'next/image';
+import NomineeCard from './NomineeCard';
 
 interface Nominee {
   id: string;
@@ -35,13 +35,9 @@ const NomineeSection: React.FC<NomineeSectionProps> = ({
         {/* Header Content */}
         <div className="mb-16 text-center">
           <h1 className="text-7xl font-semibold leading-[1.05em] tracking-[-3px] text-white mb-6">
-            {categoryTitle.split(" ").map((word, index) => (
-              <span key={index} className="inline-block">
-                {word}{" "}
-              </span>
-            ))}
+            {categoryTitle}
           </h1>
-          <p className="text-lg leading-[1.6em] tracking-[-0.07em] text-gray-300 max-w-4xl mx-auto">
+          <p className="text-lg leading-[1.6em]  text-gray-300 max-w-4xl mx-auto">
             {categoryDescription}
           </p>
         </div>

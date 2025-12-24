@@ -9,16 +9,11 @@ const EhgameExpoHeroSection = () => {
   return (
     <div className="relative w-full h-max border-b border-gray-800" id="top">
       {/* Background Image */}
-      <div className="absolute inset-0 z-0">
-        <img
-          src="https://framerusercontent.com/images/t77F9dNTIAm0knTnkab3cK5Z7NA.png"
-          alt="Hero background"
-          className="object-cover h-full w-full hidden lg:block"
-        />
+      <div className="absolute inset-0  overflow-hidden z-0">
         <img
           src=" https://framerusercontent.com/images/y6kWXjFONpoyTOQk1tsZipgYDA.png"
           alt="Hero background"
-          className="object-cover  object-center h-full w-full lg:hidden opacity-30"
+          className="object-cover transform   object-center h-full w-full  opacity-100"
         />
       </div>
 
@@ -56,19 +51,25 @@ const EhgameExpoHeroSection = () => {
             <div
               className={`${richTextContainerStyles} flex-none h-auto max-w-full lg:max-w-[40%] relative whitespace-pre-wrap  break-words`}
             >
-              <p className="font-karla text-lg md:text-xl text-white leading-relaxed tracking-tight">
+              <p className="font-karla text-lg md:text-xl text-white leading-relaxed tracking-tight py-4 pr-6">
                 <span className="block">
-                  This fall we are taking Canadian indie games to some of the
-                  biggest pop culture and gaming events in the country. These
-                  events bring together the exact players, fans, and industry
-                  professionals you want to reach. Build hype, grow your
-                  community, and make valuable connections, all in one place.
+                  EH! Game is a Canadian platform dedicated to celebrating,
+                  promoting, and supporting video games and interactive creators
+                  from across Canada.
                 </span>
                 <span className="block mt-4">
-                  Showcase your demo and let Canada experience what you have
-                  been working on. Whether you are preparing for launch or
-                  building momentum for the future, the Eh! Game Showcase is
-                  your platform to shine!
+                  Through live events, showcases, awards, and digital
+                  initiatives, EH! Game helps Canadian games reach new
+                  audiences, connects creators with industry partners, and
+                  highlights the diversity and impact of game development in
+                  Canada.
+                </span>
+                <span className="block mt-4">
+                  Best known as the organization behind the Canadian Game
+                  Awards, EH! Game operates at the intersection of culture,
+                  industry, and community — creating spaces where Canadian games
+                  are discovered, experienced, and recognized, both at home and
+                  internationally.
                 </span>
               </p>
             </div>

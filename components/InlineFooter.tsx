@@ -38,12 +38,13 @@ const InlineFooter: React.FC = () => {
               <div className="mt-2 text-white/60">
                 <h5 className="text-xs font-normal leading-6">
                   <a
-                    href="https://www.ridgeagency.ca/"
+                    href="#"
                     target="_blank"
                     rel="noopener"
                     className="hover:text-white transition-colors"
                   >
-                    Website by RIDGE Agency (ridgeagency.ca)
+                    Website by Canadian Game Awards Agency
+                    (info@canadiangameawards.ca)
                   </a>
                 </h5>
               </div>

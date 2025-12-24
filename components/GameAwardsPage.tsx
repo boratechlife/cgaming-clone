@@ -70,28 +70,6 @@ const GameAwardsPage = () => {
             />
           </div>
         </div>
-
-        <h2 className="text-white px-4 lg:px-auto font-satoshi font-medium text-[52px] leading-[1.25] tracking-[-1px] whitespace-pre-wrap break-words break-all">
-          Tour Stops and Deadlines
-        </h2>
-        <div className="w-full">
-          {GameShowEvents.map((event, index) => (
-            <GameShowCard
-              key={index}
-              href={event.href}
-              imageSrc={event.imageSrc}
-              imageAlt={event.imageAlt}
-              dates={event.dates}
-              deadline={event.deadline}
-              NominateButton={
-                <NominateButton
-                  href={event.buttonHref}
-                  label={event.buttonLabel}
-                />
-              }
-            />
-          ))}
-        </div>
       </div>
     </div>
   );
