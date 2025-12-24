@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { Search, ArrowUpRight, Menu, X } from "lucide-react";
+import { Search, ArrowUpRight, Menu, X, Link } from "lucide-react";
 import AnimatedButton from "./AnimatedButton";
 
 const Navbar = () => {
@@ -64,9 +64,10 @@ const Navbar = () => {
 
               {/* DESKTOP LINKS */}
               <div className="hidden lg:flex items-center gap-8 mx-8">
-                <a href="/" className="text-white text-[15px] font-medium">
+                <Link href="/" className="text-white text-[15px] font-medium">
                   Home
-                </a>
+                </Link>
+
                 <a
                   href="/ehgameexpo"
                   className="text-white text-[15px] font-medium"
