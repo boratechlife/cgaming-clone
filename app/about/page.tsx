@@ -1,16 +1,18 @@
 "use client";
-import React, { useState } from "react";
-import Head from "next/head";
-import AboutHero from "@/components/AboutHero";
-import Mission from "@/components/Mission";
-import WhoWeAre from "@/components/WhoWeAre";
+import React from "react";
 
-export default function Home() {
+import WhatWeDo from "@/components/about/WhatWeDo";
+import WhyMatter from "@/components/about/WhyMatter";
+import StoryOfCGAs from "@/components/about/StoryOfCGAs";
+import WhatAreTheCGAs from "@/components/about/WhatAreTheCGAs";
+
+export default function AboutPage() {
   return (
     <>
-      <AboutHero />
-      <Mission />
-      <WhoWeAre />
+      <WhatAreTheCGAs />
+      <StoryOfCGAs />
+      <WhatWeDo />
+      <WhyMatter />
     </>
   );
 }
