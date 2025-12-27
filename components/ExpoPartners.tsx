@@ -1,74 +1,62 @@
-import React from 'react';
-
+import React from "react";
 const ExpoPartners = () => {
   const partners = [
     {
-      name: 'City of Toronto',
-      url: 'https://www.toronto.ca/',
-      image: '/images/9T5taSmSffnn8GIAVEIcUxwYnOk.avif',
+      name: "City of Toronto",
+      url: "https://www.toronto.ca/",
+      image: "/images/9T5taSmSffnn8GIAVEIcUxwYnOk.avif",
+      categories: ["Expo"],
     },
-    {
-      name: 'MSI',
-      url: 'https://ca.msi.com/',
-      image: '/images/1Jqcun75YhOXKBaLuqwb28kTDk.avif',
-    },
-    {
-      name: 'Intel',
-      url: 'https://www.intel.com/',
-      image: '/images/fGFfHMPDHyHbHowQgcvzVQnjT4A.avif',
-    },
+    // MSI and Intel removed to avoid redundancy, as they are in Awards with tags
   ];
-
   return (
-    <div className="framer-NVjQy py-[30px] px-0 framer-b1p6um flex flex-col items-center gap-2.25 min-h-min overflow-hidden relative w-full">
-      <div className="framer-1f1r2h4 w-full text-center">
-        <h2
-          className="framer-text text-2xl lg:text-5xl font-medium tracking-tight text-white"
-          style={{
-            fontFamily: '"Satoshi", "Satoshi Placeholder", sans-serif',
-            letterSpacing: '-1px',
-            lineHeight: '1.25em',
-          }}
-        >
-          Eh! Game Expo Partners:
+    <div className="framer-NVjQy py-[80px] md:py-[60px] flex flex-col items-center gap-[48px] min-h-min overflow-hidden relative w-full px-[16px] md:px-[48px] lg:px-[80px]">
+      <div className="flex flex-col items-center gap-[16px] w-full">
+        <h2 className="framer-text text-[32px] font-semibold tracking-tight text-white flex items-center gap-[8px]">
+          <span>🎮</span> Eh! Game Expo Partners
         </h2>
+        <hr className="w-[60%] h-px bg-gradient-to-r from-transparent via-white/50 to-transparent" />
       </div>
-
-      <div className="framer-1yw1tr4 py-0 mt-4 px-4 lg:px-40 grid grid-cols-1 lg:grid-cols-3 gap-6.5 justify-center w-full">
+      <div className="grid grid-cols-2 gap-[16px] md:grid-cols-3 md:gap-[24px] xl:grid-cols-4 xl:gap-[32px] justify-center w-full relative">
         {partners.map((partner, index) => (
           <div
             key={index}
-            className="framer-110bz69-container place-items-start h-[175px] lg:h-[275px] w-full  framer-12202r-container framer-lve5jz-container"
+            className="aspect-square bg-white/3 border border-white/8 rounded-[16px] p-[10px] flex flex-col items-center justify-center group hover:bg-white/6 transition duration-300"
           >
             <a
               href={partner.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="framer-LJD03 framer-ce27pg framer-v-ce27pg framer-14yq3ls block"
-              style={{ width: '100%', height: '100%' }}
+              className="flex items-center justify-center h-full w-full no-underline"
             >
-              <div className="relative rounded-lg overflow-hidden">
-                <img
-                  src={partner.image}
-                  alt={`${partner.name} logo – Eh! Game Expo Partner`}
-                  className="w-full h-full object-contain"
-                  style={{
-                    display: 'block',
-                    width: '100%',
-                    height: '100%',
-                    borderRadius: 'inherit',
-                    objectPosition: 'center center',
-                    objectFit: 'contain',
-                  }}
-                  loading="lazy"
-                />
-              </div>
+              <img
+                src={partner.image}
+                alt={`${partner.name} logo – Eh! Game Expo Partner`}
+                className="max-h-[150px] object-contain grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition duration-300"
+                loading="lazy"
+              />
             </a>
+            {partner.categories.length > 1 && (
+              <div className="flex gap-[4px] mt-[8px]">
+                {partner.categories.slice(0, 2).map((cat, i) => (
+                  <span
+                    key={i}
+                    className="px-[10px] py-[4px] text-[10px] uppercase bg-white/10 border border-white/20 rounded-[12px]"
+                  >
+                    {cat}
+                  </span>
+                ))}
+                {partner.categories.length > 2 && (
+                  <span className="px-[10px] py-[4px] text-[10px] uppercase bg-white/10 border border-white/20 rounded-[12px]">
+                    +{partner.categories.length - 2}
+                  </span>
+                )}
+              </div>
+            )}
           </div>
         ))}
       </div>
     </div>
   );
 };
-
 export default ExpoPartners;

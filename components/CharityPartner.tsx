@@ -1,73 +1,46 @@
-import React from 'react';
-
+import React from "react";
 const CharityPartner = () => {
   const partner = {
-    name: 'Surrey Place',
-    url: 'https://www.surreyplace.ca/',
-    image: '/images/c6BHrhK4mGb6nA5uD7U856aH8hM.avif',
+    name: "Surrey Place",
+    url: "https://www.surreyplace.ca/",
+    image: "/images/c6BHrhK4mGb6nA5uD7U856aH8hM.avif",
   };
-
   return (
-    <div className="framer-NVjQy pt-[73px] py-0 pb-[30px] framer-1p2jxhv flex flex-col items-center gap-2.25 min-h-min overflow-hidden relative w-full">
-      <div className="framer-1yzdy8q w-full text-center">
-        <h2
-          className="framer-text text-3xl lg:text-5xl font-medium tracking-tight text-white"
-          style={{
-            fontFamily: '"Satoshi", "Satoshi Placeholder", sans-serif',
-            letterSpacing: '-1px',
-            lineHeight: '1.25em',
-          }}
-        >
-          Charity Partner:
+    <div className="framer-NVjQy py-[80px] flex flex-col items-center gap-[48px] min-h-min overflow-hidden relative w-full px-[16px] md:px-[48px] lg:px-[80px]">
+      <div className="flex flex-col items-center gap-[16px] w-full">
+        <h2 className="framer-text text-[32px] font-semibold tracking-tight text-white flex items-center gap-[8px]">
+          <span>💚</span> Charity Partner
         </h2>
+        <hr className="w-[60%] h-px bg-gradient-to-r from-transparent via-white/50 to-transparent" />
       </div>
-
-      <div className="framer-8gjpzu pt-[100px] lg:py-40 px-0 grid grid-cols-1 gap-6.5 justify-center w-full">
-        <div
-          className="framer-u76fki-container"
-          style={{
-            placeSelf: 'start',
-            flex: '0 0 auto',
-            height: '207px',
-            position: 'relative',
-            width: '100%',
-          }}
-        >
-          <a
-            href={partner.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="framer-LJD03 framer-ce27pg framer-v-ce27pg framer-14yq3ls block"
-            style={{ width: '100%', height: '100%' }}
-          >
-            <div
-              className="relative rounded-lg overflow-hidden"
-              style={{
-                position: 'absolute',
-                borderRadius: 'inherit',
-                inset: '0px',
-              }}
-            >
-              <img
-                src={partner.image}
-                alt={`${partner.name} logo – Charity Partner`}
-                className="w-full h-full object-contain"
-                style={{
-                  display: 'block',
-                  width: '100%',
-                  height: '100%',
-                  borderRadius: 'inherit',
-                  objectPosition: 'center center',
-                  objectFit: 'contain',
-                }}
-                loading="lazy"
-              />
-            </div>
-          </a>
+      <div
+        className="max-w-[600px] mx-auto bg-gradient-to-r from-emerald-500/10 to-cyan-500/10 border-2 rounded-[20px] p-[64px_48px] flex flex-col items-center gap-[32px]"
+        style={{
+          borderImage: "linear-gradient(to right, #4fc3f7, #f4d03f) 1", // Matching colors
+        }}
+      >
+        <div className="text-[12px] uppercase tracking-[0.1em] text-white/70">
+          ♥ CHARITY PARTNER
         </div>
+        <a
+          href={partner.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center justify-center relative w-full h-[100px] group hover:scale-105 transition duration-300"
+        >
+          <img
+            src={partner.image}
+            alt={`${partner.name} logo – Charity Partner`}
+            className="max-h-[100px] object-contain"
+            loading="lazy"
+          />
+        </a>
+        <p className="text-[14px] text-white/70 text-center">
+          Supporting autism and developmental support services with a
+          person-centred approach across the lifespan.
+        </p>
       </div>
     </div>
   );
 };
-
 export default CharityPartner;

@@ -1,105 +1,58 @@
-import React from 'react';
-
+import React from "react";
 const ProvincialPartners = () => {
   const partners = [
     {
-      name: 'Digital Alberta',
-      url: 'https://digitalalberta.com/',
-      image: '/images/rmrnpE9KCIxlgZf3QkTaqGwUpec.avif',
-      containerClass: 'framer-1wacicp-container',
-      height: '165px',
-      placeSelf: 'start',
+      name: "Digital Alberta",
+      url: "https://digitalalberta.com/",
+      image: "/images/rmrnpE9KCIxlgZf3QkTaqGwUpec.avif",
     },
     {
-      name: 'La Guilde du jeu vidéo du Québec',
-      url: 'https://www.laguilde.quebec/',
-      image: '/images/HYv2N7JvT5Gbo9rHzT5qhbxDKM.avif',
-      containerClass: 'framer-s7iurk-container',
-      height: '179px',
-      placeSelf: 'start',
+      name: "La Guilde du jeu vidéo du Québec",
+      url: "https://www.laguilde.quebec/",
+      image: "/images/HYv2N7JvT5Gbo9rHzT5qhbxDKM.avif",
     },
     {
-      name: 'Interactive Ontario',
-      url: 'https://interactiveontario.com/',
-      image: '/images/CSf7kU9YCIyyoWdwqMEviVdes.avif',
-      containerClass: 'framer-zhtek6-container',
-      height: '179px',
-      placeSelf: 'start',
+      name: "Interactive Ontario",
+      url: "https://interactiveontario.com/",
+      image: "/images/CSf7kU9YCIyyoWdwqMEviVdes.avif",
     },
     {
-      name: 'DigiBC',
-      url: 'https://digibc.org/',
-      image: '/images/OPBw3JXDDhDnQX6uwYv45X6ceQ.avif',
-      containerClass: 'framer-sc1632-container',
-      height: '179px',
-      placeSelf: 'start',
+      name: "DigiBC",
+      url: "https://digibc.org/",
+      image: "/images/OPBw3JXDDhDnQX6uwYv45X6ceQ.avif",
     },
   ];
-
   return (
-    <div className="framer-NVjQy px-4 lg:px-[30px] py-[0px] pb-[73px] framer-j0hsf3 flex flex-col items-center gap-2.25 min-h-min overflow-hidden relative w-full">
-      <div className="framer-1ojr5wz w-full text-center">
-        <h2
-          className="framer-text text-4xl lg:text-5xl font-medium tracking-tight text-white"
-          style={{
-            fontFamily: '"Satoshi", "Satoshi Placeholder", sans-serif',
-            letterSpacing: '-1px',
-            lineHeight: '1.25em',
-          }}
-        >
-          Provincial Partners:
+    <div className="framer-NVjQy px-[16px] md:px-[48px] lg:px-[80px] py-[48px] pb-[60px] flex flex-col items-center gap-[48px] min-h-min overflow-hidden relative w-full">
+      <div className="flex flex-col items-center gap-[16px] w-full">
+        <h2 className="framer-text text-[24px] font-semibold tracking-tight text-white flex items-center gap-[8px]">
+          <span>🌍</span> Provincial Partners
         </h2>
+        <hr className="w-[60%] h-px bg-gradient-to-r from-transparent via-white/50 to-transparent" />
+        <p className="text-[16px] text-white/50 text-center max-w-[800px]">
+          Acknowledging the vital support from provincial organizations
+          advancing the gaming industry across Canada.
+        </p>
       </div>
-
-      <div className="framer-1pc95b8 pt-[100px] lg:px-[160px] pb-0 grid grid-cols-1 lg:grid-cols-2 gap-6.5 justify-center w-full">
+      <div className="grid grid-cols-3 gap-[20px] md:grid-cols-4 xl:grid-cols-6 justify-center w-full relative ">
         {partners.map((partner, index) => (
-          <div
+          <a
             key={index}
-            className={partner.containerClass}
-            style={{
-              placeSelf: partner.placeSelf,
-              flex: '0 0 auto',
-              height: partner.height,
-              position: 'relative',
-              width: '100%',
-            }}
+            href={partner.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center h-[130px] group"
           >
-            <a
-              href={partner.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="framer-LJD03 framer-ce27pg framer-v-ce27pg framer-14yq3ls block"
-              style={{ width: '100%', height: '100%' }}
-            >
-              <div
-                className="relative rounded-lg overflow-hidden"
-                style={{
-                  position: 'absolute',
-                  borderRadius: 'inherit',
-                  inset: '0px',
-                }}
-              >
-                <img
-                  src={partner.image}
-                  alt={`${partner.name} logo – Provincial Partner`}
-                  className="w-full h-full object-contain"
-                  style={{
-                    display: 'block',
-                    width: '100%',
-                    height: '100%',
-                    borderRadius: 'inherit',
-                    objectPosition: 'center center',
-                    objectFit: 'contain',
-                  }}
-                  loading="lazy"
-                />
-              </div>
-            </a>
-          </div>
+            <img
+              src={partner.image}
+              alt={`${partner.name} logo – Provincial Partner`}
+              className="max-h-[120px] object-contain grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition duration-300"
+              loading="lazy"
+            />
+          </a>
         ))}
       </div>
     </div>
   );
 };
-
 export default ProvincialPartners;
