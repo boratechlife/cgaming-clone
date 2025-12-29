@@ -1,3 +1,4 @@
+import { inter } from '@/app/layout';
 import React from 'react';
 
 const ThreePillarsSection = () => {
@@ -11,9 +12,8 @@ const ThreePillarsSection = () => {
       <div className="contents hidden-8nmsqg hidden-1qql9d7">
         <div className="flex flex-col justify-start outline-none flex-shrink-0 whitespace-pre-wrap break-words flex-none w-[200%] max-w-[92%] h-auto relative">
           <h2
-            className="text-center"
+            className={`text-center ${inter.className}`}
             style={{
-              fontFamily: 'Karla, sans-serif',
               fontSize: '62px',
               fontWeight: 500,
               letterSpacing: '-3px',
