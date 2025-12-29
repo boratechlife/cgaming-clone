@@ -1,7 +1,8 @@
-'use client';
-import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { ChevronDown, ChevronUp } from 'lucide-react';
+"use client";
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { ChevronDown, ChevronUp } from "lucide-react";
+import { manrope, satoshi } from "@/app/layout";
 
 interface FAQItem {
   id: number;
@@ -36,14 +37,16 @@ const FAQ = ({ faqData }: FAQProps) => {
           transition={{ duration: 0.6 }}
           className="mb-16"
         >
-          <h1 className="text-5xl md:text-6xl font-bold mb-4 tracking-tight">
+          <h1
+            className={`text-5xl md:text-6xl font-bold mb-4 tracking-tight ${satoshi.className}`}
+          >
             Frequently Asked
             <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
               Questions
             </span>
           </h1>
-          <p className="text-gray-400 text-lg max-w-2xl">
+          <p className={`text-gray-400 text-lg max-w-2xl ${manrope.className}`}>
             Find answers to common questions about the awards ceremony, event
             details, and more.
           </p>
@@ -64,18 +67,20 @@ const FAQ = ({ faqData }: FAQProps) => {
                     rounded-2xl p-6 md:p-8 cursor-pointer transition-all duration-300 
                     ${
                       faq.isOpen
-                        ? 'bg-[#171717] text-white shadow-lg'
-                        : 'bg-transparent hover:bg-[#171717] hover:text-white'
+                        ? "bg-[#171717] text-white shadow-lg"
+                        : "bg-transparent hover:bg-[#171717] hover:text-white"
                     }
                   `}
                   onClick={() => toggleFAQ(faq.id)}
                 >
                   <div className="flex justify-between items-center">
                     <h3
-                      className={`text-xl md:text-2xl font-semibold transition-colors duration-300 ${
+                      className={`text-xl md:text-2xl font-semibold transition-colors ${
+                        satoshi.className
+                      } duration-300 ${
                         faq.isOpen
-                          ? 'text-white'
-                          : 'text-gray-200 hover:text-white'
+                          ? "text-white"
+                          : "text-gray-200 hover:text-white"
                       }`}
                     >
                       {faq.question}
@@ -83,7 +88,9 @@ const FAQ = ({ faqData }: FAQProps) => {
                     <motion.div
                       animate={{ rotate: faq.isOpen ? 180 : 0 }}
                       transition={{ duration: 0.3 }}
-                      className={faq.isOpen ? 'text-white' : 'text-gray-400'}
+                      className={`${manrope.className} ${
+                        faq.isOpen ? "text-white" : "text-gray-400"
+                      }`}
                     >
                       {faq.isOpen ? (
                         <ChevronUp size={24} />
@@ -97,7 +104,7 @@ const FAQ = ({ faqData }: FAQProps) => {
                     {faq.isOpen && (
                       <motion.div
                         initial={{ opacity: 0, height: 0 }}
-                        animate={{ opacity: 1, height: 'auto' }}
+                        animate={{ opacity: 1, height: "auto" }}
                         exit={{ opacity: 0, height: 0 }}
                         transition={{ duration: 0.3 }}
                         className="overflow-hidden"
@@ -129,7 +136,7 @@ const FAQ = ({ faqData }: FAQProps) => {
           className="mt-16 pt-8 border-t border-gray-800"
         >
           <p className="text-gray-400 text-center">
-            Still have questions?{' '}
+            Still have questions?{" "}
             <a
               href="mailto:info@awards.com"
               className="text-blue-400 hover:text-blue-300 underline transition-colors duration-300"

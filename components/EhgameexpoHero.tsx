@@ -1,10 +1,11 @@
 // components/HeroSection.tsx
-import Image from 'next/image';
+import { karla } from "@/app/layout";
+import Image from "next/image";
 
 const EhgameExpoHeroSection = () => {
   // RichTextContainer styles
   const richTextContainerStyles =
-    'flex flex-col justify-start outline-none flex-shrink-0';
+    "flex flex-col justify-start outline-none flex-shrink-0";
 
   return (
     <div className="relative w-full h-max border-b border-gray-800" id="top">
@@ -36,12 +37,14 @@ const EhgameExpoHeroSection = () => {
           <div
             className={`${richTextContainerStyles} flex-none h-auto relative whitespace-pre-wrap w-full lg:w-[40%] break-words`}
           >
-            <h1 className="font-karla font-semibold text-3xl md:text-4xl lg:text-5xl text-white leading-tight tracking-tight">
-              <span className="inline-block">Eh!</span>{' '}
-              <span className="inline-block">Game</span>{' '}
+            <h1
+              className={`font-karla font-semibold text-3xl md:text-4xl lg:text-5xl text-white leading-tight tracking-tight ${karla.className}`}
+            >
+              <span className="inline-block">Eh!</span>{" "}
+              <span className="inline-block">Game</span>{" "}
               <span className="inline-block">Showcase</span>
               <br />
-              <span className="inline-block">is</span>{' '}
+              <span className="inline-block">is</span>{" "}
               <span className="inline-block">here!</span>
             </h1>
           </div>
@@ -49,7 +52,7 @@ const EhgameExpoHeroSection = () => {
           {/* Description Text */}
           <div className="flex flex-col flex-none gap-9 h-min overflow-visible p-0 relative w-full place-content-[flex-start_center] items-start">
             <div
-              className={`${richTextContainerStyles} flex-none h-auto max-w-full lg:max-w-[40%] relative whitespace-pre-wrap  break-words`}
+              className={`${richTextContainerStyles}  flex-none ${karla.className} h-auto max-w-full lg:max-w-[40%] relative whitespace-pre-wrap  break-words`}
             >
               <p className="font-karla text-lg md:text-xl text-white leading-relaxed tracking-tight py-4 pr-6">
                 <span className="block">

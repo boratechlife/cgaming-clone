@@ -1,14 +1,15 @@
-import Link from 'next/link';
-import NominateButton from './NominateButton';
-import { GameShowCard } from './GameShowCard';
-import { GameShowEvents } from '@/data/events';
-import GamePromoSection from './GamePromoSection';
-import GameshowPartners from './GameshowPartners';
+import Link from "next/link";
+import NominateButton from "./NominateButton";
+import { GameShowCard } from "./GameShowCard";
+import { GameShowEvents } from "@/data/events";
+import GamePromoSection from "./GamePromoSection";
+import GameshowPartners from "./GameshowPartners";
+import { satoshi } from "@/app/layout";
 
 const GameAwardsPage = () => {
   // RichTextContainer styles
   const richTextContainerStyles =
-    'flex flex-col justify-start outline-none flex-shrink-0';
+    "flex flex-col justify-start outline-none flex-shrink-0";
 
   return (
     <div className="flex flex-col items-center justify-center gap-[41px] w-full h-min scroll-mt-10 bg-[#110e0b] relative overflow-visible">
@@ -25,7 +26,9 @@ const GameAwardsPage = () => {
             data-framer-name="Heading"
             data-framer-component-type="RichTextContainer"
           >
-            <h2 className="framer-text">Why You Should Be There</h2>
+            <h2 className={`framer-text ${satoshi.className}`}>
+              Why You Should Be There
+            </h2>
           </div>
 
           <div

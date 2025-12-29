@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { Search, ArrowUpRight, Menu, X, Link } from "lucide-react";
 import AnimatedButton from "./AnimatedButton";
+import { manrope } from "@/app/layout";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -43,7 +44,9 @@ const Navbar = () => {
       </div>
 
       {/* NAVBAR */}
-      <div className="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-full max-w-[980px] px-4">
+      <div
+        className={`fixed top-6 left-1/2 -translate-x-1/2 z-50 w-full max-w-[980px] px-4 ${manrope.className}`}
+      >
         <div
           className="relative rounded-[40px] p-px"
           style={{
