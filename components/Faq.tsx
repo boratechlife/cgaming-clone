@@ -4,14 +4,14 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import { manrope, satoshi } from "@/app/layout";
 
-interface FAQItem {
+export interface FAQItem {
   id: number;
   question: string;
   answer: string;
   isOpen?: boolean;
 }
 
-interface FAQProps {
+export interface FAQProps {
   faqData: FAQItem[];
 }
 
