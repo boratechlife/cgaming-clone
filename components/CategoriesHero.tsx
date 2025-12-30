@@ -1,10 +1,11 @@
 // components/CategoriesHero.tsx
+import { karla } from '@/app/layout';
 import Image from 'next/image';
 
 const CategoriesHero = () => {
   return (
     <div
-      className="relative w-full h-max lg:h-[90vh] border-b border-gray-800"
+      className={`relative  ${karla.className} w-full h-max lg:h-[90vh] border-b border-gray-800`}
       id="top"
     >
       {/* Background Image */}

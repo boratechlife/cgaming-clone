@@ -1,6 +1,7 @@
-"use client";
+'use client';
 
-import React from "react";
+import { satoshi } from '@/app/layout';
+import React from 'react';
 
 interface NomineeCardProps {
   title: string;
@@ -27,7 +28,7 @@ const NomineeCard: React.FC<NomineeCardProps> = ({
       {/* Image */}
       <div
         className={`relative w-full aspect-square overflow-hidden rounded-xl mb-4 transition-all duration-300 ${
-          isWinner ? "grayscale-0" : "grayscale group-hover:grayscale-0"
+          isWinner ? 'grayscale-0' : 'grayscale group-hover:grayscale-0'
         }`}
       >
         <img
@@ -38,7 +39,9 @@ const NomineeCard: React.FC<NomineeCardProps> = ({
       </div>
 
       {/* Title */}
-      <h5 className="text-white text-[22px] font-semibold leading-tight mb-1">
+      <h5
+        className={`text-white text-[22px] ${satoshi.className} font-semibold leading-tight mb-1`}
+      >
         {title}
       </h5>
 

@@ -3,6 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import NomineeCard from './NomineeCard';
+import { karla } from '@/app/layout';
 
 interface Nominee {
   id: string;
@@ -33,7 +34,7 @@ const NomineeSection: React.FC<NomineeSectionProps> = ({
     >
       <div className="max-w-8xl mx-auto">
         {/* Header Content */}
-        <div className="mb-16 text-center">
+        <div className={`mb-16 text-center ${karla.className}`}>
           <h1 className="text-7xl font-semibold leading-[1.05em] tracking-[-3px] text-white mb-6">
             {categoryTitle}
           </h1>

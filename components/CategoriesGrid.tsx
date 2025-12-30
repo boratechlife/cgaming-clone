@@ -1,4 +1,7 @@
 'use client';
+
+import { satoshi } from '@/app/layout';
+
 const CategoriesGrid = () => {
   const categories = [
     { id: 'bestartdirection', name: 'Best Art Direction' },
@@ -30,7 +33,7 @@ const CategoriesGrid = () => {
               <a
                 key={category.id}
                 href={`#${category.id}`}
-                className="group block"
+                className={`group block ${satoshi.className}`}
                 style={{ textDecoration: 'none' }}
               >
                 <div
