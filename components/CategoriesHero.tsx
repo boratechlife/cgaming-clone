@@ -1,19 +1,30 @@
 // components/CategoriesHero.tsx
-import { karla } from '@/app/layout';
-import Image from 'next/image';
+import { karla } from "@/app/layout";
+import Image from "next/image";
 
 const CategoriesHero = () => {
   return (
     <div
-      className={`relative  ${karla.className} w-full h-max lg:h-[90vh] border-b border-gray-800`}
+      className={`relative ${karla.className} w-full h-max lg:h-[90vh] `}
       id="top"
     >
-      {/* Background Image */}
+      {/* Background Image Container */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://framerusercontent.com/images/DKG5rKOUrS4N3On0M02zJn1EiY.jpg"
+          src="/images/nominees/hero.png"
           alt="Hero background"
-          className="object-cover h-full w-full"
+          className="object-cover h-full w-full opacity-25"
+        />
+        {/* GRADIENT OVERLAY: 
+            Starts transparent at the top and transitions to the 
+            exact purple (#5B2C91) used in the next section.
+        */}
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(to bottom, transparent 0%,#5B2C91 70%, #5B2C91 100%)",
+          }}
         />
       </div>
 
@@ -33,34 +44,10 @@ const CategoriesHero = () => {
           {/* Description Text */}
           <div className="max-w-3xl mx-auto">
             <p className="font-karla text-lg md:text-xl text-white leading-relaxed tracking-tight">
-              <span className="inline-block">Discover</span>{' '}
-              <span className="inline-block">16</span>{' '}
-              <span className="inline-block">categories</span>{' '}
-              <span className="inline-block">celebrating</span>{' '}
-              <span className="inline-block">the</span>{' '}
-              <span className="inline-block">best</span>{' '}
-              <span className="inline-block">in</span>{' '}
-              <span className="inline-block">Canadian</span>{' '}
-              <span className="inline-block">gaming</span>{' '}
-              <span className="inline-block">at</span>{' '}
-              <span className="inline-block">the</span>{' '}
-              <span className="inline-block">Canadian</span>{' '}
-              <span className="inline-block">Game</span>{' '}
-              <span className="inline-block">Awards,</span>{' '}
-              <span className="inline-block">where</span>{' '}
-              <span className="inline-block">we</span>{' '}
-              <span className="inline-block">honor</span>{' '}
-              <span className="inline-block">exceptional</span>{' '}
-              <span className="inline-block">talent</span>{' '}
-              <span className="inline-block">and</span>{' '}
-              <span className="inline-block">recognize</span>{' '}
-              <span className="inline-block">the</span>{' '}
-              <span className="inline-block">outstanding</span>{' '}
-              <span className="inline-block">achievements</span>{' '}
-              <span className="inline-block">of</span>{' '}
-              <span className="inline-block">this</span>{' '}
-              <span className="inline-block">year's</span>{' '}
-              <span className="inline-block">nominees.</span>
+              Discover 16 categories celebrating the best in Canadian gaming at
+              the Canadian Game Awards, where we honor exceptional talent and
+              recognize the outstanding achievements of this year&apos;s
+              nominees.
             </p>
           </div>
         </div>

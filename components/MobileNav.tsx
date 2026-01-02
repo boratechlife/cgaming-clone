@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import React, { useState } from 'react';
-import Image from 'next/image';
-import { ChevronDown } from 'lucide-react';
+import React, { useState } from "react";
+import Image from "next/image";
+import { ChevronDown } from "lucide-react";
 
 const MobileNav: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,21 +12,21 @@ const MobileNav: React.FC = () => {
   const [isMoreOpen, setIsMoreOpen] = useState(false);
 
   const nomineesLinks = [
-    { name: 'Best Art Direction', href: '/nominees#bestartdirection' },
-    { name: 'Best Game Design', href: '/nominees#bestgamedesign' },
-    { name: 'Best Score / Soundtrack', href: '/nominees#bestscore' },
-    { name: 'Best Narrative', href: '/nominees#bestnarrative' },
-    { name: 'Best Performance', href: '/nominees#bestperformance' },
-    { name: 'Best Audio Design', href: '/nominees#bestaudiodesign' },
-    { name: 'Game of the Year', href: '/nominees#gameoftheyear' },
+    { name: "Best Art Direction", href: "/nominees#bestartdirection" },
+    { name: "Best Game Design", href: "/nominees#bestgamedesign" },
+    { name: "Best Score / Soundtrack", href: "/nominees#bestscore" },
+    { name: "Best Narrative", href: "/nominees#bestnarrative" },
+    { name: "Best Performance", href: "/nominees#bestperformance" },
+    { name: "Best Audio Design", href: "/nominees#bestaudiodesign" },
+    { name: "Game of the Year", href: "/nominees#gameoftheyear" },
     // ... add others as needed
   ];
 
   const moreLinks = [
-    { name: 'Media', href: '/media' },
-    { name: 'Adjudication', href: '/adjudication' },
-    { name: 'About us', href: '/about' },
-    { name: 'Contact', href: '/contact' },
+    { name: "Media", href: "/media" },
+    { name: "Adjudication", href: "/adjudication" },
+    { name: "About us", href: "/about" },
+    { name: "Contact", href: "/contact" },
   ];
 
   return (
@@ -35,14 +35,14 @@ const MobileNav: React.FC = () => {
         className="relative overflow-hidden transition-all duration-500"
         style={{
           background:
-            'linear-gradient(180deg, rgb(10,10,10) 0%, rgba(10,10,10,0.85) 100%)',
-          borderRadius: '40px',
+            "linear-gradient(180deg, rgb(10,10,10) 0%, rgba(10,10,10,0.85) 100%)",
+          borderRadius: "40px",
         }}
       >
         {/* TOP BAR */}
         <div
           className="flex items-center justify-between px-6 py-4"
-          style={{ backgroundColor: 'rgb(5,5,5)' }}
+          style={{ backgroundColor: "rgb(5,5,5)" }}
         >
           <a href="./" className="h-[30px] w-[110px] relative">
             <Image
@@ -84,7 +84,7 @@ const MobileNav: React.FC = () => {
         {/* SLIDE-DOWN MENU */}
         <div
           className={`transition-all duration-500 ease-in-out overflow-y-auto ${
-            isOpen ? 'max-h-[85vh] opacity-100' : 'max-h-0 opacity-0'
+            isOpen ? "max-h-[85vh] opacity-100" : "max-h-0 opacity-0"
           }`}
         >
           <div className="flex flex-col items-center gap-4 py-8 text-white px-6">
@@ -104,13 +104,13 @@ const MobileNav: React.FC = () => {
                 Nominees
                 <ChevronDown
                   className={`w-4 h-4 transition-transform ${
-                    isNomineesOpen ? 'rotate-180' : ''
+                    isNomineesOpen ? "rotate-180" : ""
                   }`}
                 />
               </button>
               <div
                 className={`flex flex-col items-center gap-3 overflow-hidden transition-all duration-300 ${
-                  isNomineesOpen ? 'max-h-[400px] mt-2 mb-4' : 'max-h-0'
+                  isNomineesOpen ? "max-h-[400px] mt-2 mb-4" : "max-h-0"
                 }`}
               >
                 {nomineesLinks.map((link) => (
@@ -138,13 +138,13 @@ const MobileNav: React.FC = () => {
                 More
                 <ChevronDown
                   className={`w-4 h-4 transition-transform ${
-                    isMoreOpen ? 'rotate-180' : ''
+                    isMoreOpen ? "rotate-180" : ""
                   }`}
                 />
               </button>
               <div
                 className={`flex flex-col items-center gap-3 overflow-hidden transition-all duration-300 ${
-                  isMoreOpen ? 'max-h-[200px] mt-2 mb-4' : 'max-h-0'
+                  isMoreOpen ? "max-h-[200px] mt-2 mb-4" : "max-h-0"
                 }`}
               >
                 {moreLinks.map((link) => (

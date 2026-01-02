@@ -67,7 +67,6 @@ export default function Ehgameexpo() {
       <GameshowPartners />
 
       <FAQ faqData={ehGameFAQData} />
-      <InlineFooter />
     </section>
   );
 }

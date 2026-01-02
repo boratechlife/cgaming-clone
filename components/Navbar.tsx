@@ -193,14 +193,6 @@ const Navbar = () => {
               {/* RIGHT ACTIONS */}
               <div className="flex items-center gap-3">
                 <button
-                  className={`w-10 h-10 flex items-center justify-center transition-all duration-500 ${
-                    isMenuOpen ? "translate-x-[200px] opacity-0" : "opacity-100"
-                  }`}
-                >
-                  <Search className="w-6 h-6 text-[rgb(69,22,130)]" />
-                </button>
-
-                <button
                   className="lg:hidden w-10 h-10 flex items-center justify-center"
                   onClick={() => setIsMenuOpen(!isMenuOpen)}
                 >

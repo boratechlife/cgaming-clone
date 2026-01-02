@@ -1,16 +1,16 @@
-'use client';
+"use client";
 
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const ContactUs = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<{
-    type: 'success' | 'error' | null;
+    type: "success" | "error" | null;
     message: string;
-  }>({ type: null, message: '' });
+  }>({ type: null, message: "" });
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-900 to-black text-white flex items-center justify-center p-4 lg:p-8">
+    <div className="min-h-screen  bg-gradient-to-b from-gray-900 to-black text-white flex items-center justify-center p-4 lg:p-8 lg:py-16">
       <div className="max-w-4xl w-full mx-auto">
         {/* Header Section */}
         <div className="text-center mb-12">
@@ -37,13 +37,13 @@ const ContactUs = () => {
         {submitStatus.type && (
           <div
             className={`mb-8 p-4 rounded-xl border ${
-              submitStatus.type === 'success'
-                ? 'bg-green-900/30 border-green-700 text-green-300'
-                : 'bg-red-900/30 border-red-700 text-red-300'
+              submitStatus.type === "success"
+                ? "bg-green-900/30 border-green-700 text-green-300"
+                : "bg-red-900/30 border-red-700 text-red-300"
             }`}
           >
             <div className="flex items-center gap-3">
-              {submitStatus.type === 'success' ? (
+              {submitStatus.type === "success" ? (
                 <svg
                   className="w-5 h-5"
                   fill="none"
@@ -84,24 +84,24 @@ const ContactUs = () => {
             method="POST"
             onSubmit={(e) => {
               setIsSubmitting(true);
-              setSubmitStatus({ type: null, message: '' });
+              setSubmitStatus({ type: null, message: "" });
 
               // Client-side validation
               const form = e.currentTarget;
-              const name = (form.elements.namedItem('name') as HTMLInputElement)
+              const name = (form.elements.namedItem("name") as HTMLInputElement)
                 ?.value;
               const email = (
-                form.elements.namedItem('email') as HTMLInputElement
+                form.elements.namedItem("email") as HTMLInputElement
               )?.value;
               const message = (
-                form.elements.namedItem('message') as HTMLTextAreaElement
+                form.elements.namedItem("message") as HTMLTextAreaElement
               )?.value;
 
               if (!name || !email || !message) {
                 e.preventDefault();
                 setSubmitStatus({
-                  type: 'error',
-                  message: 'Please fill in all required fields.',
+                  type: "error",
+                  message: "Please fill in all required fields.",
                 });
                 setIsSubmitting(false);
                 return;
@@ -125,11 +125,11 @@ const ContactUs = () => {
               type="hidden"
               name="_next"
               value={`${
-                typeof window !== 'undefined' ? window.location.origin : ''
+                typeof window !== "undefined" ? window.location.origin : ""
               }/contact?success=true`}
             />
             <input type="hidden" name="_captcha" value="false" />
-            <input type="text" name="_honey" style={{ display: 'none' }} />
+            <input type="text" name="_honey" style={{ display: "none" }} />
 
             {/* Name Field */}
             <div className="space-y-3">
@@ -201,7 +201,7 @@ const ContactUs = () => {
                 type="hidden"
                 name="_cc"
                 value="admin@canadiangameawards.ca"
-              />{' '}
+              />{" "}
               {/* Add CC emails if needed */}
             </div>
 
@@ -265,7 +265,7 @@ const ContactUs = () => {
         </div>
 
         {/* Contact Information */}
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 md:justify-between">
           <div className="bg-gray-900/30 backdrop-blur-sm border border-gray-800 rounded-xl p-6 text-center">
             <div className="inline-flex items-center justify-center w-12 h-12 bg-blue-600/20 rounded-full mb-4">
               <svg
@@ -284,26 +284,6 @@ const ContactUs = () => {
             </div>
             <h3 className="text-white font-semibold mb-2">Email</h3>
             <p className="text-gray-400">info@canadiangameawards.ca</p>
-          </div>
-
-          <div className="bg-gray-900/30 backdrop-blur-sm border border-gray-800 rounded-xl p-6 text-center">
-            <div className="inline-flex items-center justify-center w-12 h-12 bg-purple-600/20 rounded-full mb-4">
-              <svg
-                className="w-6 h-6 text-purple-400"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"
-                />
-              </svg>
-            </div>
-            <h3 className="text-white font-semibold mb-2">Phone</h3>
-            <p className="text-gray-400">+1 (XXX) XXX-XXXX</p>
           </div>
 
           <div className="bg-gray-900/30 backdrop-blur-sm border border-gray-800 rounded-xl p-6 text-center">

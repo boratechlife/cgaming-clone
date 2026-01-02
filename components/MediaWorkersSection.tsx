@@ -1,3 +1,4 @@
+import { karla } from "@/app/layout";
 import React from "react";
 
 const MediaWorkersSection = () => {
@@ -77,7 +78,9 @@ const MediaWorkersSection = () => {
       }}
     >
       {/* Hero Section */}
-      <div className="framer-n4lyna flex flex-col items-center gap-20 min-h-min overflow-visible relative w-full max-w-7xl">
+      <div
+        className={`framer-n4lyna flex flex-col items-center ${karla.className} gap-20 min-h-min overflow-visible relative w-full max-w-7xl`}
+      >
         <div className="framer-xb97td w-full text-center">
           <h1
             className="framer-text text-5xl lg:text-6xl font-medium tracking-tight text-white"

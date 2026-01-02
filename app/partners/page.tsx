@@ -21,7 +21,6 @@ export default function Ehgameexpo() {
       {/* <CocktailPartners /> */}
       <CharityPartner />
       <ProvincialPartners />
-      <InlineFooter />
     </section>
   );
 }

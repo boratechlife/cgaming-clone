@@ -1,15 +1,15 @@
-import React from 'react';
+import React from "react";
 
 interface AnimatedButtonProps {
-  size?: 'sm' | 'md' | 'lg' | 'xl';
+  size?: "sm" | "md" | "lg" | "xl";
   text?: string;
   className?: string;
 }
 
 const AnimatedButton: React.FC<AnimatedButtonProps> = ({
-  size = 'md',
-  text = 'Sign up for tickets',
-  className = '',
+  size = "md",
+  text = "Sign up for tickets",
+  className = "",
 }) => {
   const sizeConfig = {
     sm: { parentW: 180, parentH: 40, childSize: 20 },
@@ -36,10 +36,10 @@ const AnimatedButton: React.FC<AnimatedButtonProps> = ({
             width: `${config.childSize}px`,
             height: `${config.childSize}px`,
             background:
-              'radial-gradient(80% 80% at 50% 50%, rgb(77, 183, 185) 0%, rgba(255, 255, 255, 0) 100%)',
-            borderRadius: '50%',
-            boxShadow: '0 0 60px 25px rgba(77, 183, 185, 0.7)',
-            animation: 'moveCorners 3s linear infinite',
+              "radial-gradient(80% 80% at 50% 50%, rgb(77, 183, 185) 0%, rgba(255, 255, 255, 0) 100%)",
+            borderRadius: "50%",
+            boxShadow: "0 0 60px 25px rgba(77, 183, 185, 0.7)",
+            animation: "moveCorners 3s linear infinite",
             zIndex: 10,
           }}
         />
@@ -48,31 +48,14 @@ const AnimatedButton: React.FC<AnimatedButtonProps> = ({
       {/* 2. Top Panel - Now perfectly flush with top, bottom, and left */}
       <div
         className="absolute top-0 left-0 w-[95%] h-full z-20 rounded-l-lg flex overflow-hidden"
-        style={{ backgroundColor: 'rgb(13, 13, 13)' }}
+        style={{ backgroundColor: "rgb(13, 13, 13)" }}
       >
         <button
           className="w-full h-full bg-transparent text-white border-none font-semibold cursor-pointer font-sans text-sm uppercase tracking-wider flex items-center justify-center gap-1.5 p-0 m-0"
-          style={{ isolation: 'isolate' }}
+          style={{ isolation: "isolate" }}
         >
           {/* Icon Stack */}
           <div className="relative w-6 h-6 flex items-center justify-center">
-            {/* Search Icon (Bottom Layer) */}
-            <svg
-              className="w-6 h-6"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="rgb(69, 22, 130)"
-              strokeWidth="2.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              style={{ opacity: 0.8 }}
-            >
-              <circle cx="11" cy="11" r="8"></circle>
-              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-            </svg>
-
-            {/* Arrow Icon (Top Layer) */}
             <svg
               className="absolute w-4 h-4"
               xmlns="http://www.w3.org/2000/svg"

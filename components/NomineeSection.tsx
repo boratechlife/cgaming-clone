@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import React from 'react';
-import Image from 'next/image';
-import NomineeCard from './NomineeCard';
-import { karla } from '@/app/layout';
+import React from "react";
+import Image from "next/image";
+import NomineeCard from "./NomineeCard";
+import { karla } from "@/app/layout";
 
 interface Nominee {
   id: string;
@@ -30,7 +30,7 @@ const NomineeSection: React.FC<NomineeSectionProps> = ({
   return (
     <div
       id={categoryId}
-      className="w-full  from-purple-700 via-purple-600 to-indigo-600 py-20 px-6"
+      className="w-full  from-purple-700 via-purple-600 to-indigo-600 py-20 pt-40 px-6"
     >
       <div className="max-w-8xl mx-auto">
         {/* Header Content */}

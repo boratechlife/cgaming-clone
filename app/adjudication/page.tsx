@@ -191,7 +191,7 @@ export default function Home() {
     {
       image: "/images/adjudication/ICmvOnJn2we13ZF5K0iPVwGDRzc.avif",
       name: "Melissa Burns",
-      title: "",
+      title: "Founder & CEO of Esport Canada",
     },
     {
       image: "/images/adjudication/81lEKPzBwLPilmGmXvPjcgvW0M.avif",
@@ -337,8 +337,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      <InlineFooter />
     </div>
   );
 }
