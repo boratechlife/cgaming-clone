@@ -25,52 +25,52 @@ export const manrope = localFont({
 export const satoshi = localFont({
   src: [
     {
-      path: './fonts/Satoshi_Complete./fonts/OTF/Satoshi-Light.otf',
+      path: './fonts/Satoshi_Complete/fonts/OTF/Satoshi-Light.otf',
       weight: '300',
       style: 'normal',
     },
     {
-      path: './fonts/Satoshi_Complete./fonts/OTF/Satoshi-LightItalic.otf',
+      path: './fonts/Satoshi_Complete/fonts/OTF/Satoshi-LightItalic.otf',
       weight: '300',
       style: 'italic',
     },
     {
-      path: './fonts/Satoshi_Complete./fonts/OTF/Satoshi-Regular.otf',
+      path: './fonts/Satoshi_Complete/fonts/OTF/Satoshi-Regular.otf',
       weight: '400',
       style: 'normal',
     },
     {
-      path: './fonts/Satoshi_Complete./fonts/OTF/Satoshi-Italic.otf',
+      path: './fonts/Satoshi_Complete/fonts/OTF/Satoshi-Italic.otf',
       weight: '400',
       style: 'italic',
     },
     {
-      path: './fonts/Satoshi_Complete./fonts/OTF/Satoshi-Medium.otf',
+      path: './fonts/Satoshi_Complete/fonts/OTF/Satoshi-Medium.otf',
       weight: '500',
       style: 'normal',
     },
     {
-      path: './fonts/Satoshi_Complete./fonts/OTF/Satoshi-MediumItalic.otf',
+      path: './fonts/Satoshi_Complete/fonts/OTF/Satoshi-MediumItalic.otf',
       weight: '500',
       style: 'italic',
     },
     {
-      path: './fonts/Satoshi_Complete./fonts/OTF/Satoshi-Bold.otf',
+      path: './fonts/Satoshi_Complete/fonts/OTF/Satoshi-Bold.otf',
       weight: '700',
       style: 'normal',
     },
     {
-      path: './fonts/Satoshi_Complete./fonts/OTF/Satoshi-BoldItalic.otf',
+      path: './fonts/Satoshi_Complete/fonts/OTF/Satoshi-BoldItalic.otf',
       weight: '700',
       style: 'italic',
     },
     {
-      path: './fonts/Satoshi_Complete./fonts/OTF/Satoshi-Black.otf',
+      path: './fonts/Satoshi_Complete/fonts/OTF/Satoshi-Black.otf',
       weight: '900',
       style: 'normal',
     },
     {
-      path: './fonts/Satoshi_Complete./fonts/OTF/Satoshi-BlackItalic.otf',
+      path: './fonts/Satoshi_Complete/fonts/OTF/Satoshi-BlackItalic.otf',
       weight: '900',
       style: 'italic',
     },
