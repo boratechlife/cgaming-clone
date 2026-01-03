@@ -7,7 +7,6 @@ import Navbar from '@/components/Navbar';
 import localFont from 'next/font/local';
 
 import MobileNav from '@/components/MobileNav';
-import InlineFooter from '@/components/InlineFooter';
 
 /* Manrope */
 export const manrope = localFont({
@@ -36,22 +35,22 @@ export const satoshi = localFont({
       style: 'italic',
     },
     {
-      path: './fonts/Satoshi_Complete/OTF/Satoshi-Regular.otf',
+      path: './fonts/Satoshi_Complete./fonts/OTF/Satoshi-Regular.otf',
       weight: '400',
       style: 'normal',
     },
     {
-      path: './fonts/Satoshi_Complete/OTF/Satoshi-Italic.otf',
+      path: './fonts/Satoshi_Complete./fonts/OTF/Satoshi-Italic.otf',
       weight: '400',
       style: 'italic',
     },
     {
-      path: './fonts/Satoshi_Complete/OTF/Satoshi-Medium.otf',
+      path: './fonts/Satoshi_Complete./fonts/OTF/Satoshi-Medium.otf',
       weight: '500',
       style: 'normal',
     },
     {
-      path: './fonts/Satoshi_Complete/OTF/Satoshi-MediumItalic.otf',
+      path: './fonts/Satoshi_Complete./fonts/OTF/Satoshi-MediumItalic.otf',
       weight: '500',
       style: 'italic',
     },
@@ -61,17 +60,17 @@ export const satoshi = localFont({
       style: 'normal',
     },
     {
-      path: './fonts/Satoshi_Complete/OTF/Satoshi-BoldItalic.otf',
+      path: './fonts/Satoshi_Complete./fonts/OTF/Satoshi-BoldItalic.otf',
       weight: '700',
       style: 'italic',
     },
     {
-      path: './fonts/Satoshi_Complete/OTF/Satoshi-Black.otf',
+      path: './fonts/Satoshi_Complete./fonts/OTF/Satoshi-Black.otf',
       weight: '900',
       style: 'normal',
     },
     {
-      path: './fonts/Satoshi_Complete/OTF/Satoshi-BlackItalic.otf',
+      path: './fonts/Satoshi_Complete./fonts/OTF/Satoshi-BlackItalic.otf',
       weight: '900',
       style: 'italic',
     },
@@ -234,7 +233,7 @@ export default function RootLayout({
         </div>
 
         {children}
-        <InlineFooter />
+        {/* <Footer/> */}
       </body>
     </html>
   );
