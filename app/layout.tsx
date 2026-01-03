@@ -7,6 +7,7 @@ import Navbar from '@/components/Navbar';
 import localFont from 'next/font/local';
 
 import MobileNav from '@/components/MobileNav';
+import InlineFooter from '@/components/InlineFooter';
 
 /* Manrope */
 export const manrope = localFont({
@@ -25,12 +26,57 @@ export const manrope = localFont({
 export const satoshi = localFont({
   src: [
     {
-      path: './fonts/Manrope/Manrope-VariableFont_wght.ttf',
-      weight: '200 800',
+      path: './fonts/Poppins/Satoshi-Light.otf',
+      weight: '300',
       style: 'normal',
     },
+    {
+      path: './fonts/Poppins/Satoshi-LightItalic.otf',
+      weight: '300',
+      style: 'italic',
+    },
+    {
+      path: './fonts/Satoshi_Complete/fonts/OTF/Satoshi-Regular.otf',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: './fonts/Poppins/Satoshi-Italic.otf',
+      weight: '400',
+      style: 'italic',
+    },
+    {
+      path: './fonts/Poppins/Satoshi-Medium.otf',
+      weight: '500',
+      style: 'normal',
+    },
+    {
+      path: './fonts/Poppins/Satoshi-MediumItalic.otf',
+      weight: '500',
+      style: 'italic',
+    },
+    {
+      path: './fonts/Poppins/Satoshi-Bold.otf',
+      weight: '700',
+      style: 'normal',
+    },
+    {
+      path: './fonts/Poppins/Satoshi-BoldItalic.otf',
+      weight: '700',
+      style: 'italic',
+    },
+    {
+      path: './fonts/Poppins/Satoshi-Black.otf',
+      weight: '900',
+      style: 'normal',
+    },
+    {
+      path: './fonts/Poppins/Satoshi-BlackItalic.otf',
+      weight: '900',
+      style: 'italic',
+    },
   ],
-  variable: '--font-manrope',
+  variable: '--font-satoshi',
   display: 'swap',
 });
 
@@ -188,7 +234,7 @@ export default function RootLayout({
         </div>
 
         {children}
-        {/* <Footer/> */}
+        <InlineFooter />
       </body>
     </html>
   );
