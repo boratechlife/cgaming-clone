@@ -36,7 +36,7 @@ export const satoshi = localFont({
       style: 'italic',
     },
     {
-      path: './fonts/Satoshi_Complete/fonts/OTF/Satoshi-Regular.otf',
+      path: './fonts/Poppins/Satoshi-Regular.otf',
       weight: '400',
       style: 'normal',
     },
