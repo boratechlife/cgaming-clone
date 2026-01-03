@@ -1,10 +1,19 @@
 'use client';
 
 import React, { useState, MouseEvent } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, ChevronDown } from 'lucide-react';
 import Link from 'next/link';
 import AnimatedButton from './AnimatedButton';
 import { manrope } from '@/app/layout';
+
+// Types for our shared link component
+interface InternalLinkProps {
+  href: string;
+  children: React.ReactNode;
+  onClick?: (e?: MouseEvent) => void;
+  className?: string;
+  style?: React.CSSProperties;
+}
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,44 +21,70 @@ const Navbar = () => {
   const toggleMenu = () => setIsMenuOpen((prev) => !prev);
 
   const closeMenu = (e?: MouseEvent) => {
-    e?.stopPropagation(); // Prevent event bubbling if needed
+    e?.stopPropagation();
     setIsMenuOpen(false);
   };
 
-  // Consistent internal link component (uses Next.js Link for client-side navigation)
   const InternalLink = ({
     href,
     children,
     onClick,
-  }: {
-    href: string;
-    children: React.ReactNode;
-    onClick?: () => void;
-  }) => (
+    className,
+    style,
+  }: InternalLinkProps) => (
     <Link
       href={href}
       onClick={onClick}
-      className="transition-colors duration-200 font-medium text-white hover:text-[#B189FF]"
+      style={style}
+      className={
+        className ||
+        'transition-colors duration-200 font-medium text-white hover:text-[#B189FF]'
+      }
     >
       {children}
     </Link>
   );
 
-  // Dropdown link (for internal pages only)
   const DropdownLink = ({
     href,
     children,
   }: {
     href: string;
     children: React.ReactNode;
-  }) => <InternalLink href={href}>{children}</InternalLink>;
+  }) => (
+    <InternalLink
+      href={href}
+      className="text-white/70 hover:text-[#B189FF] transition-colors duration-200"
+    >
+      {children}
+    </InternalLink>
+  );
 
   const mobileMenuItems = [
     { label: 'Home', href: '/' },
     { label: 'Eh! Game', href: '/ehgameexpo' },
     { label: 'Nominees', href: '/categories' },
     { label: 'Partners', href: '/partners' },
-    { label: 'More', href: '/about' }, // fallback or adjust as needed
+    { label: 'About', href: '/about' },
+  ];
+
+  const nomineeCategories = [
+    { label: 'Best Art Direction', href: '/nominees#bestartdirection' },
+    { label: 'Best Game Design', href: '/nominees#bestgamedesign' },
+    { label: 'Best Score / Soundtrack', href: '/nominees#bestscore' },
+    { label: 'Best Narrative', href: '/nominees#bestnarrative' },
+    { label: 'Best Performance', href: '/nominees#bestperformance' },
+    { label: 'Best Audio Design', href: '/nominees#bestaudiodesign' },
+    { label: 'Best Technology / Innovation', href: '/nominees#besttechnology' },
+    { label: 'Best Debut Indie Game', href: '/nominees#bestdebutindie' },
+    { label: 'Best Debut Studio', href: '/nominees#bestdebutstudio' },
+    { label: 'Most Innovative Studio', href: '/nominees#mostinnovativestudio' },
+    { label: 'Esports Player', href: '/nominees#esportsplayer' },
+    { label: 'Esports Org', href: '/nominees#esportsorg' },
+    { label: 'Esports Event', href: '/nominees#esportsevent' },
+    { label: 'Content Creator / Show', href: '/nominees#contentcreator' },
+    { label: 'Game of the Year', href: '/nominees#gameoftheyear' },
+    { label: 'Studio of the Year', href: '/nominees#studiooftheyear' },
   ];
 
   return (
@@ -118,69 +153,26 @@ const Navbar = () => {
               {/* DESKTOP LINKS */}
               <div className="hidden lg:flex items-center gap-8 mx-8">
                 <InternalLink href="/">Home</InternalLink>
-
                 <InternalLink href="/ehgameexpo">Eh! Game</InternalLink>
 
                 {/* NOMINEES DROPDOWN */}
                 <div className="relative group">
-                  <InternalLink href="/categories">Nominees</InternalLink>
+                  <button className="flex items-center gap-1 text-white text-[15px] font-medium hover:text-[#B189FF] transition-colors">
+                    Nominees{' '}
+                    <ChevronDown
+                      size={14}
+                      className="group-hover:rotate-180 transition-transform"
+                    />
+                  </button>
 
                   <div className="absolute top-full left-1/2 -translate-x-1/2 pt-4 transition-all duration-300 ease-out z-[60] opacity-0 -translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto">
                     <div className="bg-[#111] border border-white/10 rounded-[22px] shadow-[0_20px_50px_rgba(0,0,0,0.5)] px-10 py-8 w-[680px]">
                       <div className="grid grid-cols-2 gap-x-12 gap-y-4 text-[15px]">
-                        <div className="flex flex-col gap-4">
-                          <DropdownLink href="/nominees#bestartdirection">
-                            Best Art Direction
+                        {nomineeCategories.map((cat) => (
+                          <DropdownLink key={cat.href} href={cat.href}>
+                            {cat.label}
                           </DropdownLink>
-                          <DropdownLink href="/nominees#bestgamedesign">
-                            Best Game Design
-                          </DropdownLink>
-                          <DropdownLink href="/nominees#bestscore">
-                            Best Score / Soundtrack
-                          </DropdownLink>
-                          <DropdownLink href="/nominees#bestnarrative">
-                            Best Narrative
-                          </DropdownLink>
-                          <DropdownLink href="/nominees#bestperformance">
-                            Best Performance
-                          </DropdownLink>
-                          <DropdownLink href="/nominees#bestaudiodesign">
-                            Best Audio Design
-                          </DropdownLink>
-                          <DropdownLink href="/nominees#besttechnology">
-                            Best Technology / Innovation
-                          </DropdownLink>
-                          <DropdownLink href="/nominees#bestdebutindie">
-                            Best Debut Indie Game
-                          </DropdownLink>
-                        </div>
-
-                        <div className="flex flex-col gap-4">
-                          <DropdownLink href="/nominees#bestdebutstudio">
-                            Best Debut Studio
-                          </DropdownLink>
-                          <DropdownLink href="/nominees#mostinnovativestudio">
-                            Most Innovative Studio
-                          </DropdownLink>
-                          <DropdownLink href="/nominees#esportsplayer">
-                            Esports Player
-                          </DropdownLink>
-                          <DropdownLink href="/nominees#esportsorg">
-                            Esports Org
-                          </DropdownLink>
-                          <DropdownLink href="/nominees#esportsevent">
-                            Esports Event
-                          </DropdownLink>
-                          <DropdownLink href="/nominees#contentcreator">
-                            Content Creator / Show
-                          </DropdownLink>
-                          <DropdownLink href="/nominees#gameoftheyear">
-                            Game of the Year
-                          </DropdownLink>
-                          <DropdownLink href="/nominees#studiooftheyear">
-                            Studio of the Year
-                          </DropdownLink>
-                        </div>
+                        ))}
                       </div>
                     </div>
                   </div>
@@ -190,7 +182,7 @@ const Navbar = () => {
 
                 {/* MORE DROPDOWN */}
                 <div className="relative group">
-                  <button className="text-white text-[15px] font-semibold hover:text-[#B189FF] transition-colors bg-transparent border-none cursor-pointer">
+                  <button className="text-white text-[15px] font-medium hover:text-[#B189FF] transition-colors bg-transparent border-none cursor-pointer">
                     More
                   </button>
                   <div className="absolute top-full left-1/2 -translate-x-1/2 pt-4 transition-all duration-300 ease-out z-[60] opacity-0 -translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto">
