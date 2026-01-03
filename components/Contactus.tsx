@@ -1,16 +1,28 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useSearchParams } from "next/navigation";
 
 const ContactUs = () => {
+  const searchParams = useSearchParams();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<{
     type: "success" | "error" | null;
     message: string;
   }>({ type: null, message: "" });
 
+  // Check for success query parameter on mount
+  useEffect(() => {
+    if (searchParams.get("success") === "true") {
+      setSubmitStatus({
+        type: "success",
+        message: "Thank you! Your message has been sent successfully.",
+      });
+    }
+  }, [searchParams]);
+
   return (
-    <div className="min-h-screen  bg-gradient-to-b from-gray-900 to-black text-white flex items-center justify-center p-4 lg:p-8 lg:py-16">
+    <div className="min-h-screen bg-gradient-to-b from-gray-900 to-black text-white flex items-center justify-center p-4 lg:p-8 lg:py-16">
       <div className="max-w-4xl w-full mx-auto">
         {/* Header Section */}
         <div className="text-center mb-12">
@@ -36,7 +48,7 @@ const ContactUs = () => {
         {/* Success/Error Messages */}
         {submitStatus.type && (
           <div
-            className={`mb-8 p-4 rounded-xl border ${
+            className={`mb-8 p-4 rounded-xl border transition-all animate-in fade-in slide-in-from-top-2 ${
               submitStatus.type === "success"
                 ? "bg-green-900/30 border-green-700 text-green-300"
                 : "bg-red-900/30 border-red-700 text-red-300"
@@ -83,10 +95,6 @@ const ContactUs = () => {
             action="https://formsubmit.co/d10eb42ca367ddc735c0331edabcddac"
             method="POST"
             onSubmit={(e) => {
-              setIsSubmitting(true);
-              setSubmitStatus({ type: null, message: "" });
-
-              // Client-side validation
               const form = e.currentTarget;
               const name = (form.elements.namedItem("name") as HTMLInputElement)
                 ?.value;
@@ -103,9 +111,11 @@ const ContactUs = () => {
                   type: "error",
                   message: "Please fill in all required fields.",
                 });
-                setIsSubmitting(false);
                 return;
               }
+
+              setIsSubmitting(true);
+              setSubmitStatus({ type: null, message: "" });
             }}
             className="space-y-8"
           >
@@ -125,8 +135,10 @@ const ContactUs = () => {
               type="hidden"
               name="_next"
               value={`${
-                typeof window !== "undefined" ? window.location.origin : ""
-              }/contact?success=true`}
+                typeof window !== "undefined"
+                  ? window.location.origin + window.location.pathname
+                  : ""
+              }?success=true`}
             />
             <input type="hidden" name="_captcha" value="false" />
             <input type="text" name="_honey" style={{ display: "none" }} />
@@ -136,18 +148,15 @@ const ContactUs = () => {
               <label htmlFor="name" className="block text-gray-300 font-medium">
                 Name *
               </label>
-              <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-600/10 rounded-xl blur-sm"></div>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  required
-                  placeholder="Your Name"
-                  className="relative w-full bg-gray-900/80 border border-gray-700 rounded-xl px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
-                  disabled={isSubmitting}
-                />
-              </div>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                placeholder="Your Name"
+                className="w-full bg-gray-900/80 border border-gray-700 rounded-xl px-4 py-3 text-white focus:ring-2 focus:ring-blue-500 transition-all"
+                disabled={isSubmitting}
+              />
             </div>
 
             {/* Email Field */}
@@ -158,18 +167,15 @@ const ContactUs = () => {
               >
                 Email *
               </label>
-              <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-600/10 rounded-xl blur-sm"></div>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  required
-                  placeholder="yourmail@mailprovider.com"
-                  className="relative w-full bg-gray-900/80 border border-gray-700 rounded-xl px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
-                  disabled={isSubmitting}
-                />
-              </div>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="yourmail@mailprovider.com"
+                className="w-full bg-gray-900/80 border border-gray-700 rounded-xl px-4 py-3 text-white focus:ring-2 focus:ring-blue-500 transition-all"
+                disabled={isSubmitting}
+              />
             </div>
 
             {/* Message Field */}
@@ -180,29 +186,15 @@ const ContactUs = () => {
               >
                 Message *
               </label>
-              <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-600/10 rounded-xl blur-sm"></div>
-                <textarea
-                  id="message"
-                  name="message"
-                  required
-                  placeholder="Your message..."
-                  rows={6}
-                  className="relative w-full bg-gray-900/80 border border-gray-700 rounded-xl px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all resize-none"
-                  disabled={isSubmitting}
-                />
-              </div>
-            </div>
-
-            {/* Additional Fields (Optional) */}
-            <div className="hidden">
-              <input type="hidden" name="_cc" value="" />
-              <input
-                type="hidden"
-                name="_cc"
-                value="admin@canadiangameawards.ca"
-              />{" "}
-              {/* Add CC emails if needed */}
+              <textarea
+                id="message"
+                name="message"
+                required
+                placeholder="Your message..."
+                rows={6}
+                className="w-full bg-gray-900/80 border border-gray-700 rounded-xl px-4 py-3 text-white focus:ring-2 focus:ring-blue-500 transition-all resize-none"
+                disabled={isSubmitting}
+              />
             </div>
 
             {/* Submit Button */}
@@ -212,14 +204,13 @@ const ContactUs = () => {
                 disabled={isSubmitting}
                 className="relative w-full group disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl blur-lg opacity-70 group-hover:opacity-100 transition-opacity disabled:opacity-50"></div>
-                <div className="relative bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold py-4 px-6 rounded-xl transition-all transform group-hover:scale-[1.02] group-active:scale-[0.98] disabled:transform-none">
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl blur-lg opacity-70 group-hover:opacity-100 transition-opacity"></div>
+                <div className="relative bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold py-4 px-6 rounded-xl transition-all transform group-hover:scale-[1.01] group-active:scale-[0.99]">
                   <span className="flex items-center justify-center gap-2">
                     {isSubmitting ? (
                       <>
                         <svg
                           className="animate-spin h-5 w-5 text-white"
-                          xmlns="http://www.w3.org/2000/svg"
                           fill="none"
                           viewBox="0 0 24 24"
                         >
@@ -262,60 +253,6 @@ const ContactUs = () => {
               </button>
             </div>
           </form>
-        </div>
-
-        {/* Contact Information */}
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 md:justify-between">
-          <div className="bg-gray-900/30 backdrop-blur-sm border border-gray-800 rounded-xl p-6 text-center">
-            <div className="inline-flex items-center justify-center w-12 h-12 bg-blue-600/20 rounded-full mb-4">
-              <svg
-                className="w-6 h-6 text-blue-400"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                />
-              </svg>
-            </div>
-            <h3 className="text-white font-semibold mb-2">Email</h3>
-            <p className="text-gray-400">info@canadiangameawards.ca</p>
-          </div>
-
-          <div className="bg-gray-900/30 backdrop-blur-sm border border-gray-800 rounded-xl p-6 text-center">
-            <div className="inline-flex items-center justify-center w-12 h-12 bg-green-600/20 rounded-full mb-4">
-              <svg
-                className="w-6 h-6 text-green-400"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"
-                />
-              </svg>
-            </div>
-            <h3 className="text-white font-semibold mb-2">Response Time</h3>
-            <p className="text-gray-400">Within 24-48 hours</p>
-          </div>
-        </div>
-
-        {/* Footer Note */}
-        <div className="mt-12 text-center">
-          <p className="text-gray-500 text-sm">
-            Messages will be sent directly to info@canadiangameawards.ca. We
-            typically respond within 1-2 business days.
-          </p>
-          <p className="text-gray-500 text-xs mt-2">
-            Powered by Formsubmit - No spam, guaranteed.
-          </p>
         </div>
       </div>
     </div>

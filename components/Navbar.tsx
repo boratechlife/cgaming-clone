@@ -1,18 +1,32 @@
 "use client";
 import React, { useState } from "react";
-import { Search, ArrowUpRight, Menu, X, Link } from "lucide-react";
+import { Search, ArrowUpRight, Menu, X } from "lucide-react";
+import Link from "next/link"; // Ensure you use Next.js Link for internal routing
 import AnimatedButton from "./AnimatedButton";
 import { manrope } from "@/app/layout";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isNomineesOpen, setIsNomineesOpen] = useState(false);
+
+  // Helper component for dropdown links to ensure consistency
+  const DropdownLink = ({ href, children, isFaint = false }) => (
+    <a
+      href={href}
+      className={`transition-colors duration-200 font-medium ${
+        isFaint
+          ? "text-white/60 hover:text-white" // Improved "faint" text to be readable but distinct
+          : "text-white hover:text-[#B189FF]" // Custom accent color for better visual feedback
+      }`}
+    >
+      {children}
+    </a>
+  );
 
   return (
     <>
       {/* MOBILE MENU OVERLAY */}
       <div
-        className={`fixed inset-0 bg-black z-40 transition-opacity duration-500 ${
+        className={`fixed inset-0 bg-black/95 backdrop-blur-md z-40 transition-all duration-500 ${
           isMenuOpen ? "opacity-100" : "opacity-0 pointer-events-none"
         }`}
         onClick={() => setIsMenuOpen(false)}
@@ -23,7 +37,7 @@ const Navbar = () => {
               (item) => (
                 <a
                   key={item}
-                  className="text-white text-2xl font-medium"
+                  className="text-white text-3xl font-bold tracking-tight hover:text-[#B189FF] transition-colors"
                   style={{ fontFamily: "Manrope, sans-serif" }}
                   onClick={() => setIsMenuOpen(false)}
                 >
@@ -51,29 +65,32 @@ const Navbar = () => {
           className="relative rounded-[40px] p-px"
           style={{
             background:
-              "linear-gradient(180deg, rgb(33,33,33) 0%, rgba(33,33,33,0.4) 100%)",
+              "linear-gradient(180deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.05) 100%)",
           }}
         >
-          <nav className="bg-[rgb(5,5,5)] rounded-[40px] px-6 py-4">
+          <nav className="bg-[rgb(5,5,5)] rounded-[40px] px-6 py-4 shadow-2xl">
             <div className="flex items-center justify-between">
               {/* LOGO */}
-              <a href="./">
+              <Link href="/">
                 <img
                   src="https://framerusercontent.com/images/BaSvDfQZfE4UubCPmSB77sRFkY.png"
                   alt="Logo"
-                  className="h-[26px]"
+                  className="h-[26px] hover:opacity-80 transition-opacity"
                 />
-              </a>
+              </Link>
 
               {/* DESKTOP LINKS */}
               <div className="hidden lg:flex items-center gap-8 mx-8">
-                <Link href="/" className="text-white text-[15px] font-medium">
+                <Link
+                  href="/"
+                  className="text-white text-[15px] font-semibold hover:text-[#B189FF] transition-colors"
+                >
                   Home
                 </Link>
 
                 <a
                   href="/ehgameexpo"
-                  className="text-white text-[15px] font-medium"
+                  className="text-white text-[15px] font-semibold hover:text-[#B189FF] transition-colors"
                 >
                   Eh! Game
                 </a>
@@ -82,68 +99,68 @@ const Navbar = () => {
                 <div className="relative group">
                   <a
                     href="/categories"
-                    className="text-white text-[15px] font-medium cursor-pointer"
+                    className="text-white text-[15px] font-semibold flex items-center gap-1 hover:text-[#B189FF] transition-colors"
                   >
                     Nominees
                   </a>
 
-                  <div
-                    className="absolute top-full left-1/2 -translate-x-1/2 pt-4
-    transition-all duration-200 ease-out z-[60]
-    opacity-0 -translate-y-2 pointer-events-none
-    group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto"
-                    style={{ zIndex: 60 }}
-                  >
-                    <div className="bg-white rounded-[22px] shadow-xl px-10 py-8 w-[680px]">
+                  <div className="absolute top-full left-1/2 -translate-x-1/2 pt-4 transition-all duration-300 ease-out z-[60] opacity-0 -translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto">
+                    {/* Darker, higher contrast background for the dropdown */}
+                    <div className="bg-[#111] border border-white/10 rounded-[22px] shadow-[0_20px_50px_rgba(0,0,0,0.5)] px-10 py-8 w-[680px]">
                       <div className="grid grid-cols-2 gap-x-12 gap-y-4 text-[15px]">
-                        <div className="flex flex-col gap-3">
-                          <a href="/nominees#bestartdirection">
+                        <div className="flex flex-col gap-4">
+                          <DropdownLink href="/nominees#bestartdirection">
                             Best Art Direction
-                          </a>
-                          <a href="/nominees#bestgamedesign">
+                          </DropdownLink>
+                          <DropdownLink href="/nominees#bestgamedesign">
                             Best Game Design
-                          </a>
-                          <a href="/nominees#bestscore">
+                          </DropdownLink>
+                          <DropdownLink href="/nominees#bestscore">
                             Best Score / Soundtrack
-                          </a>
-                          <a href="/nominees#bestnarrative">Best Narrative</a>
-                          <a href="/nominees#bestperformance">
+                          </DropdownLink>
+                          <DropdownLink href="/nominees#bestnarrative">
+                            Best Narrative
+                          </DropdownLink>
+                          <DropdownLink href="/nominees#bestperformance">
                             Best Performance
-                          </a>
-                          <a href="/nominees#bestaudiodesign">
+                          </DropdownLink>
+                          <DropdownLink href="/nominees#bestaudiodesign">
                             Best Audio Design
-                          </a>
-                          <a href="/nominees#besttechnology">
+                          </DropdownLink>
+                          <DropdownLink href="/nominees#besttechnology">
                             Best Technology / Innovation
-                          </a>
-                          <a href="/nominees#bestdebutindie">
+                          </DropdownLink>
+                          <DropdownLink href="/nominees#bestdebutindie">
                             Best Debut Indie Game
-                          </a>
+                          </DropdownLink>
                         </div>
 
-                        <div className="flex flex-col gap-3">
-                          <a
-                            href="/nominees#bestdebutstudio"
-                            className="text-gray-400"
-                          >
+                        <div className="flex flex-col gap-4">
+                          {/* Replaced 'text-gray-400' with a clearer readable style */}
+                          <DropdownLink href="/nominees#bestdebutstudio">
                             Best Debut Studio
-                          </a>
-                          <a
-                            href="/nominees#mostinnovativestudio"
-                            className="text-gray-400"
-                          >
+                          </DropdownLink>
+                          <DropdownLink href="/nominees#mostinnovativestudio">
                             Most Innovative Studio
-                          </a>
-                          <a href="/nominees#esportsplayer">Esports Player</a>
-                          <a href="/nominees#esportsorg">Esports Org</a>
-                          <a href="/nominees#esportsevent">Esports Event</a>
-                          <a href="/nominees#contentcreator">
+                          </DropdownLink>
+                          <DropdownLink href="/nominees#esportsplayer">
+                            Esports Player
+                          </DropdownLink>
+                          <DropdownLink href="/nominees#esportsorg">
+                            Esports Org
+                          </DropdownLink>
+                          <DropdownLink href="/nominees#esportsevent">
+                            Esports Event
+                          </DropdownLink>
+                          <DropdownLink href="/nominees#contentcreator">
                             Content Creator / Show
-                          </a>
-                          <a href="/nominees#gameoftheyear">Game of the Year</a>
-                          <a href="/nominees#studiooftheyear">
+                          </DropdownLink>
+                          <DropdownLink href="/nominees#gameoftheyear">
+                            Game of the Year
+                          </DropdownLink>
+                          <DropdownLink href="/nominees#studiooftheyear">
                             Studio of the Year
-                          </a>
+                          </DropdownLink>
                         </div>
                       </div>
                     </div>
@@ -152,38 +169,25 @@ const Navbar = () => {
 
                 <a
                   href="/partners"
-                  className="text-white text-[15px] font-medium"
+                  className="text-white text-[15px] font-semibold hover:text-[#B189FF] transition-colors"
                 >
                   Partners
                 </a>
 
                 {/* MORE DROPDOWN */}
                 <div className="relative group">
-                  <span className="text-white text-[15px] font-medium cursor-pointer">
+                  <span className="text-white text-[15px] font-semibold cursor-pointer hover:text-[#B189FF] transition-colors">
                     More
                   </span>
-
-                  <div
-                    className="absolute top-full left-1/2 -translate-x-1/2 pt-4
-    transition-all duration-200 ease-out z-[60]
-    opacity-0 -translate-y-2 pointer-events-none
-    group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto"
-                    style={{ zIndex: 60 }}
-                  >
-                    <div className="bg-[rgb(5,5,5)] rounded-[22px] shadow-xl px-10 py-8 w-[300px]">
+                  <div className="absolute top-full left-1/2 -translate-x-1/2 pt-4 transition-all duration-300 ease-out z-[60] opacity-0 -translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto">
+                    <div className="bg-[#111] border border-white/10 rounded-[22px] shadow-xl px-10 py-8 w-[240px]">
                       <div className="flex flex-col gap-4 text-[15px]">
-                        <a href="/media" className="text-white">
-                          Media
-                        </a>
-                        <a href="/adjudication" className="text-white">
+                        <DropdownLink href="/media">Media</DropdownLink>
+                        <DropdownLink href="/adjudication">
                           Adjudication
-                        </a>
-                        <a href="/about" className="text-white">
-                          About us
-                        </a>
-                        <a href="/contact" className="text-white">
-                          Contact
-                        </a>
+                        </DropdownLink>
+                        <DropdownLink href="/about">About us</DropdownLink>
+                        <DropdownLink href="/contact">Contact</DropdownLink>
                       </div>
                     </div>
                   </div>
@@ -193,17 +197,17 @@ const Navbar = () => {
               {/* RIGHT ACTIONS */}
               <div className="flex items-center gap-3">
                 <button
-                  className="lg:hidden w-10 h-10 flex items-center justify-center"
+                  className="lg:hidden w-10 h-10 flex items-center justify-center rounded-full hover:bg-white/10 transition-colors"
                   onClick={() => setIsMenuOpen(!isMenuOpen)}
+                  aria-label="Toggle Menu"
                 >
                   {isMenuOpen ? (
                     <X className="text-white" />
                   ) : (
-                    <Menu className="text-[rgb(69,22,130)]" />
+                    <Menu className="text-white" />
                   )}
                 </button>
 
-                {/* Sign Up Button with Glow Effect - Hidden on mobile */}
                 <a
                   href="https://cgameawards.com/#:~:text=Be,Tickets"
                   target="_blank"
@@ -213,9 +217,8 @@ const Navbar = () => {
                   <AnimatedButton
                     size="md"
                     text="Sign up for tickets"
-                    className="text-sm"
+                    className="text-sm font-bold"
                   />
-                  {/* Button Container */}
                 </a>
               </div>
             </div>
