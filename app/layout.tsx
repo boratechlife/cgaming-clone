@@ -35,18 +35,18 @@ export const satoshi = localFont({
       weight: '300',
       style: 'italic',
     },
-    {
-      path: './fonts/Satoshi_Complete/fonts/OTF/Satoshi-Regular.otf',
-      weight: '400',
-      style: 'normal',
-    },
+    // {
+    //   path: './fonts/Satoshi_Complete/fonts/OTF/Satoshi-Regular.otf',
+    //   weight: '400',
+    //   style: 'normal',
+    // },
     {
       path: './fonts/Satoshi_Complete/fonts/OTF/Satoshi-Italic.otf',
       weight: '400',
       style: 'italic',
     },
     {
-      path: './fonts/Satoshi_Complete/fonts/OTF/Satoshi-Medium.otf',
+      path: './fonts/Satoshi_Complete/fonts/OTF/Satoshi-MediumItalic.otf',
       weight: '500',
       style: 'normal',
     },
