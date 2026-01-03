@@ -1,214 +1,214 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono, Poppins } from "next/font/google";
+import type { Metadata } from 'next';
+import { Geist, Geist_Mono, Poppins } from 'next/font/google';
 
-import "./globals.css";
+import './globals.css';
 
-import Navbar from "@/components/Navbar";
-import localFont from "next/font/local";
+import Navbar from '@/components/Navbar';
+import localFont from 'next/font/local';
 
-import MobileNav from "@/components/MobileNav";
-import InlineFooter from "@/components/InlineFooter";
+import MobileNav from '@/components/MobileNav';
+import InlineFooter from '@/components/InlineFooter';
 
 /* Manrope */
 export const manrope = localFont({
   src: [
     {
-      path: "./fonts/Manrope/Manrope-VariableFont_wght.ttf",
-      weight: "200 800",
-      style: "normal",
+      path: './fonts/Manrope/Manrope-VariableFont_wght.ttf',
+      weight: '200 800',
+      style: 'normal',
     },
   ],
-  variable: "--font-manrope",
-  display: "swap",
+  variable: '--font-manrope',
+  display: 'swap',
 });
 
 /* Satoshi */
 export const satoshi = localFont({
   src: [
     {
-      path: "./fonts/Satoshi_Complete./fonts/OTF/Satoshi-Light.otf",
-      weight: "300",
-      style: "normal",
+      path: './fonts/OTF/Satoshi-Light.otf',
+      weight: '300',
+      style: 'normal',
     },
     {
-      path: "./fonts/Satoshi_Complete./fonts/OTF/Satoshi-LightItalic.otf",
-      weight: "300",
-      style: "italic",
+      path: './fonts/OTF/Satoshi-LightItalic.otf',
+      weight: '300',
+      style: 'italic',
     },
     {
-      path: "./fonts/Satoshi_Complete./fonts/OTF/Satoshi-Regular.otf",
-      weight: "400",
-      style: "normal",
+      path: './fonts/OTF/Satoshi-Regular.otf',
+      weight: '400',
+      style: 'normal',
     },
     {
-      path: "./fonts/Satoshi_Complete./fonts/OTF/Satoshi-Italic.otf",
-      weight: "400",
-      style: "italic",
+      path: './fonts/OTF/Satoshi-Italic.otf',
+      weight: '400',
+      style: 'italic',
     },
     {
-      path: "./fonts/Satoshi_Complete./fonts/OTF/Satoshi-Medium.otf",
-      weight: "500",
-      style: "normal",
+      path: './fonts/OTF/Satoshi-Medium.otf',
+      weight: '500',
+      style: 'normal',
     },
     {
-      path: "./fonts/Satoshi_Complete./fonts/OTF/Satoshi-MediumItalic.otf",
-      weight: "500",
-      style: "italic",
+      path: './fonts/OTF/Satoshi-MediumItalic.otf',
+      weight: '500',
+      style: 'italic',
     },
     {
-      path: "./fonts/Satoshi_Complete./fonts/OTF/Satoshi-Bold.otf",
-      weight: "700",
-      style: "normal",
+      path: './fonts/OTF/Satoshi-Bold.otf',
+      weight: '700',
+      style: 'normal',
     },
     {
-      path: "./fonts/Satoshi_Complete./fonts/OTF/Satoshi-BoldItalic.otf",
-      weight: "700",
-      style: "italic",
+      path: './fonts/OTF/Satoshi-BoldItalic.otf',
+      weight: '700',
+      style: 'italic',
     },
     {
-      path: "./fonts/Satoshi_Complete./fonts/OTF/Satoshi-Black.otf",
-      weight: "900",
-      style: "normal",
+      path: './fonts/OTF/Satoshi-Black.otf',
+      weight: '900',
+      style: 'normal',
     },
     {
-      path: "./fonts/Satoshi_Complete./fonts/OTF/Satoshi-BlackItalic.otf",
-      weight: "900",
-      style: "italic",
+      path: './fonts/OTF/Satoshi-BlackItalic.otf',
+      weight: '900',
+      style: 'italic',
     },
   ],
-  variable: "--font-satoshi",
-  display: "swap",
+  variable: '--font-satoshi',
+  display: 'swap',
 });
 
 // Poppins
 export const poppins = localFont({
   src: [
     {
-      path: "./fonts/Poppins/Poppins-ExtraLight.ttf",
-      weight: "200",
-      style: "normal",
+      path: './fonts/Poppins/Poppins-ExtraLight.ttf',
+      weight: '200',
+      style: 'normal',
     },
     {
-      path: "./fonts/Poppins/Poppins-ExtraLightItalic.ttf",
-      weight: "200",
-      style: "italic",
+      path: './fonts/Poppins/Poppins-ExtraLightItalic.ttf',
+      weight: '200',
+      style: 'italic',
     },
     {
-      path: "./fonts/Poppins/Poppins-Light.ttf",
-      weight: "300",
-      style: "normal",
+      path: './fonts/Poppins/Poppins-Light.ttf',
+      weight: '300',
+      style: 'normal',
     },
     {
-      path: "./fonts/Poppins/Poppins-LightItalic.ttf",
-      weight: "300",
-      style: "italic",
+      path: './fonts/Poppins/Poppins-LightItalic.ttf',
+      weight: '300',
+      style: 'italic',
     },
     {
-      path: "./fonts/Poppins/Poppins-Medium.ttf",
-      weight: "500",
-      style: "normal",
+      path: './fonts/Poppins/Poppins-Medium.ttf',
+      weight: '500',
+      style: 'normal',
     },
     {
-      path: "./fonts/Poppins/Poppins-MediumItalic.ttf",
-      weight: "500",
-      style: "italic",
+      path: './fonts/Poppins/Poppins-MediumItalic.ttf',
+      weight: '500',
+      style: 'italic',
     },
     {
-      path: "./fonts/Poppins/Poppins-Bold.ttf",
-      weight: "700",
-      style: "normal",
+      path: './fonts/Poppins/Poppins-Bold.ttf',
+      weight: '700',
+      style: 'normal',
     },
     {
-      path: "./fonts/Poppins/Poppins-BoldItalic.ttf",
-      weight: "700",
-      style: "italic",
+      path: './fonts/Poppins/Poppins-BoldItalic.ttf',
+      weight: '700',
+      style: 'italic',
     },
     {
-      path: "./fonts/Poppins/Poppins-ExtraBold.ttf",
-      weight: "800",
-      style: "normal",
+      path: './fonts/Poppins/Poppins-ExtraBold.ttf',
+      weight: '800',
+      style: 'normal',
     },
     {
-      path: "./fonts/Poppins/Poppins-ExtraBoldItalic.ttf",
-      weight: "800",
-      style: "italic",
+      path: './fonts/Poppins/Poppins-ExtraBoldItalic.ttf',
+      weight: '800',
+      style: 'italic',
     },
     {
-      path: "./fonts/Poppins/Poppins-Black.ttf",
-      weight: "900",
-      style: "normal",
+      path: './fonts/Poppins/Poppins-Black.ttf',
+      weight: '900',
+      style: 'normal',
     },
     {
-      path: "./fonts/Poppins/Poppins-BlackItalic.ttf",
-      weight: "900",
-      style: "italic",
+      path: './fonts/Poppins/Poppins-BlackItalic.ttf',
+      weight: '900',
+      style: 'italic',
     },
   ],
-  variable: "--font-poppins",
-  display: "swap",
+  variable: '--font-poppins',
+  display: 'swap',
 });
 
 /* Open Sans */
 export const openSans = localFont({
   src: [
     {
-      path: "./fonts/Open_Sans/OpenSans-Italic-VariableFont_wdth,wght.ttf",
-      weight: "200 800",
-      style: "italic",
+      path: './fonts/Open_Sans/OpenSans-Italic-VariableFont_wdth,wght.ttf',
+      weight: '200 800',
+      style: 'italic',
     },
     {
-      path: "./fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf",
-      weight: "200 800",
-      style: "normal",
+      path: './fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf',
+      weight: '200 800',
+      style: 'normal',
     },
   ],
-  variable: "--font-open-sans",
-  display: "swap",
+  variable: '--font-open-sans',
+  display: 'swap',
 });
 
 /* Karla */
 export const karla = localFont({
   src: [
     {
-      path: "./fonts/Karla/Karla-VariableFont_wght.ttf",
-      weight: "200 800",
-      style: "normal",
+      path: './fonts/Karla/Karla-VariableFont_wght.ttf',
+      weight: '200 800',
+      style: 'normal',
     },
     {
-      path: "./fonts/Karla/Karla-Italic-VariableFont_wght.ttf",
-      weight: "200 800",
-      style: "italic",
+      path: './fonts/Karla/Karla-Italic-VariableFont_wght.ttf',
+      weight: '200 800',
+      style: 'italic',
     },
   ],
-  variable: "--font-karla",
-  display: "swap",
+  variable: '--font-karla',
+  display: 'swap',
 });
 
 export const inter = localFont({
   src: [
     {
-      path: "./fonts/Inter/Inter-VariableFont_opsz,wght.ttf",
-      weight: "100 900",
-      style: "normal",
+      path: './fonts/Inter/Inter-VariableFont_opsz,wght.ttf',
+      weight: '100 900',
+      style: 'normal',
     },
     {
-      path: "./fonts/Inter/Inter-Italic-VariableFont_opsz,wght.ttf",
-      weight: "100 900",
-      style: "italic",
+      path: './fonts/Inter/Inter-Italic-VariableFont_opsz,wght.ttf',
+      weight: '100 900',
+      style: 'italic',
     },
   ],
-  variable: "--font-inter",
-  display: "swap",
+  variable: '--font-inter',
+  display: 'swap',
 });
 
 const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+  variable: '--font-geist-sans',
+  subsets: ['latin'],
 });
 
 const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  variable: '--font-geist-mono',
+  subsets: ['latin'],
 });
 
 // export const metadata: Metadata = {
