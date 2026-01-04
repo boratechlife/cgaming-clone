@@ -443,7 +443,7 @@ const allCategories = [
       {
         id: '1',
         title: 'Shopify Rebellion',
-        studio: 'Toronto Ultra / KOI / OverActive Media',
+        studio: '',
         imageUrl:
           '/images/nominees/new/Shopify_Rebellion_Logo_2021_alternative-s5120.png',
         link: 'https://shopifyrebellion.gg/',
@@ -452,7 +452,7 @@ const allCategories = [
       {
         id: '2',
         title: 'Toronto Ultra / KOI / OverActive Media',
-        studio: 'Vancouver Surge',
+        studio: '',
         imageUrl: '/images/nominees/new/overractive_media.webp',
         link: 'https://overactivemedia.com/',
         isWinner: false,
@@ -460,7 +460,7 @@ const allCategories = [
       {
         id: '3',
         title: 'Vancouver Surge',
-        studio: 'Raptors GC',
+        studio: '',
         imageUrl: '/images/nominees/Seattle_Surge.svg',
         link: 'https://x.com/SurgeVancouver',
         isWinner: false,
@@ -483,7 +483,7 @@ const allCategories = [
       {
         id: '1',
         title: 'Victor Lucas / Electric Playground',
-        studio: 'NickEh30 (Nicholas Amyoony)',
+        studio: '',
         imageUrl: '/images/nominees/new/victor_lucas.jpg',
         link: 'https://x.com/Victor_Lucas?lang=en',
         isWinner: false,
@@ -491,7 +491,7 @@ const allCategories = [
       {
         id: '2',
         title: 'NickEh30 (Nicholas Amyoony)',
-        studio: 'Shroud (Michael Grzesiek)',
+        studio: '',
         imageUrl: '/images/nominees/new/nick amo.webp',
         link: 'https://x.com/NickEh30',
         isWinner: false,
@@ -499,7 +499,7 @@ const allCategories = [
       {
         id: '3',
         title: 'Shroud (Michael Grzesiek)',
-        studio: 'Stef Sanjati',
+        studio: '',
         imageUrl: '/images/nominees/new/michael_Shroud_cropped.jpg',
         link: 'https://x.com/shroud',
         isWinner: false,
@@ -507,7 +507,7 @@ const allCategories = [
       {
         id: '4',
         title: 'Stef Sanjati',
-        studio: 'Typical Gamer (Andre Rebelo)',
+        studio: '',
         imageUrl: '/images/nominees/new/stef_sanjati.jpg',
         link: 'https://x.com/stefsanjati?lang=en',
         isWinner: false,
@@ -530,7 +530,7 @@ const allCategories = [
       {
         id: '1',
         title: 'Shroud (Michael Grzesiek)',
-        studio: 'xQc (Felix Lengyel)',
+        studio: '',
         imageUrl: '/images/nominees/new/michael_Shroud_cropped.jpg',
         link: 'https://x.com/shroud',
         isWinner: false,
@@ -538,7 +538,7 @@ const allCategories = [
       {
         id: '2',
         title: 'xQc (Felix Lengyel)',
-        studio: 'NickEh30 (Nicholas Amyoony)',
+        studio: '',
         imageUrl: '/images/nominees/new/felix_lengyel.jpg',
         link: 'https://x.com/xQc',
         isWinner: false,
@@ -546,7 +546,7 @@ const allCategories = [
       {
         id: '3',
         title: 'NickEh30 (Nicholas Amyoony)',
-        studio: 'Typical Gamer (Andre Rebelo)',
+        studio: '',
         imageUrl: '/images/nominees/new/nick amo.webp',
         link: 'https://x.com/NickEh30',
         isWinner: false,
@@ -554,7 +554,7 @@ const allCategories = [
       {
         id: '4',
         title: 'Typical Gamer (Andre Rebelo)',
-        studio: 'Ashley Roboto',
+        studio: '',
         imageUrl: '/images/nominees/new/andrew_robole.webp',
         link: 'https://x.com/TypicalGamer',
         isWinner: false,
@@ -577,7 +577,7 @@ const allCategories = [
       {
         id: '1',
         title: 'Jennifer Pitchette (LemonKiwi)',
-        studio: 'Victor Lucas',
+        studio: '',
         imageUrl: '/images/nominees/new/JenniferLemonKiwi2019Headshot.jpg',
         link: 'https://x.com/LemonKiwi_',
         isWinner: false,
@@ -585,7 +585,7 @@ const allCategories = [
       {
         id: '2',
         title: 'Victor Lucas',
-        studio: 'Stef Sanjati',
+        studio: '',
         imageUrl: '/images/nominees/new/victor_lucas.jpg',
         link: 'https://x.com/Victor_Lucas?lang=en',
         isWinner: false,
@@ -593,7 +593,7 @@ const allCategories = [
       {
         id: '3',
         title: 'Stef Sanjati',
-        studio: 'Vansilli / Alex "Vansilli" Nguyen',
+        studio: '',
         imageUrl: '/images/nominees/new/stef_sanjati.jpg',
         link: 'https://x.com/stefsanjati?lang=en',
         isWinner: false,
@@ -601,7 +601,7 @@ const allCategories = [
       {
         id: '4',
         title: 'Vansilli / Alex "Vansilli" Nguyen',
-        studio: 'Shroud (Michael Grzesiek)',
+        studio: '',
         imageUrl: '/images/nominees/vansilli.jfif',
         link: 'https://x.com/Vansilli',
         isWinner: false,
@@ -882,7 +882,7 @@ const allCategories = [
         id: '3',
         title: 'Tribute Games',
         studio: '', // Left empty as it's the studio itself
-        imageUrl: '/images/nominees/new/tribute_games.jpg',
+        imageUrl: '/images/nominees/new/Tribute_Games_logo_HD.webp',
         link: 'https://tributegames.com/index.html',
         isWinner: false,
       },
