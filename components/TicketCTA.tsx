@@ -15,8 +15,9 @@ const TicketCTA: React.FC = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link
-              href="/tickets"
+              href="https://canadiangameawards.zohobackstage.ca/CGA2026#/buyTickets/selectTickets?lang=en"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-[#5630bf] rounded-full font-bold text-lg hover:bg-gray-100 transition-all duration-300 hover:scale-105 shadow-lg"
+              target="_blank"
             >
               Buy Tickets Now
               <svg

@@ -218,7 +218,7 @@ const Navbar = () => {
                 </button>
 
                 <a
-                  href="https://cgameawards.com/#:~:text=Be,Tickets"
+                  href="https://canadiangameawards.zohobackstage.ca/CGA2026#/buyTickets/selectTickets?lang=en"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hidden lg:block"
