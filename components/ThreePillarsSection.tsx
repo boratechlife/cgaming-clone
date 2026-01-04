@@ -1,14 +1,14 @@
-import { karla, satoshi } from "@/app/layout";
-import React from "react";
-import { ArrowUpRight } from "lucide-react";
+import { karla, satoshi } from '@/app/layout';
+import React from 'react';
+import { ArrowUpRight } from 'lucide-react';
 
 const ThreePillarsSection = () => {
   const mailchimpUrl =
-    "https://cgameawards.us18.list-manage.com/subscribe/post?u=b71f8ca57eab220be5354b8c0&id=77d43e63a9&f_id=00b6ade6f0";
+    'https://cgameawards.us18.list-manage.com/subscribe/post?u=b71f8ca57eab220be5354b8c0&id=77d43e63a9&f_id=00b6ade6f0';
 
   // Shared Link Styles for the Pillar Cards
   const cardStyle =
-    "relative flex flex-col items-center gap-4 p-10 rounded-[32px] transition-all duration-300 border border-transparent hover:border-white/20 hover:bg-white/5 hover:-translate-y-2 group no-underline";
+    'relative flex flex-col items-center gap-4 p-10 rounded-[32px] transition-all duration-300 border border-transparent hover:border-white/20 hover:bg-white/5 hover:-translate-y-2 group no-underline';
 
   return (
     <section
@@ -26,11 +26,11 @@ const ThreePillarsSection = () => {
           <h2
             className={`text-center ${karla.className}`}
             style={{
-              fontSize: "clamp(42px, 8vw, 62px)",
+              fontSize: 'clamp(42px, 8vw, 62px)',
               fontWeight: 500,
-              letterSpacing: "-2px",
-              lineHeight: "1.1",
-              color: "#ffffff",
+              letterSpacing: '-2px',
+              lineHeight: '1.1',
+              color: '#ffffff',
             }}
           >
             The Three Pillars of the CGA
@@ -58,9 +58,9 @@ const ThreePillarsSection = () => {
             <h4
               className={`text-white text-center ${satoshi.className}`}
               style={{
-                fontSize: "32px",
+                fontSize: '32px',
                 fontWeight: 600,
-                letterSpacing: "-0.02em",
+                letterSpacing: '-0.02em',
               }}
             >
               Developers
@@ -68,10 +68,10 @@ const ThreePillarsSection = () => {
             <p
               className={`text-center max-w-[320px] ${karla.className}`}
               style={{
-                fontSize: "16px",
+                fontSize: '16px',
                 fontWeight: 300,
-                lineHeight: "1.6",
-                color: "#b8b8ff",
+                lineHeight: '1.6',
+                color: '#b8b8ff',
               }}
             >
               Showcasing Canadian culture and talent, the CGAs celebrate the
@@ -93,9 +93,9 @@ const ThreePillarsSection = () => {
             <h4
               className={`text-white text-center ${satoshi.className}`}
               style={{
-                fontSize: "32px",
+                fontSize: '32px',
                 fontWeight: 600,
-                letterSpacing: "-0.02em",
+                letterSpacing: '-0.02em',
               }}
             >
               Content Creators
@@ -103,10 +103,10 @@ const ThreePillarsSection = () => {
             <p
               className={`text-center max-w-[320px] ${karla.className}`}
               style={{
-                fontSize: "16px",
+                fontSize: '16px',
                 fontWeight: 300,
-                lineHeight: "1.6",
-                color: "#b8b8ff",
+                lineHeight: '1.6',
+                color: '#b8b8ff',
               }}
             >
               Honoring the community builders who bring us together to share our
@@ -127,9 +127,9 @@ const ThreePillarsSection = () => {
             <h4
               className={`text-white text-center ${satoshi.className}`}
               style={{
-                fontSize: "32px",
+                fontSize: '32px',
                 fontWeight: 600,
-                letterSpacing: "-0.02em",
+                letterSpacing: '-0.02em',
               }}
             >
               Esports
@@ -137,10 +137,10 @@ const ThreePillarsSection = () => {
             <p
               className={`text-center max-w-[320px] ${karla.className}`}
               style={{
-                fontSize: "16px",
+                fontSize: '16px',
                 fontWeight: 300,
-                lineHeight: "1.6",
-                color: "#b8b8ff",
+                lineHeight: '1.6',
+                color: '#b8b8ff',
               }}
             >
               Recognizing the excitement and skill of Canada's best players,

@@ -1,6 +1,6 @@
-"use client";
-import React from "react";
-import NomineeCard from "./NomineeCard";
+'use client';
+import React from 'react';
+import NomineeCard from './NomineeCard';
 
 interface Nominee {
   id: string;
@@ -20,11 +20,12 @@ interface NomineeSectionProps {
 
 const NomineeSection: React.FC<NomineeSectionProps> = ({
   categoryTitle,
+  categoryId,
   categoryDescription,
   nominees,
 }) => {
   return (
-    <section className="py-12 px-6 max-w-7xl mx-auto">
+    <section className="py-12 px-6 max-w-7xl mx-auto" id={categoryId}>
       {/* Header Content */}
       <div className="mb-10 space-y-2">
         <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight">
@@ -40,6 +41,7 @@ const NomineeSection: React.FC<NomineeSectionProps> = ({
         {nominees.map((nominee) => (
           <NomineeCard
             key={nominee.id}
+            id={nominee.id}
             title={nominee.title}
             studio={nominee.studio}
             imageUrl={nominee.imageUrl}

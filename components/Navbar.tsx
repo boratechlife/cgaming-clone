@@ -157,13 +157,16 @@ const Navbar = () => {
 
                 {/* NOMINEES DROPDOWN */}
                 <div className="relative group">
-                  <button className="flex items-center gap-1 text-white text-[15px] font-medium hover:text-[#B189FF] transition-colors">
+                  <a
+                    href="/categories"
+                    className="flex items-center gap-1 text-white text-[15px] font-medium hover:text-[#B189FF] transition-colors"
+                  >
                     Nominees{' '}
                     <ChevronDown
                       size={14}
                       className="group-hover:rotate-180 transition-transform"
                     />
-                  </button>
+                  </a>
 
                   <div className="absolute top-full left-1/2 -translate-x-1/2 pt-4 transition-all duration-300 ease-out z-[60] opacity-0 -translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto">
                     <div className="bg-[#111] border border-white/10 rounded-[22px] shadow-[0_20px_50px_rgba(0,0,0,0.5)] px-10 py-8 w-[680px]">
