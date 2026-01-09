@@ -15,14 +15,9 @@ const ThreePillarsSection = () => {
       className="flex flex-col justify-center items-center w-full pt-[120px] pb-[80px] px-4 lg:px-[60px] relative bg-[#5630bf]"
       id="works"
     >
-      {/* 1. CLICKABLE HEADER SECTION */}
+      {/* 1. UNCLICKABLE HEADER SECTION */}
       <div className="w-full max-w-4xl mx-auto mb-16">
-        <a
-          href={mailchimpUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="group flex flex-col items-center no-underline outline-none transition-transform duration-300 hover:scale-[1.02]"
-        >
+        <div className="group flex flex-col items-center no-underline outline-none transition-transform duration-300 hover:scale-[1.02]">
           <h2
             className={`text-center ${karla.className}`}
             style={{
@@ -39,19 +34,14 @@ const ThreePillarsSection = () => {
             <span className={satoshi.className}>Subscribe to Updates</span>
             <ArrowUpRight size={18} />
           </div>
-        </a>
+        </div>
       </div>
 
-      {/* 2. CLICKABLE PILLARS GRID */}
+      {/* 2. UNCLICKABLE PILLARS GRID */}
       <div className="flex flex-col items-center justify-center w-full max-w-[1280px] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 w-full">
-          {/* Developers Pillar Link */}
-          <a
-            href={mailchimpUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={cardStyle}
-          >
+          {/* Developers Pillar - Now a div instead of a link */}
+          <div className={cardStyle}>
             <div className="absolute top-6 right-6 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all">
               <ArrowUpRight className="text-white" size={24} />
             </div>
@@ -78,15 +68,10 @@ const ThreePillarsSection = () => {
               incredible depth and creativity present in hundreds of studios
               across the country.
             </p>
-          </a>
+          </div>
 
-          {/* Content Creators Pillar Link */}
-          <a
-            href={mailchimpUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={cardStyle}
-          >
+          {/* Content Creators Pillar - Now a div instead of a link */}
+          <div className={cardStyle}>
             <div className="absolute top-6 right-6 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all">
               <ArrowUpRight className="text-white" size={24} />
             </div>
@@ -112,15 +97,10 @@ const ThreePillarsSection = () => {
               Honoring the community builders who bring us together to share our
               passion for made-in-Canada gaming experiences.
             </p>
-          </a>
+          </div>
 
-          {/* Esports Pillar Link */}
-          <a
-            href={mailchimpUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={cardStyle}
-          >
+          {/* Esports Pillar - Now a div instead of a link */}
+          <div className={cardStyle}>
             <div className="absolute top-6 right-6 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all">
               <ArrowUpRight className="text-white" size={24} />
             </div>
@@ -146,7 +126,7 @@ const ThreePillarsSection = () => {
               Recognizing the excitement and skill of Canada's best players,
               coaches, and teams as they light up stages and inspire fans.
             </p>
-          </a>
+          </div>
         </div>
       </div>
     </section>
