@@ -8,7 +8,7 @@ interface AnimatedButtonProps {
 
 const AnimatedButton: React.FC<AnimatedButtonProps> = ({
   size = "md",
-  text = "Sign up for tickets",
+  text = "Buy tickets",
   className = "",
 }) => {
   const sizeConfig = {

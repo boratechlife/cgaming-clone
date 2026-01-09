@@ -1,5 +1,6 @@
 import CategoriesGrid from "@/components/CategoriesGrid";
 import CategoriesHero from "@/components/CategoriesHero";
+import { NominationAnnouncement } from "@/components/NominationAnnouncement";
 import NomineeSection from "@/components/NomineeSection";
 
 const allCategories = [
@@ -300,7 +301,7 @@ const allCategories = [
       {
         id: "1",
         title: "Dashy",
-        studio: 'Russel "Twistzz" Van Dulken',
+        studio: "",
         imageUrl: "/images/nominees/dashy_1.jfif",
         link: "https://x.com/DashySZN",
         isWinner: false,
@@ -308,7 +309,7 @@ const allCategories = [
       {
         id: "2",
         title: 'Russel "Twistzz" Van Dulken',
-        studio: "Canadian – Troy",
+        studio: "",
         imageUrl: "/images/nominees/russel.webp",
         link: "https://x.com/Twistzz",
         isWinner: false,
@@ -316,7 +317,7 @@ const allCategories = [
       {
         id: "3",
         title: "Canadian – Troy",
-        studio: "Mada (Adam)",
+        studio: "",
         imageUrl: "/images/nominees/canadian_troy.jfif",
         link: "https://x.com/BIGBADNADIAN",
         isWinner: false,
@@ -324,7 +325,7 @@ const allCategories = [
       {
         id: "4",
         title: "Mada (Adam)",
-        studio: "Sarah Simpson (Shopify Rebellion Gold)",
+        studio: "",
         imageUrl: "/images/nominees/new/adam.webp",
         link: "https://x.com/madafps",
         isWinner: false,
@@ -962,7 +963,8 @@ export default function Ehgameexpo() {
   return (
     <section className="bg-[#5630bf]">
       <CategoriesHero />
-      {allCategories.map((category) => (
+      <NominationAnnouncement />
+      {/* {allCategories.map((category) => (
         <NomineeSection
           key={category.id}
           categoryId={category.id}
@@ -970,7 +972,7 @@ export default function Ehgameexpo() {
           categoryDescription={category.description}
           nominees={category.nominees}
         />
-      ))}
+      ))} */}
     </section>
   );
 }
