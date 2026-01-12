@@ -164,7 +164,7 @@ const MobileNav: React.FC = () => {
               target="_blank"
               className="mt-6 px-8 py-3 bg-[rgb(69,22,130)] rounded-full text-white font-medium flex items-center gap-2"
             >
-              Sign up for tickets <span>↗</span>
+              Buy tickets <span>↗</span>
             </a>
           </div>
         </div>

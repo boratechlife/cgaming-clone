@@ -120,7 +120,7 @@ const Navbar = () => {
               className="relative mt-8"
               onClick={closeMenu}
             >
-              <AnimatedButton size="lg" text="Sign up for tickets" />
+              <AnimatedButton size="lg" text="Buy tickets" />
             </a>
           </div>
         </div>
@@ -225,7 +225,7 @@ const Navbar = () => {
                 >
                   <AnimatedButton
                     size="md"
-                    text="Sign up for tickets"
+                    text="Buy tickets"
                     className="text-sm font-bold"
                   />
                 </a>

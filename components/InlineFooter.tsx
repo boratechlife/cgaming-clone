@@ -8,6 +8,8 @@ import {
   Music2,
   ArrowUpRight,
   Mail,
+  Linkedin, // Added for LinkedIn
+  MessageSquare, // Used as a clean alternative for Discord if specialized icon isn't in set
 } from 'lucide-react';
 
 const InlineFooter: React.FC = () => {
@@ -33,6 +35,16 @@ const InlineFooter: React.FC = () => {
       label: 'TikTok',
       url: 'https://www.tiktok.com/@cgameawards',
       Icon: Music2,
+    },
+    {
+      label: 'LinkedIn',
+      url: 'https://www.linkedin.com/company/canadian-game-awards/posts/',
+      Icon: Linkedin,
+    },
+    {
+      label: 'Discord',
+      url: 'https://discord.gg/Q8NMbHtfbS',
+      Icon: MessageSquare, // Standard clean Discord representation in Lucide
     },
   ];
 
