@@ -1,3 +1,5 @@
+'use client';
+import EventFeatureSection from '@/components/EventFeatureSection';
 import EventLocationSection from '@/components/EventLocationSection';
 import FAQ from '@/components/Faq';
 import HeroVideo from '@/components/HeroVideo';
@@ -40,6 +42,7 @@ export default function Home() {
     <section>
       <HeroVideo />
       <TicketCTA />
+      <EventFeatureSection />
       <ThreePillarsSection />
       <EventLocationSection />
       <FAQ faqData={awardsFAQData} />

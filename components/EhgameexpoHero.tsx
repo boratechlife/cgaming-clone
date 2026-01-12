@@ -1,11 +1,11 @@
 // components/HeroSection.tsx
-import { karla } from "@/app/layout";
-import Image from "next/image";
+import { karla } from '@/app/layout';
+import Image from 'next/image';
 
 const EhgameExpoHeroSection = () => {
   // RichTextContainer styles
   const richTextContainerStyles =
-    "flex flex-col justify-start outline-none flex-shrink-0";
+    'flex flex-col justify-start outline-none flex-shrink-0';
 
   return (
     <div className="relative w-full h-max border-b border-gray-800" id="top">
@@ -40,11 +40,11 @@ const EhgameExpoHeroSection = () => {
             <h1
               className={`font-karla font-semibold text-3xl md:text-4xl lg:text-5xl text-white leading-tight tracking-tight ${karla.className}`}
             >
-              <span className="inline-block">Eh!</span>{" "}
-              <span className="inline-block">Game</span>{" "}
+              <span className="inline-block">Eh!</span>{' '}
+              <span className="inline-block">Game</span>{' '}
               <span className="inline-block">Showcase</span>
               <br />
-              <span className="inline-block">is</span>{" "}
+              <span className="inline-block">is</span>{' '}
               <span className="inline-block">here!</span>
             </h1>
           </div>
@@ -56,20 +56,20 @@ const EhgameExpoHeroSection = () => {
             >
               <p className="font-karla text-lg md:text-xl text-white leading-relaxed tracking-tight py-4 pr-6">
                 <span className="block">
-                  EH! Game is a Canadian platform dedicated to celebrating,
+                  Eh! Game is a Canadian platform dedicated to celebrating,
                   promoting, and supporting video games and interactive creators
                   from across Canada.
                 </span>
                 <span className="block mt-4">
                   Through live events, showcases, awards, and digital
-                  initiatives, EH! Game helps Canadian games reach new
+                  initiatives, Eh! Game helps Canadian games reach new
                   audiences, connects creators with industry partners, and
                   highlights the diversity and impact of game development in
                   Canada.
                 </span>
                 <span className="block mt-4">
                   Best known as the organization behind the Canadian Game
-                  Awards, EH! Game operates at the intersection of culture,
+                  Awards, Eh! Game operates at the intersection of culture,
                   industry, and community — creating spaces where Canadian games
                   are discovered, experienced, and recognized, both at home and
                   internationally.
