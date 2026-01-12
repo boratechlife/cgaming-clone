@@ -56,20 +56,20 @@ const EhgameExpoHeroSection = () => {
             >
               <p className="font-karla text-lg md:text-xl text-white leading-relaxed tracking-tight py-4 pr-6">
                 <span className="block">
-                  EH! Game is a Canadian platform dedicated to celebrating,
+                  Eh! Game is a Canadian platform dedicated to celebrating,
                   promoting, and supporting video games and interactive creators
                   from across Canada.
                 </span>
                 <span className="block mt-4">
                   Through live events, showcases, awards, and digital
-                  initiatives, EH! Game helps Canadian games reach new
+                  initiatives, Eh! Game helps Canadian games reach new
                   audiences, connects creators with industry partners, and
                   highlights the diversity and impact of game development in
                   Canada.
                 </span>
                 <span className="block mt-4">
                   Best known as the organization behind the Canadian Game
-                  Awards, EH! Game operates at the intersection of culture,
+                  Awards, Eh! Game operates at the intersection of culture,
                   industry, and community — creating spaces where Canadian games
                   are discovered, experienced, and recognized, both at home and
                   internationally.

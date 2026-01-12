@@ -38,6 +38,7 @@ export default function Home() {
   return (
     <section>
       <HeroVideo />
+      <EventLocationSection />
       <ThreePillarsSection />
       <EventLocationSection />
       <FAQ faqData={awardsFAQData} />

@@ -13,7 +13,7 @@ const ExpoPartners = () => {
     <div className="framer-NVjQy py-[80px] md:py-[60px] flex flex-col items-center gap-[48px] min-h-min overflow-hidden relative w-full px-[16px] md:px-[48px] lg:px-[80px]">
       <div className="flex flex-col items-center gap-[16px] w-full">
         <h2 className="framer-text text-[32px] font-semibold tracking-tight text-white flex items-center gap-[8px]">
-          <span>🎮</span> Eh! Game Expo Partners
+          <span>🎮</span> Eh! Game Showcase Partners
         </h2>
         <hr className="w-[60%] h-px bg-gradient-to-r from-transparent via-white/50 to-transparent" />
       </div>
@@ -31,7 +31,7 @@ const ExpoPartners = () => {
             >
               <img
                 src={partner.image}
-                alt={`${partner.name} logo – Eh! Game Expo Partner`}
+                alt={`${partner.name} logo – Eh! Game Showcase Partner`}
                 className="max-h-[150px] object-contain grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition duration-300"
                 loading="lazy"
               />

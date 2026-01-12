@@ -78,6 +78,11 @@ const Footer = () => {
                 Website by RIDGE Agency (ridgeagency.ca)
               </a>
             </h5>
+            {/* Added address here - placed after existing content with appropriate styling */}
+            <address className="text-left text-xs font-medium tracking-tighter text-gray-400 mt-2 not-italic">
+              TIFF Lightbox, Festival Tower, 350 King Street West, Toronto,
+              Ontario, M5V 3X5, Canada
+            </address>
           </div>
 
           {/* Logo section - empty in original, so kept minimal */}

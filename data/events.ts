@@ -38,12 +38,12 @@ export const GameShowEvents = [
     buttonLabel: 'Apply',
   },
 
-  // --- Event 4: Toronto Game Expo ---
+  // --- Event 4: Toronto Game Showcase ---
   {
-    title: 'Toronto Game Expo', // Inferred from primary link: www.torontogameexpo.ca
+    title: 'Toronto Game Showcase', // Inferred from primary link: www.torontogameexpo.ca
     href: 'https://www.torontogameexpo.ca/',
     imageSrc: '/images/qVxzjaBzGchcIWETqpnOYCQvIO0.avif',
-    imageAlt: 'Toronto Game Expo Event Banner',
+    imageAlt: 'Toronto Game Showcase Event Banner',
     dates: 'Dates: November 22-23, 2025',
     deadline: 'Applications Deadline: November 1',
     buttonHref:

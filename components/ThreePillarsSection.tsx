@@ -30,10 +30,6 @@ const ThreePillarsSection = () => {
           >
             The Three Pillars of the CGA
           </h2>
-          <div className="mt-4 flex items-center gap-2 text-[#b8b8ff] font-medium opacity-0 group-hover:opacity-100 transition-opacity">
-            <span className={satoshi.className}>Subscribe to Updates</span>
-            <ArrowUpRight size={18} />
-          </div>
         </div>
       </div>
 
@@ -42,9 +38,6 @@ const ThreePillarsSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 w-full">
           {/* Developers Pillar - Now a div instead of a link */}
           <div className={cardStyle}>
-            <div className="absolute top-6 right-6 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all">
-              <ArrowUpRight className="text-white" size={24} />
-            </div>
             <h4
               className={`text-white text-center ${satoshi.className}`}
               style={{
@@ -72,9 +65,6 @@ const ThreePillarsSection = () => {
 
           {/* Content Creators Pillar - Now a div instead of a link */}
           <div className={cardStyle}>
-            <div className="absolute top-6 right-6 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all">
-              <ArrowUpRight className="text-white" size={24} />
-            </div>
             <h4
               className={`text-white text-center ${satoshi.className}`}
               style={{
@@ -101,9 +91,6 @@ const ThreePillarsSection = () => {
 
           {/* Esports Pillar - Now a div instead of a link */}
           <div className={cardStyle}>
-            <div className="absolute top-6 right-6 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all">
-              <ArrowUpRight className="text-white" size={24} />
-            </div>
             <h4
               className={`text-white text-center ${satoshi.className}`}
               style={{
