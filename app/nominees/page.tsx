@@ -1,5 +1,6 @@
 import CategoriesGrid from '@/components/CategoriesGrid';
 import CategoriesHero from '@/components/CategoriesHero';
+import { NominationAnnouncement } from '@/components/NominationAnnouncement';
 import NomineeSection from '@/components/NomineeSection';
 
 const allCategories = [
@@ -958,7 +959,8 @@ export default function Ehgameexpo() {
   return (
     <section className="bg-[#5630bf]">
       <CategoriesHero />
-      {allCategories.map((category) => (
+      <NominationAnnouncement />
+      {/* {allCategories.map((category) => (
         <NomineeSection
           key={category.id}
           categoryId={category.id}
@@ -966,7 +968,7 @@ export default function Ehgameexpo() {
           categoryDescription={category.description}
           nominees={category.nominees}
         />
-      ))}
+      ))} */}
     </section>
   );
 }
