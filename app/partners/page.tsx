@@ -9,7 +9,7 @@ import OfficialMediaPartner from "@/components/OfficialMediaPartner";
 import ProvincialPartners from "@/components/ProvincialPartners";
 import TitlePartnerSection from "@/components/TitlePartnersSection";
 import WorksSection from "@/components/WorksSection";
-const awardsFAQData: unknown[] = [
+const awardsFAQData: any[] = [
   {
     id: 1,
     question: "How can I be a sponsor?",
