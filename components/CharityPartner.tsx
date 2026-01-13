@@ -14,7 +14,7 @@ const CharityPartner = () => {
         <hr className="w-[60%] h-px bg-gradient-to-r from-transparent via-white/50 to-transparent" />
       </div>
       <div
-        className="max-w-[600px] mx-auto bg-gradient-to-r from-emerald-500/10 to-cyan-500/10 border-2 rounded-[20px] p-[64px_48px] flex flex-col items-center gap-[32px]"
+        className="max-w-[600px] mx-auto bg-gradient-to-r from-emerald-500/10 to-cyan-500/10 border-2 rounded-[20px] p-[64px_48px] flex flex-col items-center gap-[32px] group"
         style={{
           borderImage: "linear-gradient(to right, #4fc3f7, #f4d03f) 1", // Matching colors
         }}
@@ -26,12 +26,12 @@ const CharityPartner = () => {
           href={partner.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center justify-center relative w-full h-[100px] group hover:scale-105 transition duration-300"
+          className="flex items-center justify-center relative w-full h-[100px] transition duration-300"
         >
           <img
             src={partner.image}
             alt={`${partner.name} logo – Charity Partner`}
-            className="max-h-[100px] object-contain"
+            className="max-h-[100px] object-contain grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition duration-300"
             loading="lazy"
           />
         </a>

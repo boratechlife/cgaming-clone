@@ -34,19 +34,25 @@ const ProvincialPartners = () => {
           advancing the gaming industry across Canada.
         </p>
       </div>
-      <div className="grid grid-cols-3 gap-[20px] md:grid-cols-4 xl:grid-cols-6 justify-center w-full relative ">
+
+      {/* FIX: 
+          1. Changed 'w-full' to 'mx-auto' 
+          2. Added 'justify-items-center' to align content inside cells
+          3. Added 'justify-center' to the grid itself
+      */}
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-[20px] md:gap-[40px] justify-center justify-items-center mx-auto relative">
         {partners.map((partner, index) => (
           <a
             key={index}
             href={partner.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center h-[130px] group"
+            className="flex items-center justify-center h-[130px] w-full group"
           >
             <img
               src={partner.image}
               alt={`${partner.name} logo – Provincial Partner`}
-              className="max-h-[120px] object-contain grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition duration-300"
+              className="max-h-[120px] object-contain grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition duration-300"
               loading="lazy"
             />
           </a>

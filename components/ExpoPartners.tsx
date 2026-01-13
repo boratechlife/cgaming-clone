@@ -1,13 +1,24 @@
-import React from 'react';
+import React from "react";
 const ExpoPartners = () => {
   const partners = [
     {
-      name: 'City of Toronto',
-      url: 'https://www.toronto.ca/',
-      image: '/images/9T5taSmSffnn8GIAVEIcUxwYnOk.avif',
-      categories: ['Expo'],
+      name: "City of Toronto",
+      url: "https://www.toronto.ca/",
+      image: "/images/9T5taSmSffnn8GIAVEIcUxwYnOk.avif",
+      categories: ["Expo"],
     },
-    // MSI and Intel removed to avoid redundancy, as they are in Awards with tags
+    {
+      name: "Intel",
+      url: "https://www.intel.com/",
+      image: "/images/NQBChkYQtlqc749YjrtOHJGDg.avif",
+      categories: ["Expo"],
+    },
+    {
+      name: "MSI",
+      url: "https://ca.msi.com/",
+      image: "/images/1Jqcun75YhOXKBaLuqwb28kTDk.png",
+      categories: ["Expo"],
+    },
   ];
   return (
     <div className="framer-NVjQy py-[80px] md:py-[60px] flex flex-col items-center gap-[48px] min-h-min overflow-hidden relative w-full px-[16px] md:px-[48px] lg:px-[80px]">
@@ -17,11 +28,12 @@ const ExpoPartners = () => {
         </h2>
         <hr className="w-[60%] h-px bg-gradient-to-r from-transparent via-white/50 to-transparent" />
       </div>
-      <div className="grid grid-cols-2 gap-[16px] md:grid-cols-3 md:gap-[24px] xl:grid-cols-4 xl:gap-[32px] justify-center w-full relative">
+      {/* Updated grid classes to ensure centering when items are fewer than the column count */}
+      <div className="grid grid-cols-2 gap-[16px] md:grid-cols-3 xl:grid-cols-4 xl:gap-[32px] justify-center justify-items-center max-w-max mx-auto relative">
         {partners.map((partner, index) => (
           <div
             key={index}
-            className="aspect-square bg-white/3 border border-white/8 rounded-[16px] p-[10px] flex flex-col items-center justify-center group hover:bg-white/6 transition duration-300"
+            className="aspect-square bg-white/3 border border-white/8 rounded-[16px] p-[10px] flex flex-col items-center justify-center group hover:bg-white/6 transition duration-300 w-full min-w-[140px] md:min-w-[200px]"
           >
             <a
               href={partner.url}

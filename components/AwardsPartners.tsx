@@ -23,7 +23,7 @@ const AwardsPartners = () => {
       name: "Intel",
       url: "https://www.intel.com/",
       image: "/images/NQBChkYQtlqc749YjrtOHJGDg.avif",
-      categories: ["Awards", "Expo"],
+      categories: ["Awards"],
     },
     {
       name: "OverActive Media Group",
@@ -36,7 +36,7 @@ const AwardsPartners = () => {
       name: "MSI",
       url: "https://ca.msi.com/",
       image: "/images/1Jqcun75YhOXKBaLuqwb28kTDk.png",
-      categories: ["Awards", "Expo"],
+      categories: ["Awards"],
     },
     {
       name: "Gameloft Montréal",

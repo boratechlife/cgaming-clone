@@ -7,7 +7,7 @@ import { manrope, satoshi } from "@/app/layout";
 export interface FAQItem {
   id: number;
   question: string;
-  answer: string;
+  answer: string | React.ReactNode; // Updated to allow JSX/Hyperlinks
   isOpen?: boolean;
 }
 
@@ -115,9 +115,9 @@ const FAQ = ({ faqData }: FAQProps) => {
                           transition={{ delay: 0.1 }}
                           className="pt-10 pb-4"
                         >
-                          <p className="text-gray-300 text-lg leading-relaxed">
+                          <div className="text-gray-300 text-lg leading-relaxed">
                             {faq.answer}
-                          </p>
+                          </div>
                         </motion.div>
                       </motion.div>
                     )}

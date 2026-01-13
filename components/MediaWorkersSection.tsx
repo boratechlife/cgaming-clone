@@ -39,10 +39,9 @@ const MediaWorkersSection = () => {
       readTime: "4 min read",
       isFeatured: false,
     },
-    // Add more articles here for scalability; assuming client will upload/add more
     {
       title: "Upcoming Events at the Canadian Game Awards",
-      image: "/images/media/placeholder-event.avif", // Placeholder; replace with actual
+      image: "/images/media/placeholder-event.avif",
       link: "./blog/upcoming-events",
       category: "Events",
       date: "January 5, 2025",
@@ -53,7 +52,7 @@ const MediaWorkersSection = () => {
     },
     {
       title: "Spotlight on Canadian Game Developers",
-      image: "/images/media/placeholder-developers.avif", // Placeholder; replace with actual
+      image: "/images/media/placeholder-developers.avif",
       link: "./blog/developer-spotlight",
       category: "Announcements",
       date: "December 1, 2024",
@@ -65,7 +64,6 @@ const MediaWorkersSection = () => {
   ];
 
   const featuredPost = blogPosts.find((post) => post.isFeatured);
-
   const otherPosts = blogPosts.filter((post) => !post.isFeatured);
 
   return (
@@ -83,20 +81,21 @@ const MediaWorkersSection = () => {
       >
         <div className="framer-xb97td w-full text-center">
           <h1
-            className="framer-text text-5xl lg:text-6xl font-medium tracking-tight text-white"
+            className="framer-text text-5xl lg:text-7xl font-medium tracking-tight text-white"
             style={{
               fontFamily: '"Satoshi", "Satoshi Placeholder", sans-serif',
-              letterSpacing: "-1px",
-              lineHeight: "1.25em",
+              letterSpacing: "-2px",
+              lineHeight: "1.1em",
             }}
           >
-            Latest News & Updates from the Canadian Game Awards
+            Latest News & Updates <br />
+            <span className="text-white/80">from the Canadian Game Awards</span>
           </h1>
           <p
-            className="framer-text text-gray-300 mt-4 max-w-3xl mx-auto"
+            className="framer-text text-gray-300 mt-6 max-w-3xl mx-auto"
             style={{
               fontFamily: '"Karla", "Karla Placeholder", sans-serif',
-              letterSpacing: "-0.07em",
+              letterSpacing: "-0.02em",
               lineHeight: "1.6em",
               fontSize: "20px",
             }}
@@ -106,27 +105,26 @@ const MediaWorkersSection = () => {
           </p>
         </div>
 
-        {/* Optional Filters (Static for now) */}
+        {/* Filters */}
         <div className="flex flex-wrap justify-center gap-4">
-          <button className="px-4 py-2 bg-gray-800 text-white rounded-full text-sm font-medium">
-            All
-          </button>
-          <button className="px-4 py-2 bg-gray-800 text-white rounded-full text-sm font-medium">
-            Announcements
-          </button>
-          <button className="px-4 py-2 bg-gray-800 text-white rounded-full text-sm font-medium">
-            Partnerships
-          </button>
-          <button className="px-4 py-2 bg-gray-800 text-white rounded-full text-sm font-medium">
-            Behind the Scenes
-          </button>
-          <button className="px-4 py-2 bg-gray-800 text-white rounded-full text-sm font-medium">
-            Events
-          </button>
+          {[
+            "All",
+            "Announcements",
+            "Partnerships",
+            "Behind the Scenes",
+            "Events",
+          ].map((filter) => (
+            <button
+              key={filter}
+              className="px-5 py-2 bg-white/10 hover:bg-white/20 text-white rounded-full text-sm font-medium transition-colors backdrop-blur-md"
+            >
+              {filter}
+            </button>
+          ))}
         </div>
 
         {/* Media Accreditation Banner CTA */}
-        <div className="w-full max-w-7xl bg-gray-800 rounded-3xl p-6 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div className="w-full max-w-7xl bg-white/5 border border-white/10 backdrop-blur-lg rounded-3xl p-8 flex flex-col md:flex-row items-center justify-between gap-6 shadow-2xl">
           <div>
             <h3 className="text-2xl font-medium text-white">
               Media Attending CGA?
@@ -137,10 +135,12 @@ const MediaWorkersSection = () => {
             </p>
           </div>
           <a
-            href="https://forms.gle/siW4ezwY82xvQhFW7"
-            className="flex items-center gap-2.5 px-5 py-3 text-white bg-purple-600 rounded-full text-sm font-medium whitespace-nowrap cursor-pointer"
+            href="https://zfrmz.ca/9dm7I3fhijatLu2ZnZeg"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2.5 px-8 py-4 text-white bg-purple-600 hover:bg-purple-500 rounded-full text-base font-bold whitespace-nowrap cursor-pointer transition-all hover:scale-105"
           >
-            Apply Now →
+            Apply for Accreditation →
           </a>
         </div>
       </div>
@@ -151,28 +151,33 @@ const MediaWorkersSection = () => {
           <div className="w-full">
             <a
               href={featuredPost.link}
-              className="flex flex-col lg:flex-row items-center gap-10 bg-gray-900/50 rounded-3xl p-8 backdrop-blur-sm"
+              className="group flex flex-col lg:flex-row items-center gap-10 bg-gray-900/40 border border-white/5 hover:border-white/20 rounded-3xl p-8 backdrop-blur-sm transition-all"
             >
-              <div className="flex-none w-full lg:w-1/2 h-64 relative rounded-2xl overflow-hidden">
+              <div className="flex-none w-full lg:w-1/2 h-80 relative rounded-2xl overflow-hidden">
                 <img
                   src={featuredPost.image}
                   alt={featuredPost.title}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
               <div className="flex flex-col gap-4 w-full lg:w-1/2">
-                <span className="text-sm font-medium text-purple-400 uppercase">
+                <span className="text-sm font-bold text-purple-400 uppercase tracking-widest">
                   {featuredPost.category}
                 </span>
-                <h2 className="text-4xl font-medium text-white">
+                <h2 className="text-4xl font-medium text-white leading-tight">
                   {featuredPost.title}
                 </h2>
-                <p className="text-gray-300 text-lg">{featuredPost.excerpt}</p>
+                <p className="text-gray-300 text-lg leading-relaxed">
+                  {featuredPost.excerpt}
+                </p>
                 <div className="flex gap-4 text-gray-400 text-sm">
                   <span>{featuredPost.date}</span>
+                  <span>•</span>
                   <span>{featuredPost.readTime}</span>
                 </div>
-                <span className="text-purple-400 font-medium">Read more →</span>
+                <span className="text-purple-400 font-bold group-hover:translate-x-2 transition-transform">
+                  Read full story →
+                </span>
               </div>
             </a>
           </div>
@@ -181,54 +186,57 @@ const MediaWorkersSection = () => {
 
       {/* Blog Grid Section */}
       <div className="framer-1i3nsgi flex flex-col items-center gap-16 min-h-min overflow-hidden relative w-full max-w-7xl mt-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-[95%]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-[95%] lg:w-full">
           {otherPosts.map((post, index) => (
             <a
               key={index}
               href={post.link}
-              className="flex flex-col gap-4 bg-gray-900/50 rounded-3xl p-6 backdrop-blur-sm"
+              className="group flex flex-col gap-4 bg-gray-900/40 border border-white/5 hover:border-white/20 rounded-3xl p-6 backdrop-blur-sm transition-all"
             >
-              <div className="relative h-48 rounded-2xl overflow-hidden">
+              <div className="relative h-56 rounded-2xl overflow-hidden">
                 <img
                   src={post.image}
                   alt={post.title}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
-              <span className="text-sm font-medium text-purple-400 uppercase">
+              <span className="text-xs font-bold text-purple-400 uppercase tracking-widest">
                 {post.category}
               </span>
-              <h3 className="text-2xl font-medium text-white line-clamp-2">
+              <h3 className="text-2xl font-medium text-white line-clamp-2 leading-snug">
                 {post.title}
               </h3>
-              <p className="text-gray-300 line-clamp-3">{post.excerpt}</p>
-              <div className="flex gap-4 text-gray-400 text-sm">
+              <p className="text-gray-400 line-clamp-3 text-sm leading-relaxed">
+                {post.excerpt}
+              </p>
+              <div className="mt-auto pt-4 flex justify-between items-center border-t border-white/5 text-gray-500 text-xs">
                 <span>{post.date}</span>
-                <span>{post.readTime}</span>
+                <span className="text-purple-400 font-bold group-hover:translate-x-1 transition-transform">
+                  Read more →
+                </span>
               </div>
-              <span className="text-purple-400 font-medium">Read more →</span>
             </a>
           ))}
         </div>
       </div>
 
-      {/* Brand Assets CTA (Moved to bottom as a small section) */}
-      <div className="framer-n4lyna flex flex-col items-center gap-20 min-h-min overflow-visible relative w-full max-w-7xl mt-12">
-        <div className="w-full max-w-7xl bg-gray-800 rounded-3xl p-6 flex flex-col md:flex-row items-center justify-between gap-6">
+      {/* Brand Assets CTA */}
+      <div className="framer-n4lyna flex flex-col items-center gap-20 min-h-min overflow-visible relative w-full max-w-7xl mt-20">
+        <div className="w-full max-w-7xl bg-white/5 border border-white/10 rounded-3xl p-8 flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
             <h3 className="text-2xl font-medium text-white">
               CGA's Brand Assets
             </h3>
             <p className="text-gray-300 mt-2">
-              Download colors, typography, and design elements.
+              Download colours, typography, and official design elements.
             </p>
           </div>
           <a
             href="https://framerusercontent.com/assets/o8cSE1OsNY6WnKUwsLJf3wojmY.zip"
             download
-            className="flex items-center gap-2.5 px-5 py-3 text-white bg-purple-600 rounded-full text-sm font-medium whitespace-nowrap cursor-pointer"
+            className="flex items-center gap-2.5 px-8 py-4 text-white border border-white/20 hover:bg-white/10 rounded-full text-sm font-bold whitespace-nowrap cursor-pointer transition-all"
           >
-            Download Files →
+            Download Assets Zip ↓
           </a>
         </div>
       </div>

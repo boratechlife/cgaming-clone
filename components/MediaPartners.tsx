@@ -86,6 +86,7 @@ const MediaPartners = () => {
     sm:max-w-[300px]
     lg:max-w-[400px]
     lg:aspect-[4/3]
+    group
   `}
           >
             <a
@@ -106,7 +107,7 @@ const MediaPartners = () => {
                 <img
                   src={partner.image}
                   alt={`${partner.name} logo – Media Partner`}
-                  className="w-full h-full object-contain"
+                  className="w-full h-full object-contain grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition duration-300"
                   style={{
                     display: "block",
                     width: "100%",
