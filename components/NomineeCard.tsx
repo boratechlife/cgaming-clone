@@ -1,6 +1,5 @@
 'use client';
 import React from 'react';
-import Image from 'next/image'; // Assuming Next.js, or use <img>
 
 interface NomineeCardProps {
   title: string;
@@ -22,44 +21,44 @@ const NomineeCard: React.FC<NomineeCardProps> = ({
   return (
     <a
       href={link}
-      className="group relative flex flex-col w-full transition-transform duration-300 hover:-translate-y-2"
+      className="group relative flex flex-col w-full outline-none"
       target="_blank"
+      rel="noopener noreferrer"
     >
-      {/* Image Container: Fixed Aspect Ratio */}
-      <div className="relative aspect-square w-full overflow-hidden rounded-xl bg-neutral-900 shadow-lg">
-        {/* Layer 1: Blurred background to fill empty space */}
-        <div
-          className="absolute inset-0 scale-110 opacity-40 blur-2xl"
-          style={{
-            backgroundImage: `url(${imageUrl})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-          }}
-        />
-
-        {/* Layer 2: The actual Image (Contained) */}
-        <div className="relative z-10 flex h-full w-full items-center justify-center p-4">
+      {/* THE BOX: Constant grey background, subtle lift on hover */}
+      <div className="relative aspect-square w-full overflow-hidden rounded-2xl bg-[#1a1a1a] border border-neutral-800 transition-all duration-500 ease-out group-hover:shadow-2xl group-hover:shadow-black/50 group-hover:border-neutral-700">
+        {/* LOGO WRAPPER: Centers and constrains the image */}
+        <div className="relative flex h-full w-full items-center justify-center p-12">
           <img
             src={imageUrl}
             alt={title}
-            className="h-full w-full object-contain drop-shadow-2xl"
+            className="
+              max-h-full max-w-full object-contain
+              /* INITIAL STATE: Grey, 60% opacity, slightly smaller */
+              filter grayscale opacity-60 scale-95
+              transition-all duration-500 cubic-bezier(0.16, 1, 0.3, 1)
+              /* HOVER STATE: Vivid color, full opacity, grows larger */
+              group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110
+            "
           />
         </div>
 
-        {/* Winner Badge */}
+        {/* Premium Winner Badge */}
         {isWinner && (
-          <div className="absolute top-3 right-3 z-20 bg-yellow-500 text-black text-[10px] font-bold px-2 py-1 rounded-full uppercase tracking-wider shadow-md">
+          <div className="absolute top-4 right-4 z-20 bg-gradient-to-tr from-yellow-600 to-yellow-400 text-black text-[9px] font-bold px-2 py-1 rounded shadow-lg uppercase tracking-widest">
             Winner
           </div>
         )}
       </div>
 
-      {/* Text Content */}
-      <div className="mt-4 space-y-1">
-        <h3 className="text-white font-medium leading-tight group-hover:text-yellow-500 transition-colors">
+      {/* Typography: Minimalist and Clean */}
+      <div className="mt-5 space-y-0.5 transition-transform duration-300 group-hover:translate-x-1">
+        <h3 className="text-neutral-100 text-[13px] font-semibold tracking-wide uppercase">
           {title}
         </h3>
-        {studio && <p className="text-neutral-400 text-sm">{studio}</p>}
+        {studio && (
+          <p className="text-neutral-300 text-xs font-normal">{studio}</p>
+        )}
       </div>
     </a>
   );

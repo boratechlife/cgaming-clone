@@ -31,7 +31,7 @@ const NomineeSection: React.FC<NomineeSectionProps> = ({
         <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight">
           {categoryTitle}
         </h2>
-        <p className="text-neutral-400 max-w-2xl text-lg">
+        <p className="text-neutral-300 max-w-2xl text-lg">
           {categoryDescription}
         </p>
       </div>

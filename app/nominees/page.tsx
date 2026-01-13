@@ -960,7 +960,7 @@ export default function Ehgameexpo() {
     <section className="bg-[#5630bf]">
       <CategoriesHero />
       <NominationAnnouncement />
-      {/* {allCategories.map((category) => (
+      {allCategories.map((category) => (
         <NomineeSection
           key={category.id}
           categoryId={category.id}
@@ -968,7 +968,7 @@ export default function Ehgameexpo() {
           categoryDescription={category.description}
           nominees={category.nominees}
         />
-      ))} */}
+      ))}
     </section>
   );
 }
