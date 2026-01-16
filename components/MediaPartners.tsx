@@ -41,7 +41,7 @@ const MediaPartners = () => {
     {
       name: "Canadian Podcast Awards",
       url: "https://canpodawards.ca/",
-      image: "/images/A09yCyAK37Musop3kvfWUKAvX0w.svg",
+      image: "/images/A09yCyAK37Musop3kvfWUKAvX0w.png",
       containerClass: "framer-u63hot-container",
       height: "347px",
       width: "331px",

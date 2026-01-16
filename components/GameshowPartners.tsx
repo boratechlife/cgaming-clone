@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const GameshowPartners: React.FC = () => {
   return (
@@ -11,13 +11,13 @@ const GameshowPartners: React.FC = () => {
           className="framer-text text-gray-300 text-center mb-4"
           style={{
             fontFamily: '"Onest", "Onest Placeholder", sans-serif',
-            fontSize: '23px',
-            lineHeight: '160%',
-            textAlign: 'center',
-            color: 'rgb(188, 188, 188)',
+            fontSize: "23px",
+            lineHeight: "160%",
+            textAlign: "center",
+            color: "rgb(188, 188, 188)",
           }}
         >
-          <span style={{ fontSize: '35px' }}>
+          <span style={{ fontSize: "35px" }}>
             <br />
             <br />
             Eh! Game Showcase Partners

@@ -1,10 +1,11 @@
-import Link from 'next/link';
-import NominateButton from './NominateButton';
-import { GameShowCard } from './GameShowCard';
-import { GameShowEvents } from '@/data/events';
-import GamePromoSection from './GamePromoSection';
-import GameshowPartners from './GameshowPartners';
-import { satoshi } from '@/app/layout';
+import Link from "next/link";
+import NominateButton from "./NominateButton";
+import { GameShowCard } from "./GameShowCard";
+import { GameShowEvents } from "@/data/events";
+import GamePromoSection from "./GamePromoSection";
+import GameshowPartners from "./GameshowPartners";
+import { satoshi } from "@/app/layout";
+import { ShowcaseCarousel } from "./ShowcaseCarousel";
 
 const GameAwardsPage = () => {
   return (
@@ -19,14 +20,14 @@ const GameAwardsPage = () => {
           <div className="flex flex-col items-center text-center space-y-4 mb-4">
             <h2
               className={`
-                ${satoshi.className} 
-                text-4xl md:text-6xl lg:text-7xl 
-                font-black text-white 
-                tracking-tighter leading-tight
-                max-w-4xl
-              `}
+        ${satoshi.className} 
+        text-4xl md:text-6xl lg:text-7xl 
+        font-black text-white 
+        tracking-tighter leading-tight
+        whitespace-nowrap
+      `}
             >
-              Why You Should <br />
+              Why You Should{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-b from-white to-neutral-500">
                 Be There
               </span>
@@ -80,14 +81,24 @@ const GameAwardsPage = () => {
             </div>
           </div>
 
+          <ShowcaseCarousel />
           {/* --- FOR PLAYERS & FANS --- */}
           <div className="mt-20 pt-20 border-t border-white/10 flex flex-col gap-12">
             <div className="text-center space-y-4">
-              <h3
-                className={`${satoshi.className} text-3xl md:text-5xl font-bold text-white tracking-tight`}
+              <h2
+                className={`
+        ${satoshi.className} 
+        text-4xl md:text-6xl lg:text-7xl 
+        font-black text-white 
+        tracking-tighter leading-tight
+        whitespace-nowrap
+      `}
               >
-                Discover what’s next in Canadian games
-              </h3>
+                Discover What’s Next{" "}
+                <span className="text-transparent bg-clip-text bg-gradient-to-b from-white to-neutral-500">
+                  In Canadian Games
+                </span>
+              </h2>
               <p className="text-neutral-400 max-w-2xl mx-auto text-lg leading-relaxed">
                 The Eh! Game Showcase is a hands-on celebration of Canadian
                 games and the people behind them.
@@ -95,49 +106,84 @@ const GameAwardsPage = () => {
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              {/* Video Embed Container with Intro Skip (?start=10) */}
+              {/* Video Embed Container - Starts at 0:15 to skip "Eh! Game Expo" intro card */}
               <div className="relative aspect-video w-full rounded-2xl overflow-hidden shadow-2xl border border-white/10 bg-neutral-900">
                 <iframe
                   className="absolute inset-0 w-full h-full"
-                  src="https://www.youtube.com/embed/RBmOYrQ8nC4?start=10"
+                  src="https://www.youtube.com/embed/RBmOYrQ8nC4?start=15"
                   title="Eh! Game Showcase"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                 ></iframe>
               </div>
 
-              {/* Public Body Text */}
+              {/* Client Content Body */}
               <div className="flex flex-col gap-6">
                 <p
                   className={`${satoshi.className} text-xl text-neutral-200 leading-relaxed font-medium`}
                 >
-                  Discover upcoming and in-development titles from across
-                  Canada, play games before they are released, and connect
-                  directly with the creators shaping them.
+                  The Eh! Game Showcase is a hands-on celebration of Canadian
+                  games and the people behind them.
                 </p>
+
                 <div className="space-y-4 text-neutral-400 leading-relaxed">
                   <p>
-                    Part playtest, part community gathering, the showcase
-                    invites players to experience games early and be part of
-                    their journey. It is free to attend and offers a unique
-                    window into what is being built across Canada.
+                    Designed as a travelling showcase, Eh! Game brings Canadian
+                    games to players and communities across the country. Each
+                    stop highlights local studios alongside projects from coast
+                    to coast, creating space for discovery, conversation, and
+                    connection through play.
                   </p>
+
+                  {/* Primary Action: Exhibit */}
+                  <div className="pt-2">
+                    <Link
+                      href="https://zfrmz.ca/b3X3zhsIG6vFGZr7vMi9"
+                      className="inline-block px-6 py-3 bg-blue-800 text-white font-bold rounded-lg hover:bg-blue-900 transition-all shadow-lg shadow-red-600/20"
+                    >
+                      Apply to Exhibit
+                    </Link>
+                  </div>
+
                   <p>
-                    Continue the experience with the Canadian Game Awards taking
-                    place later that evening, celebrating the games and creators
-                    featured throughout the day.
+                    Discover upcoming and in-development titles, play games
+                    before they’re released, and connect directly with the
+                    developers, artists, and creators shaping them. Part
+                    playtest, part conversation, and part community gathering,
+                    the showcase invites players to experience games early and
+                    be part of their journey.
+                  </p>
+
+                  <p>
+                    For exhibitors, Eh! Game offers a dedicated space to present
+                    games to engaged audiences, gather real player feedback, and
+                    build meaningful connections with press, industry peers, and
+                    the wider game community.
+                  </p>
+
+                  <p>
+                    The Eh! Game Showcase is free to attend and offers a unique
+                    window into what’s being built across Canada.
+                  </p>
+
+                  <p>
+                    Continue the experience with the Canadian Game Awards later
+                    that evening, celebrating the games and creators featured
+                    throughout the day. Keep the conversation going by joining
+                    the Eh! Game Discord.
                   </p>
                 </div>
 
+                {/* Secondary Buttons */}
                 <div className="flex flex-wrap gap-4 pt-4">
                   <Link
                     href="https://canadiangameawards.zohobackstage.ca/CGA2026#/buyTickets/selectTickets?lang=en"
-                    className="px-6 py-3 bg-red-600 text-white font-bold rounded-lg hover:bg-red-700 transition-all shadow-lg shadow-red-600/20"
+                    className="px-6 py-3 bg-neutral-800 text-white font-bold rounded-lg hover:bg-neutral-700 transition-all border border-white/10"
                   >
                     Buy Awards Tickets
                   </Link>
                   <Link
-                    href="#" // Update with your actual Discord link
+                    href="https://discord.gg/Q8NMbHtfbS"
                     className="px-6 py-3 bg-neutral-800 text-white font-bold rounded-lg hover:bg-neutral-700 transition-all border border-white/10"
                   >
                     Join our Discord

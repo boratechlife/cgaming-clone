@@ -131,7 +131,7 @@ const MediaWorkersSection = () => {
             </h3>
             <p className="text-gray-300 mt-2">
               Apply for accreditation to attend events. Confirmation emails sent
-              February 13, 2025.
+              February 13, 2026.
             </p>
           </div>
           <a

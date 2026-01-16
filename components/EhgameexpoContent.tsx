@@ -1,10 +1,10 @@
 // components/HeroSection.tsx
-import Image from 'next/image';
+import Image from "next/image";
 
 const EhgameExpoHeroContent = () => {
   // RichTextContainer styles
   const richTextContainerStyles =
-    'flex flex-col justify-start outline-none flex-shrink-0';
+    "flex flex-col justify-start outline-none flex-shrink-0";
 
   return (
     <div
@@ -40,11 +40,11 @@ const EhgameExpoHeroContent = () => {
             className={`${richTextContainerStyles} flex-none h-auto relative whitespace-pre-wrap w-[515px] break-words`}
           >
             <h1 className="font-karla font-semibold text-4xl md:text-5xl lg:text-6xl text-white leading-tight tracking-tight">
-              <span className="inline-block">Eh!</span>{' '}
-              <span className="inline-block">Game</span>{' '}
+              <span className="inline-block">Eh!</span>{" "}
+              <span className="inline-block">Game</span>{" "}
               <span className="inline-block">Showcase</span>
               <br />
-              <span className="inline-block">is</span>{' '}
+              <span className="inline-block">is</span>{" "}
               <span className="inline-block">here!</span>
             </h1>
           </div>

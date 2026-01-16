@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
-import React, { useState, MouseEvent } from 'react';
-import { Menu, X, ChevronDown } from 'lucide-react';
-import Link from 'next/link';
-import AnimatedButton from './AnimatedButton';
-import { manrope } from '@/app/layout';
+import React, { useState, MouseEvent } from "react";
+import { Menu, X, ChevronDown } from "lucide-react";
+import Link from "next/link";
+import AnimatedButton from "./AnimatedButton";
+import { manrope } from "@/app/layout";
 
 // Types for our shared link component
 interface InternalLinkProps {
@@ -38,7 +38,7 @@ const Navbar = () => {
       style={style}
       className={
         className ||
-        'transition-colors duration-200 font-medium text-white hover:text-[#B189FF]'
+        "transition-colors duration-200 font-medium text-white hover:text-[#B189FF]"
       }
     >
       {children}
@@ -61,30 +61,30 @@ const Navbar = () => {
   );
 
   const mobileMenuItems = [
-    { label: 'Home', href: '/' },
-    { label: 'Eh! Game', href: '/ehgameexpo' },
-    { label: 'Nominees', href: '/categories' },
-    { label: 'Partners', href: '/partners' },
-    { label: 'About', href: '/about' },
+    { label: "Home", href: "/" },
+    { label: "Eh! Game", href: "/ehegame" },
+    { label: "Nominees", href: "/categories" },
+    { label: "Partners", href: "/partners" },
+    { label: "About", href: "/about" },
   ];
 
   const nomineeCategories = [
-    { label: 'Best Art Direction', href: '/nominees#bestartdirection' },
-    { label: 'Best Game Design', href: '/nominees#bestgamedesign' },
-    { label: 'Best Score / Soundtrack', href: '/nominees#bestscore' },
-    { label: 'Best Narrative', href: '/nominees#bestnarrative' },
-    { label: 'Best Performance', href: '/nominees#bestperformance' },
-    { label: 'Best Audio Design', href: '/nominees#bestaudiodesign' },
-    { label: 'Best Technology / Innovation', href: '/nominees#besttechnology' },
-    { label: 'Best Debut Indie Game', href: '/nominees#bestdebutindie' },
-    { label: 'Best Debut Studio', href: '/nominees#bestdebutstudio' },
-    { label: 'Most Innovative Studio', href: '/nominees#mostinnovativestudio' },
-    { label: 'Esports Player', href: '/nominees#esportsplayer' },
-    { label: 'Esports Org', href: '/nominees#esportsorg' },
-    { label: 'Esports Event', href: '/nominees#esportsevent' },
-    { label: 'Content Creator / Show', href: '/nominees#contentcreator' },
-    { label: 'Game of the Year', href: '/nominees#gameoftheyear' },
-    { label: 'Studio of the Year', href: '/nominees#studiooftheyear' },
+    { label: "Best Art Direction", href: "/nominees#bestartdirection" },
+    { label: "Best Game Design", href: "/nominees#bestgamedesign" },
+    { label: "Best Score / Soundtrack", href: "/nominees#bestscore" },
+    { label: "Best Narrative", href: "/nominees#bestnarrative" },
+    { label: "Best Performance", href: "/nominees#bestperformance" },
+    { label: "Best Audio Design", href: "/nominees#bestaudiodesign" },
+    { label: "Best Technology / Innovation", href: "/nominees#besttechnology" },
+    { label: "Best Debut Indie Game", href: "/nominees#bestdebutindie" },
+    { label: "Best Debut Studio", href: "/nominees#bestdebutstudio" },
+    { label: "Most Innovative Studio", href: "/nominees#mostinnovativestudio" },
+    { label: "Esports Player", href: "/nominees#esportsplayer" },
+    { label: "Esports Org", href: "/nominees#esportsorg" },
+    { label: "Esports Event", href: "/nominees#esportsevent" },
+    { label: "Content Creator / Show", href: "/nominees#contentcreator" },
+    { label: "Game of the Year", href: "/nominees#gameoftheyear" },
+    { label: "Studio of the Year", href: "/nominees#studiooftheyear" },
   ];
 
   return (
@@ -92,7 +92,7 @@ const Navbar = () => {
       {/* MOBILE MENU OVERLAY */}
       <div
         className={`fixed inset-0 bg-black/95 backdrop-blur-md z-40 transition-all duration-500 ${
-          isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
+          isMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"
         }`}
         onClick={closeMenu}
       >
@@ -107,7 +107,7 @@ const Navbar = () => {
                 href={item.href}
                 onClick={closeMenu}
                 className="text-white text-3xl font-bold tracking-tight hover:text-[#B189FF] transition-colors"
-                style={{ fontFamily: 'Manrope, sans-serif' }}
+                style={{ fontFamily: "Manrope, sans-serif" }}
               >
                 {item.label}
               </InternalLink>
@@ -129,14 +129,14 @@ const Navbar = () => {
       {/* NAVBAR */}
       <div
         className={`fixed top-6 left-1/2 -translate-x-1/2 z-50 w-full max-w-[980px] px-4 ${
-          manrope.className ?? ''
+          manrope.className ?? ""
         }`}
       >
         <div
           className="relative rounded-[40px] p-px"
           style={{
             background:
-              'linear-gradient(180deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.05) 100%)',
+              "linear-gradient(180deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.05) 100%)",
           }}
         >
           <nav className="bg-[rgb(5,5,5)] rounded-[40px] px-6 py-4 shadow-2xl">
@@ -153,7 +153,7 @@ const Navbar = () => {
               {/* DESKTOP LINKS */}
               <div className="hidden lg:flex items-center gap-8 mx-8">
                 <InternalLink href="/">Home</InternalLink>
-                <InternalLink href="/ehgameexpo">Eh! Game</InternalLink>
+                <InternalLink href="/ehegame">Eh! Game</InternalLink>
 
                 {/* NOMINEES DROPDOWN */}
                 <div className="relative group">
@@ -161,7 +161,7 @@ const Navbar = () => {
                     href="/categories"
                     className="flex items-center gap-1 text-white text-[15px] font-medium hover:text-[#B189FF] transition-colors"
                   >
-                    Nominees{' '}
+                    Nominees{" "}
                     <ChevronDown
                       size={14}
                       className="group-hover:rotate-180 transition-transform"

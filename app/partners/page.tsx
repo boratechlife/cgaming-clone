@@ -15,14 +15,14 @@ const awardsFAQData: any[] = [
     question: "How can I be a sponsor?",
     answer: (
       <span>
-        Request to be a sponsor here{" "}
+        How can I be a sponsor?{" "}
         <a
           href="https://zfrmz.ca/s0Kel0JkFv5GXo2WpZH3"
           target="_blank"
           rel="noopener noreferrer"
           className="text-blue-400 hover:underline"
         >
-          Become a Sponsor
+          Request to be a sponsor
         </a>
         .
       </span>
@@ -34,16 +34,16 @@ const awardsFAQData: any[] = [
     question: "Where do I find more information about sponsorships?",
     answer: (
       <span>
-        For questions about sponsorships tiers and what they encompass, visit
-        here{" "}
+        Where do I find more information about sponsorships? View our{" "}
         <a
           href="https://www.canva.com/design/DAGr1AqrdyM/Bx4Q006CR2uB8LL2L8ok-g/view"
           target="_blank"
           rel="noopener noreferrer"
           className="text-blue-400 hover:underline"
         >
-          Contact us for more details.
-        </a>
+          sponsorship deck
+        </a>{" "}
+        or contact us to learn more.
       </span>
     ),
     isOpen: false,
@@ -58,7 +58,6 @@ export default function Ehgameexpo() {
       <OfficialMediaPartner />
       <MediaPartners />
       <ExpoPartners />
-      {/* <CocktailPartners /> */}
 
       <CharityPartner />
       <ProvincialPartners />

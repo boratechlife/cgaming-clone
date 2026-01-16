@@ -1,4 +1,4 @@
-import { satoshi } from '@/app/layout';
+import { satoshi } from "@/app/layout";
 
 // New component for the nomination announcement
 export const NominationAnnouncement = () => {
@@ -15,7 +15,7 @@ export const NominationAnnouncement = () => {
         <p
           className={`text-3xl font-bold text-yellow-300 ${satoshi.className}`}
         >
-          January 21st
+          March 21st
         </p>
 
         <p className="text-white mt-6 max-w-2xl mx-auto leading-relaxed">

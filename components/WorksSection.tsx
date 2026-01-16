@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const WorksSection = () => {
   return (
     <div
@@ -33,16 +35,18 @@ const WorksSection = () => {
             >
               POWERING THE INDUSTRY
             </div>
+
             <div
               className="flex-none h-auto relative whitespace-pre-wrap w-full break-words"
               data-framer-name="Heading"
               data-framer-component-type="RichTextContainer"
               style={{ transform: "none", overflowWrap: "break-word" }}
             >
-              <h2 className="framer-text m-0 p-0 text-center text-[56px] font-bold text-white">
-                Our Partners
+              <h2 className="framer-text m-0 p-0 text-center text-[42px] md:text-[56px] font-bold text-white tracking-tighter">
+                Become a Sponsor of the Canadian Game Awards
               </h2>
             </div>
+
             <div
               className="flex-none h-auto relative whitespace-pre-wrap w-full break-words"
               data-framer-name="Supporting text"
@@ -52,16 +56,45 @@ const WorksSection = () => {
                 overflowWrap: "break-word",
               }}
             >
-              <p className="framer-text m-0 p-0 text-center text-[18px] text-white/70 mx-auto max-w-[70%]">
-                In partnership with leading brands shaping Canada's video game
-                ecosystem.
+              <p className="framer-text m-0 p-0 text-center text-[18px] text-white/70 mx-auto max-w-[80%]">
+                Partner with the Canadian Game Awards and help celebrate the
+                studios, creators, and communities shaping Canada’s game
+                industry.
               </p>
             </div>
-            <hr className="w-[60%] h-px bg-gradient-to-r from-transparent via-white/50 to-transparent mx-auto mt-[32px]" />
+
+            {/* Button Section */}
+            <div className="flex flex-col items-center gap-[16px] justify-center pt-4 w-full">
+              <Link
+                href="https://zfrmz.ca/s0Kel0JkFv5GXo2WpZH3"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-8 py-3 bg-blue-700 text-white font-bold rounded-lg hover:bg-blue-600 transition-all shadow-lg shadow-blue-600/20 uppercase text-sm tracking-wide"
+              >
+                Request to Sponsor
+              </Link>
+
+              {/* Sponsorship Deck Link */}
+              <p className="text-[14px] text-white/50">
+                View our{" "}
+                <a
+                  href="https://www.canva.com/design/DAGr1AqrdyM/Bx4Q006CR2uB8LL2L8ok-g/view"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-400 hover:underline"
+                >
+                  sponsorship deck
+                </a>{" "}
+                or contact us to learn more.
+              </p>
+            </div>
+
+            <hr className="w-[60%] h-px bg-gradient-to-r from-transparent via-white/50 to-transparent mx-auto mt-[48px]" />
           </div>
         </div>
       </div>
     </div>
   );
 };
+
 export default WorksSection;
