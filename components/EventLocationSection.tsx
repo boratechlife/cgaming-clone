@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import TicketCTA from './TicketCTA';
 
 const EventLocationSection = () => {
   return (
@@ -215,6 +216,8 @@ const EventLocationSection = () => {
           </div>
         </div>
       </div>
+
+      <TicketCTA />
     </div>
   );
 };

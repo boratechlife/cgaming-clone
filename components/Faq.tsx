@@ -1,8 +1,8 @@
-"use client";
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { ChevronDown, ChevronUp } from "lucide-react";
-import { manrope, satoshi } from "@/app/layout";
+'use client';
+import { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { ChevronDown, ChevronUp } from 'lucide-react';
+import { manrope, satoshi } from '@/app/layout';
 
 export interface FAQItem {
   id: number;
@@ -67,8 +67,8 @@ const FAQ = ({ faqData }: FAQProps) => {
                     rounded-2xl p-6 md:p-8 cursor-pointer transition-all duration-300 
                     ${
                       faq.isOpen
-                        ? "bg-[#171717] text-white shadow-lg"
-                        : "bg-transparent hover:bg-[#171717] hover:text-white"
+                        ? 'bg-[#171717] text-white shadow-lg'
+                        : 'bg-transparent hover:bg-[#171717] hover:text-white'
                     }
                   `}
                   onClick={() => toggleFAQ(faq.id)}
@@ -79,8 +79,8 @@ const FAQ = ({ faqData }: FAQProps) => {
                         satoshi.className
                       } duration-300 ${
                         faq.isOpen
-                          ? "text-white"
-                          : "text-gray-200 hover:text-white"
+                          ? 'text-white'
+                          : 'text-gray-200 hover:text-white'
                       }`}
                     >
                       {faq.question}
@@ -89,7 +89,7 @@ const FAQ = ({ faqData }: FAQProps) => {
                       animate={{ rotate: faq.isOpen ? 180 : 0 }}
                       transition={{ duration: 0.3 }}
                       className={`${manrope.className} ${
-                        faq.isOpen ? "text-white" : "text-gray-400"
+                        faq.isOpen ? 'text-white' : 'text-gray-400'
                       }`}
                     >
                       {faq.isOpen ? (
@@ -104,7 +104,7 @@ const FAQ = ({ faqData }: FAQProps) => {
                     {faq.isOpen && (
                       <motion.div
                         initial={{ opacity: 0, height: 0 }}
-                        animate={{ opacity: 1, height: "auto" }}
+                        animate={{ opacity: 1, height: 'auto' }}
                         exit={{ opacity: 0, height: 0 }}
                         transition={{ duration: 0.3 }}
                         className="overflow-hidden"
@@ -136,7 +136,7 @@ const FAQ = ({ faqData }: FAQProps) => {
           className="mt-16 pt-8 border-t border-gray-800"
         >
           <p className="text-gray-400 text-center">
-            Still have questions?{" "}
+            Still have questions?{' '}
             <a
               href="mailto:info@awards.com"
               className="text-blue-400 hover:text-blue-300 underline transition-colors duration-300"
