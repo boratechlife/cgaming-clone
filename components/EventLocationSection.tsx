@@ -1,11 +1,11 @@
-import React from 'react';
-import Image from 'next/image';
-import TicketCTA from './TicketCTA';
+import React from "react";
+import Image from "next/image";
+import TicketCTA from "./TicketCTA";
 
 const EventLocationSection = () => {
   return (
     <div
-      className="flex flex-col flex-none justify-center items-center gap-0 w-full h-min pt-[100px] pb-[60px] px-4 lg:px-[60px] scroll-mt-10 relative overflow-visible bg-gradient-to-b from-[#5630bf] via-[#3c2185] to-[#0d021b]"
+      className="flex flex-col flex-none justify-center items-center gap-0 w-full h-min pt-[100px] pb-[60px] px-4 lg:px-[60px] scroll-mt-10 relative overflow-visible"
       id="works-1"
     >
       <div
@@ -19,16 +19,16 @@ const EventLocationSection = () => {
                 <h2
                   className="text-center"
                   style={{
-                    fontFamily: 'Satoshi, sans-serif',
-                    fontSize: '52px',
+                    fontFamily: "Satoshi, sans-serif",
+                    fontSize: "52px",
                     fontWeight: 500,
-                    letterSpacing: '-1px',
-                    lineHeight: '1.25em',
-                    color: '#ffffff',
+                    letterSpacing: "-1px",
+                    lineHeight: "1.25em",
+                    color: "#ffffff",
                   }}
                 >
-                  <span style={{ display: 'inline-block' }}>Event</span>{' '}
-                  <span style={{ display: 'inline-block' }}>Location</span>
+                  <span style={{ display: "inline-block" }}>Event</span>{" "}
+                  <span style={{ display: "inline-block" }}>Location</span>
                 </h2>
               </div>
             </div>
@@ -38,45 +38,45 @@ const EventLocationSection = () => {
                 <p
                   className="text-center"
                   style={{
-                    fontFamily: 'Karla, sans-serif',
-                    fontSize: '18px',
-                    letterSpacing: '-0.07em',
-                    lineHeight: '1.6em',
-                    color: '#afafaf',
+                    fontFamily: "Karla, sans-serif",
+                    fontSize: "18px",
+                    letterSpacing: "-0.07em",
+                    lineHeight: "1.6em",
+                    color: "#afafaf",
                   }}
                 >
-                  <span style={{ display: 'inline-block' }}>TIFF</span>{' '}
-                  <span style={{ display: 'inline-block' }}>Lightbox</span>{' '}
-                  <span style={{ display: 'inline-block' }}>is</span>{' '}
-                  <span style={{ display: 'inline-block' }}>a</span>{' '}
-                  <span style={{ display: 'inline-block' }}>cultural</span>{' '}
-                  <span style={{ display: 'inline-block' }}>centre</span>{' '}
-                  <span style={{ display: 'inline-block' }}>in</span>{' '}
-                  <span style={{ display: 'inline-block' }}>Toronto,</span>{' '}
-                  <span style={{ display: 'inline-block' }}>Ontario,</span>{' '}
-                  <span style={{ display: 'inline-block' }}>Canada,</span>{' '}
-                  <span style={{ display: 'inline-block' }}>located</span>{' '}
-                  <span style={{ display: 'inline-block' }}>on</span>{' '}
-                  <span style={{ display: 'inline-block' }}>the</span>{' '}
-                  <span style={{ display: 'inline-block' }}>first</span>{' '}
-                  <span style={{ display: 'inline-block' }}>five</span>{' '}
-                  <span style={{ display: 'inline-block' }}>floors</span>{' '}
-                  <span style={{ display: 'inline-block' }}>of</span>{' '}
-                  <span style={{ display: 'inline-block' }}>the</span>{' '}
-                  <span style={{ display: 'inline-block' }}>Lightbox</span>{' '}
-                  <span style={{ display: 'inline-block' }}>and</span>{' '}
-                  <span style={{ display: 'inline-block' }}>Festival</span>{' '}
-                  <span style={{ display: 'inline-block' }}>Tower</span>{' '}
-                  <span style={{ display: 'inline-block' }}>on</span>{' '}
-                  <span style={{ display: 'inline-block' }}>the</span>{' '}
-                  <span style={{ display: 'inline-block' }}>northwest</span>{' '}
-                  <span style={{ display: 'inline-block' }}>corner</span>{' '}
-                  <span style={{ display: 'inline-block' }}>of</span>{' '}
-                  <span style={{ display: 'inline-block' }}>King</span>{' '}
-                  <span style={{ display: 'inline-block' }}>Street</span>{' '}
-                  <span style={{ display: 'inline-block' }}>and</span>{' '}
-                  <span style={{ display: 'inline-block' }}>John</span>{' '}
-                  <span style={{ display: 'inline-block' }}>Street.</span>
+                  <span style={{ display: "inline-block" }}>TIFF</span>{" "}
+                  <span style={{ display: "inline-block" }}>Lightbox</span>{" "}
+                  <span style={{ display: "inline-block" }}>is</span>{" "}
+                  <span style={{ display: "inline-block" }}>a</span>{" "}
+                  <span style={{ display: "inline-block" }}>cultural</span>{" "}
+                  <span style={{ display: "inline-block" }}>centre</span>{" "}
+                  <span style={{ display: "inline-block" }}>in</span>{" "}
+                  <span style={{ display: "inline-block" }}>Toronto,</span>{" "}
+                  <span style={{ display: "inline-block" }}>Ontario,</span>{" "}
+                  <span style={{ display: "inline-block" }}>Canada,</span>{" "}
+                  <span style={{ display: "inline-block" }}>located</span>{" "}
+                  <span style={{ display: "inline-block" }}>on</span>{" "}
+                  <span style={{ display: "inline-block" }}>the</span>{" "}
+                  <span style={{ display: "inline-block" }}>first</span>{" "}
+                  <span style={{ display: "inline-block" }}>five</span>{" "}
+                  <span style={{ display: "inline-block" }}>floors</span>{" "}
+                  <span style={{ display: "inline-block" }}>of</span>{" "}
+                  <span style={{ display: "inline-block" }}>the</span>{" "}
+                  <span style={{ display: "inline-block" }}>Lightbox</span>{" "}
+                  <span style={{ display: "inline-block" }}>and</span>{" "}
+                  <span style={{ display: "inline-block" }}>Festival</span>{" "}
+                  <span style={{ display: "inline-block" }}>Tower</span>{" "}
+                  <span style={{ display: "inline-block" }}>on</span>{" "}
+                  <span style={{ display: "inline-block" }}>the</span>{" "}
+                  <span style={{ display: "inline-block" }}>northwest</span>{" "}
+                  <span style={{ display: "inline-block" }}>corner</span>{" "}
+                  <span style={{ display: "inline-block" }}>of</span>{" "}
+                  <span style={{ display: "inline-block" }}>King</span>{" "}
+                  <span style={{ display: "inline-block" }}>Street</span>{" "}
+                  <span style={{ display: "inline-block" }}>and</span>{" "}
+                  <span style={{ display: "inline-block" }}>John</span>{" "}
+                  <span style={{ display: "inline-block" }}>Street.</span>
                 </p>
               </div>
             </div>
@@ -92,10 +92,10 @@ const EventLocationSection = () => {
                       <p
                         className="text-center"
                         style={{
-                          fontFamily: 'Manrope, sans-serif',
-                          fontSize: '14px',
-                          lineHeight: '1em',
-                          color: '#afafaf',
+                          fontFamily: "Manrope, sans-serif",
+                          fontSize: "14px",
+                          lineHeight: "1em",
+                          color: "#afafaf",
                         }}
                       >
                         Contact us
@@ -130,74 +130,74 @@ const EventLocationSection = () => {
                 <p
                   className="text-center"
                   style={{
-                    fontFamily: 'Karla, sans-serif',
-                    fontSize: '18px',
-                    letterSpacing: '-0.07em',
-                    lineHeight: '1.6em',
-                    color: '#afafaf',
+                    fontFamily: "Karla, sans-serif",
+                    fontSize: "18px",
+                    letterSpacing: "-0.07em",
+                    lineHeight: "1.6em",
+                    color: "#afafaf",
                   }}
                 >
-                  <span style={{ display: 'inline-block' }}>TIFF</span>{' '}
-                  <span style={{ display: 'inline-block' }}>Lightbox</span>{' '}
-                  <span style={{ display: 'inline-block' }}>is</span>{' '}
-                  <span style={{ display: 'inline-block' }}>located</span>{' '}
-                  <span style={{ display: 'inline-block' }}>in</span>{' '}
-                  <span style={{ display: 'inline-block' }}>the</span>{' '}
-                  <span style={{ display: 'inline-block' }}>heart</span>{' '}
-                  <span style={{ display: 'inline-block' }}>of</span>{' '}
-                  <span style={{ display: 'inline-block' }}></span>
+                  <span style={{ display: "inline-block" }}>TIFF</span>{" "}
+                  <span style={{ display: "inline-block" }}>Lightbox</span>{" "}
+                  <span style={{ display: "inline-block" }}>is</span>{" "}
+                  <span style={{ display: "inline-block" }}>located</span>{" "}
+                  <span style={{ display: "inline-block" }}>in</span>{" "}
+                  <span style={{ display: "inline-block" }}>the</span>{" "}
+                  <span style={{ display: "inline-block" }}>heart</span>{" "}
+                  <span style={{ display: "inline-block" }}>of</span>{" "}
+                  <span style={{ display: "inline-block" }}></span>
                   <strong className="font-bold">
-                    <span style={{ display: 'inline-block' }}>downtown</span>{' '}
-                    <span style={{ display: 'inline-block' }}>Toronto</span>
+                    <span style={{ display: "inline-block" }}>downtown</span>{" "}
+                    <span style={{ display: "inline-block" }}>Toronto</span>
                   </strong>
-                  <span style={{ display: 'inline-block' }}>,</span>{' '}
-                  <span style={{ display: 'inline-block' }}>surrounded</span>{' '}
-                  <span style={{ display: 'inline-block' }}>by</span>{' '}
-                  <span style={{ display: 'inline-block' }}>the</span>{' '}
-                  <span style={{ display: 'inline-block' }}>city's</span>{' '}
-                  <span style={{ display: 'inline-block' }}>vibrant</span>{' '}
-                  <span style={{ display: 'inline-block' }}>entertainment</span>{' '}
-                  <span style={{ display: 'inline-block' }}>district.</span>{' '}
-                  <span style={{ display: 'inline-block' }}>As</span>{' '}
-                  <span style={{ display: 'inline-block' }}>a</span>{' '}
-                  <span style={{ display: 'inline-block' }}>premier</span>{' '}
-                  <span style={{ display: 'inline-block' }}>venue</span>{' '}
-                  <span style={{ display: 'inline-block' }}>for</span>{' '}
-                  <span style={{ display: 'inline-block' }}>film,</span>{' '}
-                  <span style={{ display: 'inline-block' }}>arts,</span>{' '}
-                  <span style={{ display: 'inline-block' }}>and</span>{' '}
-                  <span style={{ display: 'inline-block' }}>cultural</span>{' '}
-                  <span style={{ display: 'inline-block' }}>events,</span>{' '}
-                  <span style={{ display: 'inline-block' }}>it</span>{' '}
-                  <span style={{ display: 'inline-block' }}>offers</span>{' '}
-                  <span style={{ display: 'inline-block' }}>a</span>{' '}
-                  <span style={{ display: 'inline-block' }}>modern</span>{' '}
-                  <span style={{ display: 'inline-block' }}>and</span>{' '}
-                  <span style={{ display: 'inline-block' }}>dynamic</span>{' '}
-                  <span style={{ display: 'inline-block' }}>space</span>{' '}
-                  <span style={{ display: 'inline-block' }}>that</span>{' '}
-                  <span style={{ display: 'inline-block' }}>serves</span>{' '}
-                  <span style={{ display: 'inline-block' }}>as</span>{' '}
-                  <span style={{ display: 'inline-block' }}>the</span>{' '}
-                  <span style={{ display: 'inline-block' }}>perfect</span>{' '}
-                  <span style={{ display: 'inline-block' }}>setting</span>{' '}
-                  <span style={{ display: 'inline-block' }}>for</span>{' '}
-                  <span style={{ display: 'inline-block' }}>the</span>{' '}
-                  <span style={{ display: 'inline-block' }}></span>
+                  <span style={{ display: "inline-block" }}>,</span>{" "}
+                  <span style={{ display: "inline-block" }}>surrounded</span>{" "}
+                  <span style={{ display: "inline-block" }}>by</span>{" "}
+                  <span style={{ display: "inline-block" }}>the</span>{" "}
+                  <span style={{ display: "inline-block" }}>city's</span>{" "}
+                  <span style={{ display: "inline-block" }}>vibrant</span>{" "}
+                  <span style={{ display: "inline-block" }}>entertainment</span>{" "}
+                  <span style={{ display: "inline-block" }}>district.</span>{" "}
+                  <span style={{ display: "inline-block" }}>As</span>{" "}
+                  <span style={{ display: "inline-block" }}>a</span>{" "}
+                  <span style={{ display: "inline-block" }}>premier</span>{" "}
+                  <span style={{ display: "inline-block" }}>venue</span>{" "}
+                  <span style={{ display: "inline-block" }}>for</span>{" "}
+                  <span style={{ display: "inline-block" }}>film,</span>{" "}
+                  <span style={{ display: "inline-block" }}>arts,</span>{" "}
+                  <span style={{ display: "inline-block" }}>and</span>{" "}
+                  <span style={{ display: "inline-block" }}>cultural</span>{" "}
+                  <span style={{ display: "inline-block" }}>events,</span>{" "}
+                  <span style={{ display: "inline-block" }}>it</span>{" "}
+                  <span style={{ display: "inline-block" }}>offers</span>{" "}
+                  <span style={{ display: "inline-block" }}>a</span>{" "}
+                  <span style={{ display: "inline-block" }}>modern</span>{" "}
+                  <span style={{ display: "inline-block" }}>and</span>{" "}
+                  <span style={{ display: "inline-block" }}>dynamic</span>{" "}
+                  <span style={{ display: "inline-block" }}>space</span>{" "}
+                  <span style={{ display: "inline-block" }}>that</span>{" "}
+                  <span style={{ display: "inline-block" }}>serves</span>{" "}
+                  <span style={{ display: "inline-block" }}>as</span>{" "}
+                  <span style={{ display: "inline-block" }}>the</span>{" "}
+                  <span style={{ display: "inline-block" }}>perfect</span>{" "}
+                  <span style={{ display: "inline-block" }}>setting</span>{" "}
+                  <span style={{ display: "inline-block" }}>for</span>{" "}
+                  <span style={{ display: "inline-block" }}>the</span>{" "}
+                  <span style={{ display: "inline-block" }}></span>
                   <strong className="font-bold">
-                    <span style={{ display: 'inline-block' }}>Canadian</span>{' '}
-                    <span style={{ display: 'inline-block' }}>Game</span>{' '}
-                    <span style={{ display: 'inline-block' }}>Awards</span>
+                    <span style={{ display: "inline-block" }}>Canadian</span>{" "}
+                    <span style={{ display: "inline-block" }}>Game</span>{" "}
+                    <span style={{ display: "inline-block" }}>Awards</span>
                   </strong>
-                  <span style={{ display: 'inline-block' }}></span>{' '}
-                  <span style={{ display: 'inline-block' }}>and</span>{' '}
-                  <span style={{ display: 'inline-block' }}></span>
+                  <span style={{ display: "inline-block" }}></span>{" "}
+                  <span style={{ display: "inline-block" }}>and</span>{" "}
+                  <span style={{ display: "inline-block" }}></span>
                   <strong className="font-bold">
-                    <span style={{ display: 'inline-block' }}>Eh!</span>{' '}
-                    <span style={{ display: 'inline-block' }}>Game</span>{' '}
-                    <span style={{ display: 'inline-block' }}>Expo</span>
+                    <span style={{ display: "inline-block" }}>Eh!</span>{" "}
+                    <span style={{ display: "inline-block" }}>Game</span>{" "}
+                    <span style={{ display: "inline-block" }}>Expo</span>
                   </strong>
-                  <span style={{ display: 'inline-block' }}>.</span>
+                  <span style={{ display: "inline-block" }}>.</span>
                 </p>
               </div>
             </div>

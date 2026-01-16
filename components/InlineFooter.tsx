@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   Instagram,
   Twitter,
@@ -10,40 +10,40 @@ import {
   Mail,
   Linkedin, // Added for LinkedIn
   MessageSquare, // Used as a clean alternative for Discord if specialized icon isn't in set
-} from 'lucide-react';
+} from "lucide-react";
 
 const InlineFooter: React.FC = () => {
   const socialLinks = [
     {
-      label: 'Instagram',
-      url: 'https://www.instagram.com/cgameawards/',
+      label: "Instagram",
+      url: "https://www.instagram.com/cgameawards/",
       Icon: Instagram,
     },
-    { label: 'Twitch', url: 'https://www.twitch.tv/cgameawards', Icon: Twitch },
-    { label: 'X', url: 'https://x.com/cgameawards', Icon: Twitter },
+    { label: "Twitch", url: "https://www.twitch.tv/cgameawards", Icon: Twitch },
+    { label: "X", url: "https://x.com/cgameawards", Icon: Twitter },
     {
-      label: 'Facebook',
-      url: 'https://www.facebook.com/CGameAwards',
+      label: "Facebook",
+      url: "https://www.facebook.com/CGameAwards",
       Icon: Facebook,
     },
     {
-      label: 'YouTube',
-      url: 'https://www.youtube.com/@cgameawards',
+      label: "YouTube",
+      url: "https://www.youtube.com/@cgameawards",
       Icon: Youtube,
     },
     {
-      label: 'TikTok',
-      url: 'https://www.tiktok.com/@cgameawards',
+      label: "TikTok",
+      url: "https://www.tiktok.com/@cgameawards",
       Icon: Music2,
     },
     {
-      label: 'LinkedIn',
-      url: 'https://www.linkedin.com/company/canadian-game-awards/posts/',
+      label: "LinkedIn",
+      url: "https://www.linkedin.com/company/canadian-game-awards/posts/",
       Icon: Linkedin,
     },
     {
-      label: 'Discord',
-      url: 'https://discord.gg/Q8NMbHtfbS',
+      label: "Discord",
+      url: "https://discord.gg/Q8NMbHtfbS",
       Icon: MessageSquare, // Standard clean Discord representation in Lucide
     },
   ];
@@ -85,6 +85,7 @@ const InlineFooter: React.FC = () => {
             </h3>
             <address className="not-italic text-sm leading-6 space-y-1">
               <p>TIFF Lightbox, Festival Tower</p>
+              <p>TIFF Festival Box Office Department</p>
               <p>350 King Street West</p>
               <p>Toronto, Ontario, M5V 3X5</p>
               <p className="text-neutral-500 italic">Canada</p>
@@ -97,10 +98,12 @@ const InlineFooter: React.FC = () => {
               Get Involved
             </h3>
             <a
-              href="#"
+              href="/partners"
               className="group flex items-center justify-between p-4 border border-neutral-800 rounded-lg hover:border-red-600/50 hover:bg-red-600/5 transition-all"
             >
-              <span className="text-white font-medium">Our Partners</span>
+              <span className="text-white font-medium">
+                Become Our Partners{" "}
+              </span>
               <ArrowUpRight
                 size={18}
                 className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"

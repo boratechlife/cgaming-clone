@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const EventFeatureSection = () => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -9,14 +9,14 @@ const EventFeatureSection = () => {
 
   return (
     <div
-      className="flex flex-col items-center justify-start w-full min-h-screen pt-24 pb-16 px-6 text-white text-center bg-gradient-to-b from-[#5630bf] via-[#3c2185] to-[#0d021b]"
+      className="flex flex-col items-center justify-start w-full min-h-screen pt-24 pb-16 px-6 text-white text-center "
       id="event-hero"
     >
       <div className="max-w-[1100px] w-full flex flex-col items-center">
         {/* Main Heading */}
         <h1
           className="text-4xl md:text-6xl lg:text-[76px] font-bold tracking-tight leading-[1.1] mb-8"
-          style={{ fontFamily: 'Satoshi, sans-serif' }}
+          style={{ fontFamily: "Satoshi, sans-serif" }}
         >
           6th edition of the Canadian Game Awards: <br />
           <span className="font-medium text-white/90">February 21st, 2026</span>
@@ -26,7 +26,7 @@ const EventFeatureSection = () => {
         <div className="max-w-3xl mb-16">
           <p
             className="text-lg md:text-xl text-gray-300 leading-relaxed font-light"
-            style={{ fontFamily: 'Karla, sans-serif' }}
+            style={{ fontFamily: "Karla, sans-serif" }}
           >
             The Canadian Game Awards (CGA) are a celebration of Canada’s growing
             gaming industry, one of the largest in the world. This award show
@@ -65,12 +65,12 @@ const EventFeatureSection = () => {
             <article
               onClick={handlePlayVideo}
               style={{
-                position: 'relative',
-                width: '100%',
-                height: '100%',
-                borderRadius: '20px',
-                cursor: 'pointer',
-                overflow: 'hidden',
+                position: "relative",
+                width: "100%",
+                height: "100%",
+                borderRadius: "20px",
+                cursor: "pointer",
+                overflow: "hidden",
               }}
               role="presentation"
             >
@@ -81,28 +81,28 @@ const EventFeatureSection = () => {
                 <>
                   <div
                     style={{
-                      position: 'absolute',
+                      position: "absolute",
                       top: 0,
                       left: 0,
-                      height: '100%',
-                      width: '100%',
+                      height: "100%",
+                      width: "100%",
                       background:
-                        'center / cover url(https://i.ytimg.com/vi_webp/LDNn0rg5x1k/sddefault.webp) no-repeat',
+                        "center / cover url(https://i.ytimg.com/vi_webp/LDNn0rg5x1k/sddefault.webp) no-repeat",
                     }}
                   ></div>
                   <button
                     aria-label="Play"
                     style={{
-                      position: 'absolute',
-                      top: '50%',
-                      left: '50%',
-                      transform: 'translate(-50%, -50%)',
-                      width: '68px',
-                      height: '48px',
+                      position: "absolute",
+                      top: "50%",
+                      left: "50%",
+                      transform: "translate(-50%, -50%)",
+                      width: "68px",
+                      height: "48px",
                       padding: 0,
-                      border: 'none',
-                      background: 'transparent',
-                      cursor: 'pointer',
+                      border: "none",
+                      background: "transparent",
+                      cursor: "pointer",
                       zIndex: 10,
                     }}
                   >
@@ -118,7 +118,7 @@ const EventFeatureSection = () => {
                         fillOpacity="0.8"
                         style={{
                           transition:
-                            'fill .1s cubic-bezier(0.4, 0, 1, 1), fill-opacity .1s cubic-bezier(0.4, 0, 1, 1)',
+                            "fill .1s cubic-bezier(0.4, 0, 1, 1), fill-opacity .1s cubic-bezier(0.4, 0, 1, 1)",
                         }}
                       ></path>
                       <path d="M 45,24 27,14 27,34" fill="#fff"></path>
@@ -137,11 +137,11 @@ const EventFeatureSection = () => {
               {isPlaying && (
                 <iframe
                   style={{
-                    position: 'absolute',
+                    position: "absolute",
                     top: 0,
                     left: 0,
-                    height: '100%',
-                    width: '100%',
+                    height: "100%",
+                    width: "100%",
                   }}
                   title="Youtube Video"
                   allow="autoplay; fullscreen; accelerometer; encrypted-media; gyroscope; picture-in-picture"
